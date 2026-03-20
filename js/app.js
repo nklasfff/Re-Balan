@@ -84,162 +84,168 @@
     });
   }
 
-  /* ─── Populate Content ─── */
+  /* ─── ESSENSEN ─── */
+  function populateEssensen() {
+    const data = D.sections.essensen;
 
-  function populateIntro() {
-    const el = $('#introContent');
-    if (!el) return;
-    el.innerHTML = D.sections.introduktion.content.map(c =>
-      `<p class="prose-heading">${c.heading}</p><p>${c.text}</p>`
-    ).join('');
+    const pull = $('#essensPull');
+    if (pull) pull.innerHTML = `<p>${data.pullQuote}</p>`;
+
+    const intro = $('#essensIntro');
+    if (intro) {
+      intro.innerHTML = data.intro.map(c =>
+        `<p class="prose-heading">${c.heading}</p><p>${c.text}</p>`
+      ).join('');
+    }
+
+    const paradoksText = $('#paradoksText');
+    if (paradoksText) paradoksText.textContent = data.paradoks.text;
+
+    const principles = $('#paradoksPrinciples');
+    if (principles) {
+      principles.innerHTML = data.paradoks.principles.map(p =>
+        `<div class="principle reveal"><p class="principle__text">${p}</p></div>`
+      ).join('');
+    }
+
+    const kontekstPull = $('#kontekstPull');
+    if (kontekstPull) kontekstPull.innerHTML = `<p>${data.kontekst.pullQuote}</p>`;
+
+    const kontekstText = $('#kontekstText');
+    if (kontekstText) kontekstText.innerHTML = `<p>${data.kontekst.text}</p>`;
   }
 
-  function populateNormal() {
-    const el = $('#normalContent');
-    if (!el) return;
-    el.innerHTML = D.sections.normalReaktion.content.map(c =>
-      `<p class="prose-heading">${c.heading}</p><p>${c.text}</p>`
-    ).join('');
-  }
+  /* ─── NERVESYSTEM ─── */
+  function populateNervesystem() {
+    const data = D.sections.nervesystem;
 
-  function populateStages() {
-    const el = $('#stages');
-    if (!el) return;
-    const icons = { horizontal: 'I', seated: 'II', calendar: 'III' };
-    el.innerHTML = D.sections.treStadier.stages.map((s, i) => `
-      <div class="stage reveal" data-stage="${i}">
-        <div class="stage__top">
-          <div class="stage__icon">${icons[s.icon] || (i + 1)}</div>
-          <div class="stage__info">
-            <h3 class="stage__title">${s.title}</h3>
-            <p class="stage__desc">${s.description}</p>
+    const intro = $('#nerveIntro');
+    if (intro) intro.textContent = data.intro;
+
+    const staterIntro = $('#staterIntro');
+    if (staterIntro) staterIntro.textContent = data.treStater.intro;
+
+    // State cards
+    const stateCards = $('#stateCards');
+    if (stateCards) {
+      stateCards.innerHTML = data.treStater.states.map(s => `
+        <div class="state-card reveal">
+          <div class="state-card__top">
+            <div class="state-card__heading">
+              <div class="state-card__indicator state-card__indicator--${s.color}"></div>
+              <div>
+                <span class="state-card__title">${s.title}</span>
+                <span class="state-card__label">${s.label}</span>
+              </div>
+            </div>
+            <svg class="state-card__toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"/></svg>
           </div>
-          <svg class="stage__toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"/></svg>
+          <div class="state-card__body">
+            <div class="state-card__body-inner">
+              <p class="state-card__desc">${s.description}</p>
+              <div class="state-card__qualities">
+                ${s.qualities.map(q => `<span class="state-card__quality">${q}</span>`).join('')}
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="stage__body">
-          <div class="stage__body-inner">
-            <p>${s.text}</p>
-            <p style="margin-top:12px;color:var(--text-secondary)">${s.details}</p>
+      `).join('');
+
+      $$('.state-card', stateCards).forEach(card => {
+        card.addEventListener('click', () => card.classList.toggle('open'));
+      });
+    }
+
+    // Dynamik
+    const dynamikPull = $('#dynamikPull');
+    if (dynamikPull) dynamikPull.innerHTML = `<p>${data.dynamik.pullQuote}</p>`;
+
+    const dynamikText = $('#dynamikText');
+    if (dynamikText) dynamikText.innerHTML = `<p>${data.dynamik.text}</p>`;
+
+    // Slow Way Down
+    const slowText = $('#slowText');
+    if (slowText) slowText.textContent = data.dynamik.slow.text;
+    const slowList = $('#slowList');
+    if (slowList) slowList.innerHTML = data.dynamik.slow.qualities.map(q => `<li>${q}</li>`).join('');
+
+    // Meet Me
+    const meetText = $('#meetText');
+    if (meetText) meetText.textContent = data.dynamik.meet.text;
+    const meetList = $('#meetList');
+    if (meetList) meetList.innerHTML = data.dynamik.meet.qualities.map(q => `<li>${q}</li>`).join('');
+  }
+
+  /* ─── RUMMET ─── */
+  function populateRummet() {
+    const data = D.sections.rummet;
+
+    const pull = $('#rumPull');
+    if (pull) pull.innerHTML = `<p>${data.pullQuote}</p>`;
+
+    const intro = $('#rumIntro');
+    if (intro) {
+      intro.innerHTML = data.intro.map(c =>
+        `<p class="prose-heading">${c.heading}</p><p>${c.text}</p>`
+      ).join('');
+    }
+
+    // The Neutral
+    const neutralPull = $('#neutralPull');
+    if (neutralPull) neutralPull.innerHTML = `<p>${data.neutral.pullQuote}</p>`;
+
+    const neutralText = $('#neutralText');
+    if (neutralText) neutralText.innerHTML = `<p>${data.neutral.text}</p>`;
+
+    const neutralQualities = $('#neutralQualities');
+    if (neutralQualities) {
+      neutralQualities.innerHTML = data.neutral.qualities.map(q =>
+        `<span class="tag">${q}</span>`
+      ).join('');
+    }
+
+    // Dosering
+    const doseringPull = $('#doseringPull');
+    if (doseringPull) doseringPull.innerHTML = `<p>${data.dosering.pullQuote}</p>`;
+
+    const doseringText = $('#doseringText');
+    if (doseringText) doseringText.innerHTML = `<p>${data.dosering.text}</p>`;
+
+    const doseringQualities = $('#doseringQualities');
+    if (doseringQualities) {
+      doseringQualities.innerHTML = data.dosering.tegn.map(t =>
+        `<span class="tag">${t}</span>`
+      ).join('');
+    }
+  }
+
+  /* ─── FÆNOMENER ─── */
+  function populateFaenomener() {
+    const el = $('#concepts');
+    if (!el) return;
+    el.innerHTML = D.sections.faenomener.items.map((c, i) => `
+      <div class="concept reveal" data-concept="${i}">
+        <div class="concept__header">
+          <div>
+            <span class="concept__term">${c.term}</span>
+            <span class="concept__short">${c.short}</span>
           </div>
+          <svg class="concept__toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="concept__body">
+          <div class="concept__body-inner">${c.text}</div>
         </div>
       </div>
     `).join('');
 
-    $$('.stage', el).forEach(stage => {
-      stage.addEventListener('click', () => stage.classList.toggle('open'));
+    $$('.concept__header', el).forEach(header => {
+      header.addEventListener('click', () => {
+        header.parentElement.classList.toggle('open');
+      });
     });
   }
 
-  function populateReactions() {
-    const el = $('#reactionTags');
-    if (!el) return;
-    el.innerHTML = D.sections.treStadier.normaleReaktioner.items.map(r =>
-      `<span class="tag">${r}</span>`
-    ).join('');
-  }
-
-  function populateCase() {
-    const el = $('#caseTimeline');
-    if (!el) return;
-    el.innerHTML = D.sections.caseEksempel.sessions.map(s => `
-      <div class="case-session">
-        <div class="case-session__dot"></div>
-        <span class="case-session__num">Behandling ${s.number}</span>
-        <h4 class="case-session__title">${s.title}</h4>
-        <p class="case-session__text">${s.text}</p>
-      </div>
-    `).join('');
-  }
-
-  function populateNerve() {
-    const intro = $('#nerveIntro');
-    if (intro) intro.textContent = D.sections.nervesystem.intro;
-
-    const sym = $('#symSigns');
-    if (sym) sym.innerHTML = D.sections.nervesystem.sympatisk.tegn.map(t => `<li>${t}</li>`).join('');
-
-    const para = $('#paraSigns');
-    if (para) para.innerHTML = D.sections.nervesystem.parasympatisk.tegn.map(t => `<li>${t}</li>`).join('');
-  }
-
-  function populateInterventions() {
-    const strats = D.sections.intervention.strategies;
-    const slow = strats.find(s => s.id === 'sympatisk');
-    const meet = strats.find(s => s.id === 'parasympatisk');
-
-    const sp = $('#slowPrinciple');
-    if (sp && slow) sp.textContent = slow.principle;
-    const sl = $('#slowList');
-    if (sl && slow) sl.innerHTML = slow.approaches.map(a => `<li>${a}</li>`).join('');
-
-    const mp = $('#meetPrinciple');
-    if (mp && meet) mp.textContent = meet.principle;
-    const ml = $('#meetList');
-    if (ml && meet) ml.innerHTML = meet.approaches.map(a => `<li>${a}</li>`).join('');
-  }
-
-  function populateSamtale() {
-    const el = $('#samtaleContent');
-    if (!el) return;
-    el.innerHTML = D.sections.samtale.points.map(p => `<p>${p}</p>`).join('');
-  }
-
-  function populatePrinciples() {
-    const el = $('#principles');
-    if (!el) return;
-    el.innerHTML = D.sections.principper.guidelines.map(g =>
-      `<div class="principle reveal"><p class="principle__text">${g}</p></div>`
-    ).join('');
-  }
-
-  function populateGreb() {
-    const el = $('#greb');
-    if (!el) return;
-    el.innerHTML = D.sections.principper.greb.map(g =>
-      `<div class="greb-item reveal">${g}</div>`
-    ).join('');
-  }
-
-  function populateEmotional() {
-    const el = $('#emotionalBlock');
-    if (!el) return;
-    const data = D.sections.foelelser;
-    el.innerHTML = `
-      <blockquote class="pull">
-        <p>${data.subtitle}</p>
-      </blockquote>
-      <div class="prose">
-        ${data.content.map(c => `<p class="prose-heading">${c.heading}</p><p>${c.text}</p>`).join('')}
-      </div>
-    `;
-  }
-
-  function populatePhases() {
-    const el = $('#phases');
-    if (!el) return;
-    el.innerHTML = D.sections.kommunikation.phases.map(p => `
-      <div class="phase reveal">
-        <h3 class="phase__title">${p.phase}</h3>
-        <ul class="phase__list">
-          ${p.points.map(pt => `<li>${pt}</li>`).join('')}
-        </ul>
-      </div>
-    `).join('');
-  }
-
-  function populateSafety() {
-    const el = $('#safety');
-    if (!el) return;
-    el.innerHTML = D.sections.sikkerhed.categories.map(c => `
-      <div class="safety-cat reveal">
-        <h3 class="safety-cat__title">${c.title}</h3>
-        <ul class="safety-cat__list">
-          ${c.items.map(i => `<li>${i}</li>`).join('')}
-        </ul>
-      </div>
-    `).join('');
-  }
-
+  /* ─── REFLEKSION ─── */
   function populateRefleksion() {
     const track = $('#carouselTrack');
     if (!track) return;
@@ -266,6 +272,7 @@
     if (prev) prev.addEventListener('click', () => show(idx - 1));
     if (next) next.addEventListener('click', () => show(idx + 1));
 
+    // Swipe support
     let startX = 0;
     track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
     track.addEventListener('touchend', e => {
@@ -274,66 +281,13 @@
     }, { passive: true });
   }
 
-  function populateConcepts() {
-    const el = $('#concepts');
-    if (!el) return;
-    el.innerHTML = D.sections.begreber.items.map((c, i) => `
-      <div class="concept reveal" data-concept="${i}">
-        <div class="concept__header">
-          <div>
-            <span class="concept__term">${c.term}</span>
-            <span class="concept__short">${c.short}</span>
-          </div>
-          <svg class="concept__toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"/></svg>
-        </div>
-        <div class="concept__body">
-          <div class="concept__body-inner">${c.definition}</div>
-        </div>
-      </div>
-    `).join('');
-
-    $$('.concept__header', el).forEach(header => {
-      header.addEventListener('click', () => {
-        header.parentElement.classList.toggle('open');
-      });
-    });
-  }
-
-  function populateLit() {
-    const el = $('#litList');
-    if (!el) return;
-    el.innerHTML = D.sections.litteratur.books.map(b => `
-      <div class="lit-item">
-        <strong>${b.author}</strong> ${b.year ? `(${b.year})` : ''}<br>
-        <em>${b.title}</em>${b.publisher ? `. ${b.publisher}` : ''}${b.type ? ` [${b.type}]` : ''}
-      </div>
-    `).join('');
-
-    const btn = $('#litBtn');
-    const lit = btn?.closest('.lit');
-    if (btn && lit) {
-      btn.addEventListener('click', () => lit.classList.toggle('open'));
-    }
-  }
-
   /* ─── Init ─── */
   function init() {
-    populateIntro();
-    populateNormal();
-    populateStages();
-    populateReactions();
-    populateCase();
-    populateNerve();
-    populateInterventions();
-    populateSamtale();
-    populatePrinciples();
-    populateGreb();
-    populateEmotional();
-    populatePhases();
-    populateSafety();
+    populateEssensen();
+    populateNervesystem();
+    populateRummet();
+    populateFaenomener();
     populateRefleksion();
-    populateConcepts();
-    populateLit();
     observeReveals();
   }
 

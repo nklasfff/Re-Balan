@@ -1,4 +1,4 @@
-// Re-Balan Content Data
+// Re-Balan Content Data — Philosophical Edition
 const APP_DATA = {
 
   meta: {
@@ -16,326 +16,188 @@ const APP_DATA = {
 
   sections: {
 
-    introduktion: {
-      title: "Introduktion",
-      subtitle: "Den terapeutiske proces: et dynamisk paradoks",
-      content: [
+    essensen: {
+      title: "Essensen",
+      subtitle: "Den iboende intelligens",
+      pullQuote: "Vi behøver ikke skabe balancen. Den er allerede til stede — som en kapacitet, der venter på de rette betingelser.",
+      intro: [
         {
-          heading: "Den terapeutiske proces",
-          text: "Ved enhver behandling skal vi i en vis forstand på den delikate rejse at tage kontakt til et system, som allerede er belastet/traumatiseret og derfor skal behandlingen matche de ressourcer, som klienten har tilgængelig — på den givne dag, og endvidere i bredere forstand ved de livsomstændigheder, som deres liv udspiller sig under og i."
+          heading: "En naturlig kapacitet",
+          text: "Dybt i ethvert levende system eksisterer en iboende evne til at finde tilbage mod balance. Det er ikke noget vi skal tilføre udefra, og det er ikke noget der kræver en bestemt teknik eller metode. Det er en intelligens, der allerede er til stede — som vejrtrækningen, som hjerterytmen, som de tusindvis af processer, der i dette øjeblik opretholder livet i os."
         },
         {
-          heading: "Balance og dosering",
-          text: "Når vi rammer den rigtige dosering, er der balance mellem de to. Det kan være hensigtsmæssigt at tale med klienten om dette — at de i tiden efter behandlingen kan opleve ændringer, som forekommer forvirrende. Når vi taler med dem om det, kan det gøre det lettere for dem at forstå, at ikke alle ændringer betyder, at der er noget galt."
+          heading: "Rumskabelse, ikke intervention",
+          text: "Re-balancering handler fundamentalt om at skabe et rum. Ikke et fysisk rum, men en kvalitet af tilstedeværelse, hvor det som er i ubalance får lov til at være præcis som det er — uden at vi forsøger at fikse det, ændre det eller skubbe det i en bestemt retning. I det øjeblik vi skaber det rum, har systemet allerede alt det behøver for selv at igangsætte den proces, der fører mod bedst mulige balance."
         },
         {
-          heading: "Træthed som signal",
-          text: "Mange oplever f.eks. træthed som foruroligende, mens det for os behandlere er det væsentligste tegn på, at den terapeutiske proces er \"modtaget\" og i gang med at skabe de forvandlinger, som er hele sigtet med behandlingen. Hvis vi har talt med klienten om dette, er det lettere for dem at give det lov til at være der og de kan i en vis forstand læne sig ind i trætheden."
-        }
-      ]
-    },
-
-    normalReaktion: {
-      title: "Normal Reaktion vs. Overbehandling",
-      subtitle: "Den levende gråzone",
-      content: [
-        {
-          heading: "Den levende gråzone",
-          text: "Jeg tror ikke, at der findes én udtømmende definition af overbehandling. Det varierer fra behandler til behandler og fra fag til fag, hvad vi vurderer som overbehandling. Det er derfor en slags levende gråzone, hvor vi ikke entydigt kan måle og konkludere, hvorvidt behandlingen har overskredet klientens ressourcer."
-        },
-        {
-          heading: "Kontekstens betydning",
-          text: "Klientens reaktion skal også ses i kontekst for at vi kan vurdere, hvorvidt det var den egentlige behandling, som afstedkom en kraftig reaktion, eller om det skyldtes, at klienten efterfølgende i deres eget liv overdoserede stimuli og belastning i dagene efter behandlingen."
-        }
-      ]
-    },
-
-    treStadier: {
-      title: "De Tre Stadier",
-      subtitle: "Behandlingsresponsen",
-      stages: [
-        {
-          title: "På briksen",
-          icon: "horizontal",
-          description: "Behandlerens referencer for normal processering",
-          text: "Hvad indikerer, at klientens proces under behandlingen forløber på en normal, balanceret måde? Hvad fortæller os, at de responderer på behandlingen på en måde, som ligger indenfor deres ressourcer i dette øjeblik?",
-          details: "For min del mærker jeg det primært via fysiske sansninger og bevægelser i klientens krop. Bevægelsernes grad af symmetri, harmoni, hastighed, blødhed, flydenhed, intensitet, gensidig balance og symmetri. Noget i mig koger det altid ned til noget meget simpelt — er der ro eller er der ikke ro?"
-        },
-        {
-          title: "Lige efter behandlingen",
-          icon: "seated",
-          description: "Tilstanden når klienten rejser sig",
-          text: "Når vores klient har rejst sig fra briksen og vi sammen sidder i stolene, får vi ligeledes en fornemmelse af, hvorvidt de på en normal og sund måde er \"vendt tilbage\" fra behandlingen på briksen.",
-          details: "Deres stemme, ansigtsudtryk, bevægelser, øjenkontakt, sammenhæng i tale og temaer, tempo, ansigtsfarve mm. fortæller altsammen, om de er tilbage og derved klar til at drage hjem til deres eget liv, hvor den egentlige behandling indfinder sig."
-        },
-        {
-          title: "Dagene efter",
-          icon: "calendar",
-          description: "Reaktioner i tiden mellem behandlinger",
-          text: "Ofte vil vi først få kendskab til denne del, når vi ser dem til næste behandling. Her vil vi få en fornemmelse af, hvorvidt dagene efter behandlingen forløb på en måde, som stemmer overens med det vi betragter som normal reaktion.",
-          details: "Jeg plejer at være interesseret i to aspekter af tiden mellem behandlingerne — reaktionerne samme dag og de næste 2-3 dage, og desuden den samlede tid siden sidst — altså, hvordan deres tilstand har været i de uger siden sidste behandling."
+          heading: "Processen kender sin egen vej",
+          text: "Den re-balancerende proces kender præcis den sekvens, den skal igennem. Den kender sit eget tempo. Den kender den grad af kontakt og plads, der er nødvendig. Vores rolle er ikke at styre processen, men at være til stede med den — at tilbyde de betingelser, under hvilke den kan udfolde sig af sine egne veje."
         }
       ],
-      normaleReaktioner: {
-        title: "Normale reaktioner efter behandlingen",
-        items: [
-          "Træthed",
-          "Mærken aktivitet",
-          "Behov for mere hvile/søvn",
-          "Følelsesmæssige reaktioner",
-          "Øget drømmeaktivitet",
-          "Ømhed/værken i kroppen",
-          "Bevægeapparatet påvirket",
-          "Primære symptomer rører på sig",
-          "Erindringer dukker op",
-          "Gamle skader/traumer dukker op"
+      paradoks: {
+        title: "Det dynamiske paradoks",
+        text: "Der er et smukt paradoks i re-balancering: jo mindre vi gør, desto mere kan ske. Jo mere vi forsøger at kontrollere processen, desto mere begrænser vi den. Det kræver mod at træde et skridt tilbage og lade systemets egen intelligens tage føringen — men det er netop i det rum, at de dybeste forvandlinger bliver mulige.",
+        principles: [
+          "Det generelle er mest og dybest og blidest støttende",
+          "Midtlinjen fungerer som aksen for normalisering",
+          "Mindre er mere — den optimale dosering er ofte blidere end vi tror",
+          "Så snart kroppen har svaret, er det nok"
         ]
+      },
+      kontekst: {
+        pullQuote: "Balance er aldrig absolut. Den er altid relativ til den kontekst, hvori den opstår.",
+        text: "Ubalance opstår i en kontekst — i relation til bestemte omstændigheder, oplevelser og belastninger. Og re-balanceringen indfinder sig ligeledes i en kontekst. Den har brug for en støttende og nærværende ramme. Den har brug for at være i relation til noget udenfor sig selv. Når de betingelser er til stede, har systemet allerede alt, det behøver for at skabe den optimale proces tilbage mod bedst mulige balance — i relation til begge kontekster."
       }
-    },
-
-    caseEksempel: {
-      title: "Case-eksempel",
-      subtitle: "En leverlæsion rører på sig",
-      quote: "I kinesisk medicin har leveren betydning for både vrede og glæde",
-      sessions: [
-        {
-          number: 1,
-          title: "Første behandling",
-          text: "En mand midt i 50'erne opsøgte mig pga. tinnitus og generel stress gennem de seneste 4-5 år. Hans tinnitus var eksploderet ifm. hans svigermors begravelse, som havde trigget erindringer om hans egen mors bortgang, da han var 18 år. Jeg lavede en behandling med afsæt i lever-energien. Han responderede rigtigt godt — en masse dynamisk arbejde skete og han var langt, langt væk under behandlingen."
-        },
-        {
-          number: 2,
-          title: "Anden behandling",
-          text: "Han fortalte om stor træthed i dagene efter behandlingen, om tydelige følelsesmæssige reaktioner, at tinnitusen havde opført sig anderledes end vanligt og om en drøm, som havde gjort meget stort indtryk på ham. Han havde drømt, at han mødtes med broren og han under hele mødet ikke havde mærket den mindste smule vrede."
-        },
-        {
-          number: 3,
-          title: "Tredje behandling",
-          text: "Tinnitusen var yderligere dæmpet og han mærkede en ny klarhed og glæde begynde at indfinde sig. Hans system tog fantastisk imod behandlingen og mønstret i lever-energien trådte meget klart frem — hele hans underkrop var fuldstændigt flydende, mens halsen havde meget svært ved at lade lever-energien bevæge sig igennem."
-        }
-      ]
     },
 
     nervesystem: {
       title: "Nervesystemets Dynamik",
-      subtitle: "Det autonome nervesystem",
-      intro: "Når vi taler overdosering, kan det være en hjælp at tænke i, hvorvidt reaktionen sker i den sympatiske eller i den parasympatiske retning.",
-      sympatisk: {
-        title: "Sympatisk aktivering",
-        subtitle: "Mobilisering — Kamp eller flugt",
-        tegn: [
-          "Vejrtrækning hurtig/hektisk/overfladisk",
-          "Øjenlåg blinker/urolige/sitrende",
-          "Varme — i ansigt og/eller i kroppen",
-          "Bevægelser hurtige/repetitive/hektiske",
-          "Tale hektisk/urolig/springende/forvirret",
-          "Sveden i ansigt/krop",
-          "Væv opspændt/hårdt"
+      subtitle: "Tre tilstande i os alle",
+      intro: "I ethvert menneske lever et autonomt nervesystem, der konstant navigerer mellem aktivering og ro, mellem mobilisering og hvile. Det er vores mest grundlæggende fysiologiske kompas — og det fungerer oftest helt uden vores bevidste medvirken.",
+      treStater: {
+        intro: "Den polyvagale teori udvider vores forståelse af nervesystemet til tre distinkte tilstande, der hver repræsenterer en fundamental måde at møde verden på:",
+        states: [
+          {
+            title: "Tryghed & Forbindelse",
+            label: "Ventral vagal",
+            color: "green",
+            description: "En tilstand af afbalanceret fleksibilitet, hvor vi er i stand til at møde verden med åbenhed og nysgerrighed. Her er nervesystemet optimalt reguleret — vi kan mærke os selv, mærke andre, og bevæge os frit mellem aktivering og ro.",
+            qualities: ["Social engagement", "Dyb vejrtrækning", "Åben perception", "Fleksibel respons", "Forbindelse til krop og omverden"]
+          },
+          {
+            title: "Mobilisering",
+            label: "Sympatisk aktivering",
+            color: "warm",
+            description: "Nervesystemets naturlige respons på fare eller udfordring. Tempoet øges, kroppen gør klar til handling. I sin sunde form giver den os energi og handlekraft. Når den overaktiveres, mister vi kontakten — med os selv og med omverdenen.",
+            qualities: ["Øget hjertefrekvens", "Hurtig vejrtrækning", "Forhøjet energi", "Muskelspænding", "Skærpet fokus"]
+          },
+          {
+            title: "Immobilisering",
+            label: "Dorsal vagal",
+            color: "cool",
+            description: "Den evolutionært ældste overlevelsesrespons. Når systemet vurderer, at hverken kamp eller flugt er mulig, lukker det ned. En tilstand af tilbagetrækning og energibesparelse. I sin ekstreme form opleves den som følelsesløshed, frakobling eller kollaps.",
+            qualities: ["Langsom vejrtrækning", "Nedsat energi", "Tilbagetrækning", "Følelsesmæssig distance", "Kroppens stilhed"]
+          }
         ]
       },
-      parasympatisk: {
-        title: "Parasympatisk aktivering",
-        subtitle: "Immobilisering — Kollaps",
+      dynamik: {
+        title: "Tempo & Kontakt",
+        pullQuote: "To grundlæggende kvaliteter — tempo og kontakt — bestemmer nervesystemets bevægelse mellem tilstandene.",
+        text: "Når tempoet i systemet løber løbsk, mister vi kontakt. Når kontakten forsvinder, falder tempoet mod kollaps. Disse to dynamikker spejler hinanden — og vejen tilbage mod balance følger den modsatte sti.",
+        slow: {
+          title: "Slow Way Down",
+          subtitle: "Når tempoet er primært",
+          text: "Når systemet er overaktiveret, skyldes det primært tempoet — mistet kontakt er en konsekvens. Vejen tilbage går gennem langsomhed: et roligt åndedræt, en blidere rytme, en invitation til at mærke noget langsomt indeni sig selv.",
+          qualities: [
+            "Invitere til langsomhed i krop og sind",
+            "Finde et roligt kontaktsted — noget stabilt at hvile opmærksomheden på",
+            "Bemærke noget langsomt indeni sig selv",
+            "Kontakt med omverdenen — åbne sanserne udad",
+            "Mærke støtten under sig — det der bærer"
+          ]
+        },
+        meet: {
+          title: "Meet Me",
+          subtitle: "Når kontakt er primært",
+          text: "Når systemet er kollapset, skyldes det primært mistet kontakt — det sænkede tempo er en konsekvens. Vejen tilbage går gennem forbindelse: en tilstedeværelse der siger 'du er ikke alene', en kontakt der er tydelig nok til at nå igennem stilheden.",
+          qualities: [
+            "Etablere en minimal grad af tryghed som indgang",
+            "Tilkendegive tilstedeværelse — du er ikke alene",
+            "Fokusere på kvaliteten af kontakt som det primære",
+            "Mærke støtten og stabiliteten i forbindelsen",
+            "Give tillid til at læne sig ind i nærværet"
+          ]
+        }
+      }
+    },
+
+    rummet: {
+      title: "Rummet",
+      subtitle: "Betingelserne for re-balancering",
+      pullQuote: "Det handler ikke om at gøre noget ved tilstanden. Det handler om at være med den — på en måde der giver den plads til at bevæge sig.",
+      intro: [
+        {
+          heading: "Tilstedeværelse",
+          text: "Den vigtigste betingelse for re-balancering er kvaliteten af tilstedeværelse. Ikke en anspændt, koncentreret opmærksomhed, men en rolig, åben væren-med — som det, der er, præcis som det er. Denne kvalitet skaber i sig selv et rum, hvori forandring kan opstå. Paradoksalt nok ikke fordi vi forsøger at skabe forandring, men fordi vi holder op med at forsøge."
+        },
+        {
+          heading: "Relation",
+          text: "Re-balancering sker ikke i isolation. Den kræver relation — en forbindelse til noget udenfor sig selv. Det kan være en anden persons nærvær, det kan være kontakten med ens egen krop, det kan være forbindelsen til rummet man befinder sig i. Systemet finder sin balance i mødet med noget andet — ikke i sin afsondrethed."
+        },
+        {
+          heading: "Sikkerhed",
+          text: "Nervesystemet re-balancerer kun, når det vurderer, at det er sikkert at gøre det. Denne vurdering sker ofte helt udenfor vores bevidste kontrol — det er en ubevidst neuroception, en kropslig fornemmelse af 'er det sikkert her?'. Derfor er sikkerheden ikke noget vi kan argumentere os til — den skal mærkes, sanses, opleves."
+        }
+      ],
+      neutral: {
+        title: "The Neutral",
+        pullQuote: "Ikke passivitet, men dynamisk ligevægt — hvorfra forandring kan opstarte.",
+        text: "The Neutral er en specifik fysiologisk tilstand, hvor kroppens kompensatoriske mønstre midlertidigt nedreguleres. Det er det øjeblik, hvor systemet holder op med at kompensere og i stedet samler sig — som en indånding før en dyb udånding. Det er ikke stilstand, men en levende, vibrerende ro, hvorfra kroppens selvregulerende kræfter kan mobiliseres optimalt.",
+        qualities: [
+          "Kompensatoriske mønstre ophører midlertidigt",
+          "Systemet samler sig omkring midtlinjen",
+          "En levende stilhed — ikke fravær, men tilstedeværelse",
+          "Kroppens selvregulerende kræfter mobiliseres",
+          "Forandringens udgangspunkt"
+        ]
+      },
+      dosering: {
+        title: "Dosering",
+        pullQuote: "Mindre er mere — og det er sværere end det lyder.",
+        text: "I enhver proces mod balance spiller doseringen en afgørende rolle. For meget stimuli, for hurtigt, overskrider systemets kapacitet og skaber ny ubalance. For lidt når ikke igennem. Den optimale dosering matcher præcis de ressourcer, der er tilgængelige lige nu — ikke i går, ikke i morgen, men i dette øjeblik.",
         tegn: [
-          "Vejrtrækning minimal/langsom",
-          "Bleghed",
-          "Bevægelser minimale/langsomme",
-          "Tale sløv/fraværende/usammenhængende",
-          "Kulde i kroppen",
-          "Væv slapt/dødt/livløst/kollapset"
+          "Bevægelserne er symmetriske og harmoniske",
+          "Der er en blødhed og flydenhed i systemet",
+          "Tempoet er naturligt — hverken forceret eller stagnerende",
+          "Vejrtrækningen finder sin egen rytme",
+          "En grundlæggende ro er til stede"
         ]
       }
     },
 
-    intervention: {
-      title: "Interventionsstrategier",
-      strategies: [
-        {
-          id: "sympatisk",
-          title: "Slow Way Down",
-          subtitle: "Sympatikus",
-          principle: "Den primære traumatiske hændelse skyldes tempoet — mistet kontakt er en konsekvens, sekundær. Den primære indgang til balancering er at bringe tempoet ned — suppleret af nærværende kontakt.",
-          approaches: [
-            "Lad dine hænder og hele dit væsen invitere til langsomhed",
-            "Tal langsommere — bed dem prøve at tale langsommere",
-            "Bed dem mærke briksens stabilitet som et roligt kontaktsted",
-            "Guide dem til at bemærke noget langsomt indeni dem selv",
-            "Bed dem åbne øjnene for kontakt med omverdenen",
-            "Hænderne typisk under ryggen — mærk min hånd, mærk roen"
-          ]
-        },
-        {
-          id: "parasympatisk",
-          title: "Meet Me",
-          subtitle: "Parasympatikus",
-          principle: "Den primære traumatiske hændelse skyldes mistet kontakt — tempoet ned er en konsekvens, sekundær. Den primære indgang til balancering er at opnå kontakt — åbner naturligt op til normalisering af tempo.",
-          approaches: [
-            "Etabler en minimal grad af tryghed som indgang",
-            "Tilkendegiv at du er til stede — de er ikke alene",
-            "Fokuser på kvaliteten af kontakt som primær",
-            "Mærk støtten og stabiliteten i kontakten",
-            "Tilkendegiv verbalt at du forbliver i kontakt",
-            "Giv dem tillid til at læne sig ind i dit nærvær"
-          ]
-        }
-      ]
-    },
-
-    samtale: {
-      title: "Samtalens rolle",
-      subtitle: "Ved re-balancering",
-      intro: "En væsentlig forskel mellem almindelig behandling og re-balancering ligger i brugen af samtale. Mens en biodynamisk behandling typisk udspiller sig i stilhed, bliver det verbale et aktivt og nødvendigt redskab ved re-balancering.",
-      points: [
-        "Samtalen giver klienten en forståelse for, hvad der sker, hvilket i sig selv kan være regulerende",
-        "Den skaber et orienteringspunkt i en tilstand, der ofte opleves som forvirrende eller overvældende",
-        "Stemmens kvalitet — dens tempo, toneleje og rytme — fungerer som en direkte støtte til nervesystemets regulering",
-        "Ved sympatisk overdosering: rolig, langsom stemme med dybere toneleje",
-        "Ved parasympatisk kollaps: tydelig, direkte stemme med kvalitet af nærvær og kontakt"
-      ]
-    },
-
-    principper: {
-      title: "Principper for Re-balancering",
-      subtitle: "Valg af greb",
-      guidelines: [
-        "Det generelle er mest og dybest og blidest støttende",
-        "Midtlinjen fungerer som aksen for normalisering",
-        "Det handler ikke om en terapeutisk proces, men om overlevelse",
-        "Så snart kroppen har svaret, afrunder jeg"
-      ],
-      greb: [
-        "Symmetriske greb omkring midtlinjen",
-        "Greb der ikke adresserer bestemte strukturer",
-        "Brede greb med kontakt til store flader",
-        "Undgå specifikke problemsteder",
-        "Formidle tempo, nærvær, ro, kontakt, stabilitet"
-      ]
-    },
-
-    foelelser: {
-      title: "Det Følelsesmæssige Aspekt",
-      subtitle: "Tårer: den gode smerte",
-      content: [
-        {
-          heading: "Tårer som tegn",
-          text: "Mange mennesker anser tårer som enten svaghed eller \"noget forkert\". Det er min erfaring — såvel professionelt som privat — at egentlige gennembrud og forvandlinger altid indeholder de store følelser. Når tårer opstår spontant under behandlingen, ser jeg det som et sundt tegn på, at klientens proces er levende og dynamisk i dem."
-        },
-        {
-          heading: "Overdoseringens skjulte gave",
-          text: "Man kan se den såkaldte overdosering som indeholdende en art skjult gave til både behandleren og klienten. En gave, hvor den kraftige reaktion fortæller om et område, som kalder på hjælp fremover. At deres kraftige reaktion fortæller, at de ved hjælp til netop dette område kan frigive energi, som hidtil har haft drænende og belastende effekt."
-        }
-      ]
-    },
-
-    begreber: {
-      title: "Centrale Begreber",
-      subtitle: "Uddybning",
+    faenomener: {
+      title: "Fænomener",
+      subtitle: "Begreber og dynamikker",
       items: [
         {
           term: "Det autonome nervesystem",
-          short: "Styrer kroppens ubevidste funktioner",
-          definition: "Består af to primære grene — den sympatiske og den parasympatiske, der ideelt set fungerer i en dynamisk balance. Den sympatiske gren aktiverer mobilisering (kamp/flugt), mens den parasympatiske faciliterer hvile, fordøjelse og restitution."
-        },
-        {
-          term: "Polyvagal Teori",
-          short: "Tre autonome tilstande",
-          definition: "Teori udviklet af Stephen Porges, der udvider forståelsen af det autonome nervesystem til at omfatte tre distinkte tilstande: Ventral vagal kompleks (social engagement, tryghed), sympatisk aktivering (mobilisering), og dorsal vagal kompleks (immobilisering, frys)."
-        },
-        {
-          term: "Ventral vagal tilstand",
-          short: "Tryghed og social forbindelse",
-          definition: "En tilstand af tryghed og social forbindelse, hvor nervesystemet er afbalanceret og fleksibelt. I denne tilstand er klienten optimalt i stand til at indgå i terapeutisk arbejde."
-        },
-        {
-          term: "Dorsal vagal tilstand",
-          short: "Immobilisering og beskyttelse",
-          definition: "En primitiv beskyttelsestilstand karakteriseret ved immobilisering og nedregulering af kroppens funktioner. Denne tilstand er evolutionært ældre end både den sympatiske og den ventrale vagale respons."
+          short: "Vores ubevidste kompas",
+          text: "Består af to primære grene — den sympatiske og den parasympatiske — der ideelt fungerer i dynamisk balance. Den sympatiske aktiverer mobilisering, mens den parasympatiske faciliterer hvile og restitution. I den polyvagale forståelse tilføjes en tredje dimension: den ventrale vagale tilstand af tryghed og social forbindelse."
         },
         {
           term: "The Neutral",
           short: "Dynamisk ligevægt",
-          definition: "En specifik fysiologisk tilstand, hvor kroppens kompensatoriske mønstre midlertidigt nedreguleres, og hvor kroppens selvregulerende kræfter kan mobiliseres optimalt. Ikke passivitet, men dynamisk ligevægt, hvorfra forandring kan opstartes."
-        },
-        {
-          term: "Nervous system arousal",
-          short: "Graden af aktivering",
-          definition: "Spænder fra ekstremt lav arousal (kollaps, dissociation) over optimal arousal (fokuseret, tilpasningsdygtig) til ekstremt høj arousal (hyperaktivering, panik). Optimal behandling forudsætter, at klienten befinder sig inden for et \"tolerance-vindue\"."
+          text: "En specifik fysiologisk tilstand, hvor kroppens kompensatoriske mønstre midlertidigt nedreguleres, og hvor kroppens selvregulerende kræfter kan mobiliseres optimalt. Ikke passivitet, men dynamisk ligevægt, hvorfra forandring kan opstartes. Det er i dette øjeblik, kroppen samler sig og finder sin egen vej."
         },
         {
           term: "Somatisk resonans",
           short: "Gensidig nervesystem-kommunikation",
-          definition: "Processen hvor terapeutens nervesystem påvirker og påvirkes af klientens nervesystem i en gensidig, ofte ubevidst, kommunikation. Kan være et kraftfuldt terapeutisk værktøj, når terapeuten er velreguleret og bevidst om dynamikken."
+          text: "Processen hvor ét nervesystem påvirker og påvirkes af et andet i en gensidig, ofte ubevidst, kommunikation. Det er den mekanisme, hvorigennem nærvær og ro i ét menneske kan understøtte re-balancering i et andet. Vi regulerer hinanden konstant — oftest uden at vide det."
+        },
+        {
+          term: "Tolerance-vinduet",
+          short: "Rummet for optimal processering",
+          text: "Spænder fra ekstremt lav arousal over optimal arousal til ekstremt høj arousal. Inden for tolerance-vinduet kan systemet processere oplevelser og finde balance. Udenfor vinduet er systemet i overlevelsestilstand — og re-balancering kræver først en tilbagevenden til vinduet."
+        },
+        {
+          term: "Den levende gråzone",
+          short: "Mellem balance og overbelastning",
+          text: "Der findes ikke én klar grænse mellem sund reaktion og overbelastning. Det er en levende gråzone, hvor kontekst er alt. Træthed efter en dyb proces kan være det sundeste tegn på, at noget er i bevægelse. Den samme træthed i en anden kontekst kan signalere overbelastning."
+        },
+        {
+          term: "Tårer som forvandling",
+          short: "Den gode smerte",
+          text: "Mange anser tårer som svaghed eller noget forkert. Men egentlige gennembrud og forvandlinger indeholder altid de store følelser. Når tårer opstår spontant, er det ofte et tegn på, at en proces er levende og dynamisk — at noget der har været holdt, endelig får lov at bevæge sig."
+        },
+        {
+          term: "Den skjulte gave",
+          short: "Ubalancens budskab",
+          text: "Enhver kraftig reaktion indeholder information. Den fortæller om et område, der kalder på opmærksomhed — et sted, hvor energi har været bundet og drænende. Ubalancen er ikke en fjende, men en budbringer. Den peger præcis derhen, hvor frigørelse er mulig."
         },
         {
           term: "Dosering",
-          short: "Tilpasning af behandlingsintensitet",
-          definition: "Omhyggelig tilpasning af behandlingens intensitet til klientens aktuelle kapacitet. Dosering er både en videnskab og en kunst. I den biodynamiske tilgang ligger det implicit, at den optimale dosering ofte indebærer \"mindre er mere\"."
-        }
-      ]
-    },
-
-    kommunikation: {
-      title: "Kommunikation",
-      subtitle: "Med klienten om behandlingsprocessen",
-      phases: [
-        {
-          phase: "Før behandlingen",
-          points: [
-            "Orientere klienten om normale reaktioner — træthed, emotionelle reaktioner, midlertidige ændringer",
-            "Skabe en forståelsesramme, hvor reaktioner ikke automatisk tolkes som forværring",
-            "Vende eventuelle tidligere erfaringer med behandling"
-          ]
-        },
-        {
-          phase: "Under behandlingen",
-          points: [
-            "Hold verbal kommunikation til et minimum, medmindre tegn på overstimulering",
-            "Tal i et tempo og med stemmeføring der understøtter processen",
-            "Kommuniker tydeligt ved tegn på overdosering"
-          ]
-        },
-        {
-          phase: "Efter behandlingen",
-          points: [
-            "Giv rigelig tid til at vende tilbage til fuld vågenhed",
-            "Tal om eventuelle reaktioner og placer dem i kontekst",
-            "Orienter om mulige reaktioner i dagene efter",
-            "Etabler klar aftale om kontakt ved uventede reaktioner"
-          ]
-        }
-      ]
-    },
-
-    sikkerhed: {
-      title: "Sikkerhedsovervejelser",
-      categories: [
-        {
-          title: "Respekt for nervesystemets kapacitet",
-          items: [
-            "Markante ændringer i vejrtrækningens mønster",
-            "Pludselige skift i hudfarve",
-            "Tab af verbal respons eller øjenkontakt",
-            "Ufrivillige bevægelser der ikke aftager",
-            "Emotionel oversvømmelse uden regulering"
-          ]
-        },
-        {
-          title: "Særlige hensyn ved traumer",
-          items: [
-            "Etabler klare rammer før behandlingen",
-            "Sikr at klienten har ressourcer til selvregulering",
-            "Hav \"nødudgange\" klar",
-            "Vær forberedt på at afkorte behandlingen"
-          ]
-        },
-        {
-          title: "Egen centrering",
-          items: [
-            "Faste rutiner for egen regulering",
-            "Anerkend egne triggere og sårbarhedspunkter",
-            "Strategier klar til selv-regulering under behandlinger",
-            "Regelmæssig supervision eller kollegial sparring"
-          ]
+          short: "Kunstens fineste balance",
+          text: "Omhyggelig tilpasning af enhver påvirknings intensitet til systemets aktuelle kapacitet. Den optimale dosering er ofte blidere end vi tror — 'mindre er mere' er ikke blot et princip, men en levende erfaring af, at kroppens egen intelligens ofte arbejder bedst, når den får plads frem for pres."
         }
       ]
     },
@@ -343,29 +205,13 @@ const APP_DATA = {
     refleksion: {
       title: "Tanker til eftertanke",
       questions: [
-        "Hvordan oplever du balancen mellem aktiv intervention og receptiv lytten?",
-        "På hvilke måder påvirker dine egne erfaringer med regulering din tilgang til arbejdet?",
-        "Hvordan kan forståelsen af de neurobiologiske principper berige din kliniske praksis uden at blive rigide skabeloner?",
-        "Hvordan navigerer du i spændingsfeltet mellem at være fuldt til stede med din intention, samtidig med at du giver slip på agendaer?",
-        "Hvilke kvaliteter i din egen tilstedeværelse understøtter bedst etableringen af The Neutral hos dine klienter?",
-        "Hvordan afgør du det rette tempo for en behandling?",
-        "Hvordan understøtter du klientens egen kapacitet til selvregulering?"
-      ]
-    },
-
-    litteratur: {
-      title: "Litteratur",
-      books: [
-        { author: "Jealous, James S.", title: "The Fluid Body and Rebalancing, No. 2", publisher: "Center for Traditional Osteopathy", type: "Audio Lecture" },
-        { author: "Jealous, James S.", title: "Rebalancing and Side Effects No. 1 & 2", publisher: "Center for Traditional Osteopathy", type: "Audio Lecture" },
-        { author: "Levine, Peter A.", title: "In an Unspoken Voice: How the Body Releases Trauma and Restores Goodness", publisher: "North Atlantic Books", year: "2010" },
-        { author: "Porges, Stephen W.", title: "The Polyvagal Theory", publisher: "W. W. Norton & Company", year: "2011" },
-        { author: "Dana, Deb", title: "The Polyvagal Theory in Therapy", publisher: "W. W. Norton & Company", year: "2018" },
-        { author: "Becker, Rollin E.", title: "The Stillness of Life", publisher: "Stillness Press", year: "2000" },
-        { author: "van der Kolk, Bessel", title: "The Body Keeps the Score", publisher: "Viking", year: "2014" },
-        { author: "Hübl, Thomas", title: "Healing Collective Trauma", publisher: "Sounds True", year: "2020" },
-        { author: "Maté, Gabor", title: "When the Body Says No", publisher: "Wiley", year: "2011" },
-        { author: "Ogden, Pat et al.", title: "Trauma and the Body: A Sensorimotor Approach", publisher: "W. W. Norton & Company", year: "2006" }
+        "Hvornår har du sidst mærket din krop finde ro helt af sig selv — uden at du behøvede at gøre noget?",
+        "Hvad sker der, når du holder op med at forsøge at ændre noget ved den tilstand, du er i lige nu?",
+        "Hvad er forskellen for dig mellem at gøre noget og at være med noget?",
+        "Hvornår oplever du, at en andens nærvær i sig selv er nok til at skabe forandring i dig?",
+        "Hvordan mærker du forskellen mellem et tempo der er dit eget, og et tempo der er pålagt udefra?",
+        "Hvad sker der i dig, når du virkelig føler dig mødt — uden at der er en agenda?",
+        "Kan du genkende øjeblikke, hvor din krop vidste noget, som dit hoved endnu ikke havde forstået?"
       ]
     }
   }
