@@ -108,6 +108,13 @@
       ).join('');
     }
 
+    // Stillads
+    const stilladsPull = $('#stilladsPull');
+    if (stilladsPull) stilladsPull.innerHTML = `<p>${data.stillads.pullQuote}</p>`;
+
+    const stilladsText = $('#stilladsText');
+    if (stilladsText) stilladsText.innerHTML = `<p>${data.stillads.text}</p><p>${data.stillads.text2}</p>`;
+
     const kontekstPull = $('#kontekstPull');
     if (kontekstPull) kontekstPull.innerHTML = `<p>${data.kontekst.pullQuote}</p>`;
 
@@ -156,6 +163,13 @@
       });
     }
 
+    // Immobilisering
+    const immoPull = $('#immoPull');
+    if (immoPull) immoPull.innerHTML = `<p>${data.immobilisering.pullQuote}</p>`;
+
+    const immoText = $('#immoText');
+    if (immoText) immoText.innerHTML = `<p>${data.immobilisering.text}</p><p>${data.immobilisering.text2}</p>`;
+
     // Dynamik
     const dynamikPull = $('#dynamikPull');
     if (dynamikPull) dynamikPull.innerHTML = `<p>${data.dynamik.pullQuote}</p>`;
@@ -190,12 +204,27 @@
       ).join('');
     }
 
+    // Stilheden
+    const stilhedPoem = $('#stilhedPoem');
+    if (stilhedPoem && data.stilheden && data.stilheden.poem) {
+      stilhedPoem.innerHTML = `
+        <p class="poem__text">${data.stilheden.poem.text.replace(/\n/g, '<br>')}</p>
+        <cite class="poem__author">${data.stilheden.poem.author}</cite>
+      `;
+    }
+
+    const stilhedPull = $('#stilhedPull');
+    if (stilhedPull && data.stilheden) stilhedPull.innerHTML = `<p>${data.stilheden.pullQuote}</p>`;
+
+    const stilhedText = $('#stilhedText');
+    if (stilhedText && data.stilheden) stilhedText.innerHTML = `<p>${data.stilheden.text}</p><p>${data.stilheden.text2}</p>`;
+
     // The Neutral
     const neutralPull = $('#neutralPull');
     if (neutralPull) neutralPull.innerHTML = `<p>${data.neutral.pullQuote}</p>`;
 
     const neutralText = $('#neutralText');
-    if (neutralText) neutralText.innerHTML = `<p>${data.neutral.text}</p>`;
+    if (neutralText) neutralText.innerHTML = `<p>${data.neutral.text}</p>${data.neutral.text2 ? `<p>${data.neutral.text2}</p>` : ''}`;
 
     const neutralQualities = $('#neutralQualities');
     if (neutralQualities) {
@@ -209,7 +238,7 @@
     if (doseringPull) doseringPull.innerHTML = `<p>${data.dosering.pullQuote}</p>`;
 
     const doseringText = $('#doseringText');
-    if (doseringText) doseringText.innerHTML = `<p>${data.dosering.text}</p>`;
+    if (doseringText) doseringText.innerHTML = `<p>${data.dosering.text}</p>${data.dosering.text2 ? `<p>${data.dosering.text2}</p>` : ''}`;
 
     const doseringQualities = $('#doseringQualities');
     if (doseringQualities) {

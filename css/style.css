@@ -1509,6 +1509,49 @@ body {
   color: var(--text-dim);
 }
 
+/* ─── Poem ─── */
+.poem {
+  text-align: center;
+  padding: var(--space-xl) var(--space-lg);
+  margin-bottom: var(--space-xl);
+  position: relative;
+}
+
+.poem::before,
+.poem::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 1px;
+  background: var(--border-light);
+  margin: 0 auto;
+  opacity: 0.5;
+}
+
+.poem::before { margin-bottom: var(--space-xl); }
+.poem::after { margin-top: var(--space-xl); }
+
+.poem__text {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 480px;
+  margin: 0 auto var(--space-md);
+}
+
+.poem__author {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 /* ─── Footer ─── */
 .footer {
   position: relative;
