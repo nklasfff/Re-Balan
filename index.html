@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#1E3A5F">
+  <title>Re-Balan — Balancering & Re-Balancering</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ═══ Top Bar ═══ -->
+  <header class="top-bar" id="topBar">
+    <button class="top-bar-btn" id="menuBtn" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="15" y2="17"/></svg>
+    </button>
+    <span class="top-bar-title" id="topTitle">Re-Balan</span>
+    <button class="top-bar-btn" id="searchBtn" aria-label="Søg">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+    </button>
+  </header>
+
+  <!-- ═══ Menu Overlay ═══ -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+  <nav class="menu-panel" id="menuPanel">
+    <div class="menu-header">
+      <h2>Biodynamics</h2>
+      <h3>Balancering & Re-Balancering</h3>
+    </div>
+    <div class="menu-nav">
+      <button class="menu-item" data-section="introduktion"><span class="menu-item-num">01</span> Introduktion</button>
+      <button class="menu-item" data-section="normalReaktion"><span class="menu-item-num">02</span> Normal Reaktion vs. Overbehandling</button>
+      <button class="menu-item" data-section="treStadier"><span class="menu-item-num">03</span> De Tre Stadier</button>
+      <button class="menu-item" data-section="caseEksempel"><span class="menu-item-num">04</span> Case-eksempel</button>
+      <button class="menu-item" data-section="nervesystem"><span class="menu-item-num">05</span> Nervesystemets Dynamik</button>
+      <button class="menu-item" data-section="intervention"><span class="menu-item-num">06</span> Interventionsstrategier</button>
+      <button class="menu-item" data-section="samtale"><span class="menu-item-num">07</span> Samtalens Rolle</button>
+      <button class="menu-item" data-section="principper"><span class="menu-item-num">08</span> Principper</button>
+      <button class="menu-item" data-section="foelelser"><span class="menu-item-num">09</span> Det Følelsesmæssige</button>
+    </div>
+  </nav>
+
+  <!-- ═══ Search Overlay ═══ -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-bar">
+      <svg class="search-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+      <input type="text" id="searchInput" placeholder="Søg i indholdet..." autocomplete="off">
+      <button class="search-close" id="searchClose">Luk</button>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+
+  <!-- ═══ VIEWS ═══ -->
+
+  <!-- ── Hjem ── -->
+  <div class="view active" data-view="hjem" id="viewHjem">
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="water-effect"></div>
+
+      <!-- Abstract pillar SVG -->
+      <svg class="hero-pillars" viewBox="0 0 800 300" preserveAspectRatio="xMidYMax slice">
+        <rect x="80" y="40" width="6" height="260" rx="2" fill="currentColor" opacity="0.6"/>
+        <rect x="120" y="80" width="4" height="220" rx="2" fill="currentColor" opacity="0.4"/>
+        <rect x="160" y="20" width="7" height="280" rx="2" fill="currentColor" opacity="0.7"/>
+        <rect x="190" y="60" width="5" height="240" rx="2" fill="currentColor" opacity="0.5"/>
+        <rect x="280" y="10" width="8" height="290" rx="2" fill="currentColor" opacity="0.8"/>
+        <rect x="310" y="50" width="5" height="250" rx="2" fill="currentColor" opacity="0.45"/>
+        <rect x="370" y="30" width="7" height="270" rx="2" fill="currentColor" opacity="0.65"/>
+        <rect x="460" y="15" width="9" height="285" rx="2" fill="currentColor" opacity="0.75"/>
+        <rect x="500" y="70" width="4" height="230" rx="2" fill="currentColor" opacity="0.35"/>
+        <rect x="560" y="45" width="6" height="255" rx="2" fill="currentColor" opacity="0.55"/>
+        <rect x="630" y="25" width="7" height="275" rx="2" fill="currentColor" opacity="0.6"/>
+        <rect x="680" y="90" width="4" height="210" rx="2" fill="currentColor" opacity="0.3"/>
+        <rect x="720" y="55" width="5" height="245" rx="2" fill="currentColor" opacity="0.5"/>
+      </svg>
+
+      <span class="hero-label">B i o d y n a m i c s</span>
+      <h1 class="hero-title">
+        Balancering
+        <span class="hero-ampersand">&</span>
+        Re-Balancering
+        <em>ikke mindst</em>
+      </h1>
+      <div class="hero-divider"></div>
+      <div class="hero-quote">
+        <p>"Healing is not about getting rid of symptoms. It's about an individual wholeness, that we remember instinctively the moment we touch it."</p>
+        <cite>— James Jealous</cite>
+      </div>
+      <div class="hero-scroll">
+        <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </div>
+
+    <!-- Navigation Pillars -->
+    <div class="pillars-nav">
+      <p class="pillars-nav-title">Indhold</p>
+      <div class="pillars-grid">
+        <button class="pillar-item" data-target="grundlag" data-scroll="sec-introduktion">
+          <span class="pillar-num">01</span>
+          <div class="pillar-line"></div>
+          <div class="pillar-content">
+            <h3>Introduktion</h3>
+            <p>Den terapeutiske proces: et dynamisk paradoks</p>
+          </div>
+          <span class="pillar-arrow"><svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg></span>
+        </button>
+        <button class="pillar-item" data-target="grundlag" data-scroll="sec-normalReaktion">
+          <span class="pillar-num">02</span>
+          <div class="pillar-line"></div>
+          <div class="pillar-content">
+            <h3>Normal Reaktion vs. Overbehandling</h3>
+            <p>Den levende gråzone</p>
+          </div>
+          <span class="pillar-arrow"><svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg></span>
+        </button>
+        <button class="pillar-item" data-target="grundlag" data-scroll="sec-treStadier">
+          <span class="pillar-num">03</span>
+          <div class="pillar-line"></div>
+          <div class="pillar-content">
+            <h3>De Tre Stadier</h3>
+            <p>Behandlingsresponsen</p>
+          </div>
+          <span class="pillar-arrow"><svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg></span>
+        </button>
+        <button class="pillar-item" data-target="nervesystemet" data-scroll="sec-nervesystem">
+          <span class="pillar-num">04</span>
+          <div class="pillar-line"></div>
+          <div class="pillar-content">
+            <h3>Nervesystemets Dynamik</h3>
+            <p>Det autonome nervesystem</p>
+          </div>
+          <span class="pillar-arrow"><svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg></span>
+        </button>
+        <button class="pillar-item" data-target="nervesystemet" data-scroll="sec-intervention">
+          <span class="pillar-num">05</span>
+          <div class="pillar-line"></div>
+          <div class="pillar-content">
+            <h3>Interventionsstrategier</h3>
+            <p>Slow Way Down & Meet Me</p>
+          </div>
+          <span class="pillar-arrow"><svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg></span>
+        </button>
+        <button class="pillar-item" data-target="praksis" data-scroll="sec-principper">
+          <span class="pillar-num">06</span>
+          <div class="pillar-line"></div>
+          <div class="pillar-content">
+            <h3>Principper & Greb</h3>
+            <p>Re-balanceringens fundament</p>
+          </div>
+          <span class="pillar-arrow"><svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg></span>
+        </button>
+        <button class="pillar-item" data-target="fordybelse">
+          <span class="pillar-num">07</span>
+          <div class="pillar-line"></div>
+          <div class="pillar-content">
+            <h3>Fordybelse</h3>
+            <p>Begreber, refleksion & litteratur</p>
+          </div>
+          <span class="pillar-arrow"><svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Closing Quote -->
+    <div class="quote-block">
+      <blockquote>"Medicine is not found in a healed wound, but in a wound that is weeping."</blockquote>
+      <cite>— Matt Licata</cite>
+    </div>
+
+    <footer class="app-footer">
+      <div class="footer-divider"></div>
+      <p>Balancering & Re-Balancering</p>
+      <p class="footer-author">Biodynamics</p>
+    </footer>
+  </div>
+
+  <!-- ── Grundlag ── -->
+  <div class="view" data-view="grundlag" id="viewGrundlag">
+    <div class="section">
+      <button class="back-btn" data-back="hjem">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        Hjem
+      </button>
+
+      <!-- Introduktion -->
+      <div id="sec-introduktion" class="fade-in">
+        <span class="section-label">01 — Grundlag</span>
+        <h2 class="section-title">Introduktion til Balancering og Re-Balancering</h2>
+        <p class="section-subtitle">Den terapeutiske proces: et dynamisk paradoks</p>
+
+        <div class="card">
+          <h3 class="card-title">Den terapeutiske proces</h3>
+          <p class="card-text">Ved enhver behandling skal vi i en vis forstand på den delikate rejse at tage kontakt til et system, som allerede er belastet/traumatiseret og derfor skal behandlingen matche de ressourcer, som klienten har tilgængelig — på den givne dag, og endvidere i bredere forstand ved de livsomstændigheder, som deres liv udspiller sig under og i.</p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Balance og dosering</h3>
+          <p class="card-text">Når vi rammer den rigtige dosering, er der balance mellem de to. Det kan være hensigtsmæssigt at tale med klienten om dette — at de i tiden efter behandlingen kan opleve ændringer, som forekommer forvirrende. Når vi taler med dem om det, kan det gøre det lettere for dem at forstå, at ikke alle ændringer betyder, at der er noget galt.</p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Træthed som signal</h3>
+          <p class="card-text">Mange oplever f.eks. træthed som foruroligende, mens det for os behandlere er det væsentligste tegn på, at den terapeutiske proces er "modtaget" og i gang med at skabe de forvandlinger, som er hele sigtet med behandlingen. Hvis vi har talt med klienten om dette, er det lettere for dem at give det lov til at være der og de kan i en vis forstand læne sig ind i trætheden.</p>
+        </div>
+      </div>
+
+      <!-- Normal Reaktion -->
+      <div id="sec-normalReaktion" class="fade-in" style="margin-top: 48px;">
+        <span class="section-label">02 — Grundlag</span>
+        <h2 class="section-title">Normal Reaktion vs. Overbehandling</h2>
+        <p class="section-subtitle">Den levende gråzone</p>
+
+        <div class="card">
+          <h3 class="card-title">Den levende gråzone</h3>
+          <p class="card-text">Jeg tror ikke, at der findes én udtømmende definition af overbehandling. Det varierer fra behandler til behandler og fra fag til fag, hvad vi vurderer som overbehandling. Det er derfor en slags levende gråzone, hvor vi ikke entydigt kan måle og konkludere, hvorvidt behandlingen har overskredet klientens ressourcer.</p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Kontekstens betydning</h3>
+          <p class="card-text">Klientens reaktion skal også ses i kontekst for at vi kan vurdere, hvorvidt det var den egentlige behandling, som afstedkom en kraftig reaktion, eller om det skyldtes, at klienten efterfølgende i deres eget liv overdoserede stimuli og belastning i dagene efter behandlingen.</p>
+        </div>
+      </div>
+
+      <!-- Tre Stadier -->
+      <div id="sec-treStadier" class="fade-in" style="margin-top: 48px;">
+        <span class="section-label">03 — Grundlag</span>
+        <h2 class="section-title">De Tre Stadier af Behandlingsresponsen</h2>
+        <p class="section-subtitle">Fra briksen til dagene efter</p>
+
+        <div class="stages-timeline">
+          <div class="stage-item active">
+            <div class="stage-dot"></div>
+            <div class="expand-card">
+              <button class="expand-trigger">
+                <div class="expand-trigger-text">
+                  <h3>På briksen</h3>
+                  <p>Behandlerens referencer for normal processering</p>
+                </div>
+                <span class="expand-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+              </button>
+              <div class="expand-body">
+                <div class="expand-content">
+                  <p>Hvad indikerer, at klientens proces under behandlingen forløber på en normal, balanceret måde? Hvad fortæller os, at de responderer på behandlingen på en måde, som ligger indenfor deres ressourcer i dette øjeblik?</p>
+                  <br>
+                  <p>For min del mærker jeg det primært via fysiske sansninger og bevægelser i klientens krop. Bevægelsernes grad af symmetri, harmoni, hastighed, blødhed, flydenhed, intensitet, gensidig balance og symmetri. Noget i mig koger det altid ned til noget meget simpelt — er der ro eller er der ikke ro?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stage-item">
+            <div class="stage-dot"></div>
+            <div class="expand-card">
+              <button class="expand-trigger">
+                <div class="expand-trigger-text">
+                  <h3>Lige efter behandlingen</h3>
+                  <p>Tilstanden når klienten rejser sig</p>
+                </div>
+                <span class="expand-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+              </button>
+              <div class="expand-body">
+                <div class="expand-content">
+                  <p>Når vores klient har rejst sig fra briksen og vi sammen sidder i stolene, får vi ligeledes en fornemmelse af, hvorvidt de på en normal og sund måde er "vendt tilbage" fra behandlingen.</p>
+                  <br>
+                  <p>Deres stemme, ansigtsudtryk, bevægelser, øjenkontakt, sammenhæng i tale og temaer, tempo, ansigtsfarve mm. fortæller altsammen, om de er tilbage og derved klar til at drage hjem til deres eget liv, hvor den egentlige behandling indfinder sig.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stage-item">
+            <div class="stage-dot"></div>
+            <div class="expand-card">
+              <button class="expand-trigger">
+                <div class="expand-trigger-text">
+                  <h3>Dagene efter</h3>
+                  <p>Reaktioner i tiden mellem behandlinger</p>
+                </div>
+                <span class="expand-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+              </button>
+              <div class="expand-body">
+                <div class="expand-content">
+                  <p>Ofte vil vi først få kendskab til denne del, når vi ser dem til næste behandling. Her vil vi få en fornemmelse af, hvorvidt dagene efter behandlingen forløb normalt.</p>
+                  <br>
+                  <p>Jeg plejer at være interesseret i to aspekter: reaktionerne samme dag og de næste 2-3 dage, og desuden den samlede tid siden sidst — altså, hvordan deres tilstand har været i de uger siden sidste behandling.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Normale Reaktioner -->
+        <div style="margin-top: 32px;">
+          <h3 class="card-title" style="margin-bottom: 16px;">Normale reaktioner efter behandlingen</h3>
+          <div class="reaction-grid">
+            <div class="reaction-item">Træthed</div>
+            <div class="reaction-item">Mærken aktivitet</div>
+            <div class="reaction-item">Behov for hvile/søvn</div>
+            <div class="reaction-item">Følelsesmæssige reaktioner</div>
+            <div class="reaction-item">Øget drømmeaktivitet</div>
+            <div class="reaction-item">Ømhed/værken</div>
+            <div class="reaction-item">Bevægeapparat påvirket</div>
+            <div class="reaction-item">Symptomer rører på sig</div>
+            <div class="reaction-item">Erindringer dukker op</div>
+            <div class="reaction-item">Gamle skader vågner</div>
+          </div>
+        </div>
+
+        <!-- Case -->
+        <div id="sec-case" class="fade-in" style="margin-top: 48px;">
+          <h2 class="section-title">Case-eksempel</h2>
+          <p class="section-subtitle">En leverlæsion rører på sig</p>
+
+          <div class="quote-block" style="margin-top: 0;">
+            <blockquote>"I kinesisk medicin har leveren betydning for både vrede og glæde"</blockquote>
+          </div>
+
+          <div class="case-timeline">
+            <div class="case-session">
+              <div class="case-session-num">1</div>
+              <h4>Første behandling</h4>
+              <p>En mand midt i 50'erne opsøgte mig pga. tinnitus og generel stress gennem de seneste 4-5 år. Hans tinnitus var eksploderet ifm. hans svigermors begravelse, som havde trigget erindringer om hans egen mors bortgang. Jeg lavede en behandling med afsæt i lever-energien. Han responderede rigtigt godt — en masse dynamisk arbejde skete.</p>
+            </div>
+            <div class="case-session">
+              <div class="case-session-num">2</div>
+              <h4>Anden behandling</h4>
+              <p>Han fortalte om stor træthed, tydelige følelsesmæssige reaktioner, og en drøm der havde gjort stort indtryk. Han havde drømt, at han mødtes med broren og under hele mødet ikke mærkede den mindste vrede. Hans tinnitus havde været mindre intens og fyldt mindre.</p>
+            </div>
+            <div class="case-session">
+              <div class="case-session-num">3</div>
+              <h4>Tredje behandling</h4>
+              <p>Tinnitusen var yderligere dæmpet og han mærkede en ny klarhed og glæde. Mønstret i lever-energien trådte klart frem — hele underkroppen fuldstændigt flydende, mens halsen havde svært ved at lade energien bevæge sig igennem. Et typisk lever-mønster.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── Nervesystemet ── -->
+  <div class="view" data-view="nervesystemet" id="viewNervesystem">
+    <div class="section">
+      <button class="back-btn" data-back="hjem">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        Hjem
+      </button>
+
+      <!-- Nervesystemets Dynamik -->
+      <div id="sec-nervesystem" class="fade-in">
+        <span class="section-label">04 — Nervesystemet</span>
+        <h2 class="section-title">Nervesystemets Dynamik</h2>
+        <p class="section-subtitle">Det autonome nervesystem</p>
+
+        <p class="section-text">Når vi taler overdosering, kan det være en hjælp at tænke i, hvorvidt reaktionen sker i den sympatiske eller i den parasympatiske retning. Dette kan samtidigt give informationer om, hvordan klienten samlet fungerer.</p>
+
+        <div class="dual-panel">
+          <div class="dual-side sympathetic">
+            <h3><span class="indicator"></span>Sympatisk</h3>
+            <h4>Mobilisering — Kamp / Flugt</h4>
+            <ul class="sign-list">
+              <li>Vejrtrækning hurtig/hektisk</li>
+              <li>Øjenlåg urolige/sitrende</li>
+              <li>Varme i ansigt/krop</li>
+              <li>Bevægelser hurtige/hektiske</li>
+              <li>Tale springende/forvirret</li>
+              <li>Sveden</li>
+              <li>Væv opspændt/hårdt</li>
+            </ul>
+          </div>
+          <div class="dual-side parasympathetic">
+            <h3><span class="indicator"></span>Parasympatisk</h3>
+            <h4>Immobilisering — Kollaps</h4>
+            <ul class="sign-list">
+              <li>Vejrtrækning minimal/langsom</li>
+              <li>Bleghed</li>
+              <li>Bevægelser minimale/langsomme</li>
+              <li>Tale sløv/fraværende</li>
+              <li>Kulde i kroppen</li>
+              <li>Væv slapt/livløst</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 24px;">
+          <h3 class="card-title">Opmærksomhed og timing</h3>
+          <p class="card-text">Nogle af disse udtryk kan vi registrere under behandlingen, mens andre først træder tydeligt frem, når klienten er vågen. De kan være tricky at læse, da nogle kvaliteter ligner de naturlige processer ved den gode behandling. Det er min erfaring, at både de sympatiske og parasympatiske træk har en vis inkubationsfase — de eksploderer sjældent pludseligt frem, men har forskellige udtryk som stille varsler en overdosering.</p>
+        </div>
+      </div>
+
+      <!-- Interventionsstrategier -->
+      <div id="sec-intervention" class="fade-in" style="margin-top: 48px;">
+        <span class="section-label">05 — Intervention</span>
+        <h2 class="section-title">Interventionsstrategier</h2>
+        <p class="section-subtitle">To veje tilbage til balance</p>
+
+        <div class="strategy-card sympathetic-card">
+          <span class="strategy-label">Sympatikus</span>
+          <h3 class="strategy-title">Slow Way Down</h3>
+          <p class="strategy-principle">Den primære traumatiske hændelse skyldes tempoet — mistet kontakt er en konsekvens, sekundær. Den primære indgang til balancering er at bringe tempoet ned.</p>
+          <ul class="strategy-list">
+            <li>Lad dine hænder og hele dit væsen invitere til langsomhed</li>
+            <li>Tal langsommere — bed dem prøve at tale langsommere</li>
+            <li>Bed dem mærke briksens stabilitet som et roligt kontaktsted</li>
+            <li>Guide dem til at bemærke noget langsomt indeni dem selv</li>
+            <li>Bed dem åbne øjnene for kontakt med omverdenen</li>
+            <li>Hænderne typisk under ryggen — mærk min hånd, mærk roen</li>
+          </ul>
+        </div>
+
+        <div class="strategy-card parasympathetic-card">
+          <span class="strategy-label">Parasympatikus</span>
+          <h3 class="strategy-title">Meet Me</h3>
+          <p class="strategy-principle">Den primære traumatiske hændelse skyldes mistet kontakt — tempoet ned er en konsekvens, sekundær. Den primære indgang til balancering er at opnå kontakt.</p>
+          <ul class="strategy-list">
+            <li>Etabler en minimal grad af tryghed som indgang</li>
+            <li>Tilkendegiv at du er til stede — de er ikke alene</li>
+            <li>Fokuser på kvaliteten af kontakt som primær</li>
+            <li>Mærk støtten og stabiliteten i kontakten</li>
+            <li>Tilkendegiv verbalt at du forbliver i kontakt</li>
+            <li>Giv dem tillid til at læne sig ind i dit nærvær</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Samtalens Rolle -->
+      <div id="sec-samtale" class="fade-in" style="margin-top: 48px;">
+        <span class="section-label">06 — Samtale</span>
+        <h2 class="section-title">Samtalens Rolle</h2>
+        <p class="section-subtitle">Ved re-balancering</p>
+
+        <p class="section-text">En væsentlig forskel mellem almindelig behandling og re-balancering ligger i brugen af samtale. Mens en biodynamisk behandling typisk udspiller sig i stilhed, bliver det verbale et aktivt og nødvendigt redskab ved re-balancering.</p>
+
+        <div class="expand-card">
+          <button class="expand-trigger">
+            <div class="expand-dot"></div>
+            <div class="expand-trigger-text">
+              <h3>Stemmens kvalitet</h3>
+              <p>Tempo, toneleje og rytme som regulering</p>
+            </div>
+            <span class="expand-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+          </button>
+          <div class="expand-body">
+            <div class="expand-content">
+              <p>Ved sympatisk overdosering tilpasser jeg bevidst min stemme til at være rolig, langsom og med et dybere toneleje. Dette signalerer implicit til klientens nervesystem, at der er tid og ro.</p>
+              <br>
+              <p>Ved parasympatisk kollaps bruger jeg en mere tydelig, direkte stemme med en kvalitet af nærvær og kontakt, der kan fungere som et anker for klienten at orientere sig efter.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="expand-card">
+          <button class="expand-trigger">
+            <div class="expand-dot"></div>
+            <div class="expand-trigger-text">
+              <h3>Verbal guidning</h3>
+              <p>Konkrete ankerpunkter og vejrtrækning</p>
+            </div>
+            <span class="expand-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+          </button>
+          <div class="expand-body">
+            <div class="expand-content">
+              <p>Gennem præcis verbal guidning kan jeg hjælpe klienten til at mærke konkrete ankerpunkter i kroppen, til at bemærke deres vejrtrækning uden at styre den, og til at genkende tegn på gradvis regulering, efterhånden som de opstår.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── Praksis ── -->
+  <div class="view" data-view="praksis" id="viewPraksis">
+    <div class="section">
+      <button class="back-btn" data-back="hjem">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        Hjem
+      </button>
+
+      <!-- Principper -->
+      <div id="sec-principper" class="fade-in">
+        <span class="section-label">07 — Praksis</span>
+        <h2 class="section-title">Principper for Re-balancering</h2>
+        <p class="section-subtitle">Valg af greb</p>
+
+        <div style="margin-bottom: 32px;">
+          <div class="principle-item"><span class="principle-num">1</span><span class="principle-text">Det generelle er mest og dybest og blidest støttende</span></div>
+          <div class="principle-item"><span class="principle-num">2</span><span class="principle-text">Midtlinjen fungerer som aksen for normalisering</span></div>
+          <div class="principle-item"><span class="principle-num">3</span><span class="principle-text">Det handler ikke om en terapeutisk proces, men om overlevelse</span></div>
+          <div class="principle-item"><span class="principle-num">4</span><span class="principle-text">Så snart kroppen har svaret, afrunder jeg</span></div>
+        </div>
+
+        <h3 class="card-title" style="margin-bottom: 16px;">Greb ved re-balancering</h3>
+        <ul class="greb-list">
+          <li>Symmetriske greb omkring midtlinjen</li>
+          <li>Greb der ikke adresserer bestemte strukturer (akupunkturpunkter, nerver, reflekspunkter)</li>
+          <li>Brede greb, hvor hænderne kontakter store flader</li>
+          <li>Undgå specifikke problemsteder — f.eks. arvæv eller hovedet ved hjernerystelse</li>
+          <li>Formidle tempo, nærvær, ro, kontakt, stabilitet</li>
+        </ul>
+      </div>
+
+      <!-- Det Følelsesmæssige -->
+      <div id="sec-foelelser" class="fade-in" style="margin-top: 48px;">
+        <span class="section-label">08 — Det Følelsesmæssige</span>
+        <h2 class="section-title">Det Følelsesmæssige Aspekt</h2>
+        <p class="section-subtitle">Tårer: den gode smerte</p>
+
+        <div class="card">
+          <h3 class="card-title">Tårer som tegn</h3>
+          <p class="card-text">Mange mennesker anser tårer som enten svaghed eller "noget forkert". Det er min erfaring — såvel professionelt som privat — at egentlige gennembrud og forvandlinger altid indeholder de store følelser. Når tårer opstår spontant under behandlingen, ser jeg det som et sundt tegn på, at klientens proces er levende og dynamisk i dem.</p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Overdoseringens skjulte gave</h3>
+          <p class="card-text">Man kan se den såkaldte overdosering som indeholdende en art skjult gave til både behandleren og klienten. En gave, hvor den kraftige reaktion fortæller om et område, som kalder på hjælp fremover. Så på sin egen måde er det en smuk påmindelse om, at vores svage og sårbare steder samtidigt indeholder potentialet til mere bevægelse, mere plads, mere liv.</p>
+        </div>
+      </div>
+
+      <!-- Kommunikation -->
+      <div id="sec-kommunikation" class="fade-in" style="margin-top: 48px;">
+        <span class="section-label">09 — Kommunikation</span>
+        <h2 class="section-title">Kommunikation med klienten</h2>
+        <p class="section-subtitle">Om behandlingsprocessen</p>
+
+        <div class="phase-card">
+          <h3 class="phase-title">Før behandlingen</h3>
+          <ul class="phase-list">
+            <li>Orientere klienten om normale reaktioner — træthed, emotionelle reaktioner, midlertidige ændringer</li>
+            <li>Skabe en forståelsesramme, hvor reaktioner ikke automatisk tolkes som forværring</li>
+            <li>Vende eventuelle tidligere erfaringer med behandling</li>
+          </ul>
+        </div>
+
+        <div class="phase-card">
+          <h3 class="phase-title">Under behandlingen</h3>
+          <ul class="phase-list">
+            <li>Hold verbal kommunikation til et minimum, medmindre tegn på overstimulering</li>
+            <li>Tal i et tempo og med stemmeføring der understøtter processen</li>
+            <li>Kommuniker tydeligt ved tegn på overdosering</li>
+          </ul>
+        </div>
+
+        <div class="phase-card">
+          <h3 class="phase-title">Efter behandlingen</h3>
+          <ul class="phase-list">
+            <li>Giv rigelig tid til at vende tilbage til fuld vågenhed</li>
+            <li>Tal om reaktioner og placer dem i kontekst</li>
+            <li>Orienter om mulige reaktioner i dagene efter</li>
+            <li>Etabler klar aftale om kontakt ved uventede reaktioner</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Sikkerhed -->
+      <div id="sec-sikkerhed" class="fade-in" style="margin-top: 48px;">
+        <span class="section-label">10 — Sikkerhed</span>
+        <h2 class="section-title">Sikkerhedsovervejelser</h2>
+
+        <div class="safety-category">
+          <h3>Respekt for nervesystemets kapacitet</h3>
+          <ul class="safety-list">
+            <li>Markante ændringer i vejrtrækningens mønster</li>
+            <li>Pludselige skift i hudfarve (rødme eller bleghed)</li>
+            <li>Tab af verbal respons eller øjenkontakt</li>
+            <li>Ufrivillige bevægelser der ikke aftager</li>
+            <li>Emotionel oversvømmelse uden regulering</li>
+          </ul>
+        </div>
+
+        <div class="safety-category">
+          <h3>Særlige hensyn ved traumer</h3>
+          <ul class="safety-list">
+            <li>Etabler klare rammer før behandlingen</li>
+            <li>Sikr at klienten har ressourcer til selvregulering</li>
+            <li>Hav "nødudgange" klar til hurtigt at bringe dem tilbage</li>
+            <li>Vær forberedt på at afkorte behandlingen</li>
+          </ul>
+        </div>
+
+        <div class="safety-category">
+          <h3>Egen centrering</h3>
+          <ul class="safety-list">
+            <li>Faste rutiner for egen regulering før og efter klientkontakt</li>
+            <li>Anerkend egne triggere og sårbarhedspunkter</li>
+            <li>Strategier klar til selv-regulering under behandlinger</li>
+            <li>Regelmæssig supervision eller kollegial sparring</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── Fordybelse ── -->
+  <div class="view" data-view="fordybelse" id="viewFordybelse">
+    <div class="section">
+      <button class="back-btn" data-back="hjem">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        Hjem
+      </button>
+
+      <!-- Centrale Begreber -->
+      <div id="sec-begreber" class="fade-in">
+        <span class="section-label">Fordybelse</span>
+        <h2 class="section-title">Centrale Begreber</h2>
+        <p class="section-subtitle">Uddybning af kernebegreber</p>
+
+        <div class="concept-list" id="conceptList">
+          <!-- Generated by JS -->
+        </div>
+      </div>
+
+      <!-- Refleksion -->
+      <div id="sec-refleksion" class="fade-in" style="margin-top: 48px;">
+        <h2 class="section-title">Tanker til eftertanke</h2>
+        <p class="section-subtitle">Refleksionsspørgsmål</p>
+
+        <div class="reflection-list">
+          <div class="reflection-item"><p>Hvordan oplever du balancen mellem aktiv intervention og receptiv lytten?</p></div>
+          <div class="reflection-item"><p>På hvilke måder påvirker dine egne erfaringer med regulering din tilgang til arbejdet?</p></div>
+          <div class="reflection-item"><p>Hvordan kan forståelsen af de neurobiologiske principper berige din kliniske praksis uden at blive rigide skabeloner?</p></div>
+          <div class="reflection-item"><p>Hvordan navigerer du i spændingsfeltet mellem at være fuldt til stede med din intention, samtidig med at du giver slip på agendaer?</p></div>
+          <div class="reflection-item"><p>Hvilke kvaliteter i din egen tilstedeværelse understøtter bedst etableringen af The Neutral hos dine klienter?</p></div>
+          <div class="reflection-item"><p>Hvordan afgør du det rette tempo for en behandling?</p></div>
+          <div class="reflection-item"><p>Hvordan understøtter du klientens egen kapacitet til selvregulering?</p></div>
+        </div>
+      </div>
+
+      <!-- Litteratur -->
+      <div id="sec-litteratur" class="fade-in" style="margin-top: 48px;">
+        <h2 class="section-title">Litteratur</h2>
+        <p class="section-subtitle">Relevant læsning</p>
+
+        <div class="lit-list" id="litList">
+          <!-- Generated by JS -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══ Bottom Navigation ═══ -->
+  <nav class="bottom-nav" id="bottomNav">
+    <button class="nav-tab active" data-view="hjem">
+      <svg viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1"/></svg>
+      <span>Hjem</span>
+    </button>
+    <button class="nav-tab" data-view="grundlag">
+      <svg viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+      <span>Grundlag</span>
+    </button>
+    <button class="nav-tab" data-view="nervesystemet">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4m-7.07-14.07l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg>
+      <span>Nerve</span>
+    </button>
+    <button class="nav-tab" data-view="praksis">
+      <svg viewBox="0 0 24 24"><path d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11"/></svg>
+      <span>Praksis</span>
+    </button>
+    <button class="nav-tab" data-view="fordybelse">
+      <svg viewBox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+      <span>Dybde</span>
+    </button>
+  </nav>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
