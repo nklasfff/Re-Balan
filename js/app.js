@@ -310,6 +310,88 @@
     }, { passive: true });
   }
 
+  /* ─── Onboarding ─── */
+  function initOnboarding() {
+    const onboarding = $('#onboarding');
+    if (!onboarding) return;
+
+    // Skip if already seen
+    if (localStorage.getItem('rebal_onboarded')) {
+      onboarding.remove();
+      return;
+    }
+
+    document.body.classList.add('onboarding-active');
+    onboarding.classList.add('entering');
+
+    let step = 0;
+    const totalSteps = 4;
+    const steps = $$('.onboarding__step', onboarding);
+    const dots = $$('.onboarding__dot', onboarding);
+    const btn = $('#onboardingBtn');
+    const btnText = btn ? btn.querySelector('.onboarding__btn-text') : null;
+
+    function goToStep(n) {
+      const cur = steps[step];
+      const next = steps[n];
+      if (!cur || !next || n === step) return;
+
+      cur.classList.add('exiting');
+      cur.classList.remove('active');
+      setTimeout(() => cur.classList.remove('exiting'), 800);
+
+      next.classList.add('active');
+
+      dots.forEach((d, i) => d.classList.toggle('active', i === n));
+
+      step = n;
+
+      // Update button text on last step
+      if (btnText) {
+        btnText.textContent = step === totalSteps - 1 ? 'Træd ind' : 'Fortsæt';
+      }
+    }
+
+    // Button click
+    if (btn) {
+      btn.addEventListener('click', () => {
+        if (step < totalSteps - 1) {
+          goToStep(step + 1);
+        } else {
+          // Finish onboarding
+          localStorage.setItem('rebal_onboarded', '1');
+          document.body.classList.remove('onboarding-active');
+          onboarding.classList.add('farewell');
+          setTimeout(() => onboarding.remove(), 1400);
+        }
+      });
+    }
+
+    // Dot clicks
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        const target = parseInt(dot.dataset.dot, 10);
+        if (!isNaN(target)) goToStep(target);
+      });
+    });
+
+    // Swipe support
+    let startX = 0;
+    onboarding.addEventListener('touchstart', e => {
+      startX = e.touches[0].clientX;
+    }, { passive: true });
+    onboarding.addEventListener('touchend', e => {
+      const dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 60) {
+        if (dx < 0 && step < totalSteps - 1) goToStep(step + 1);
+        if (dx > 0 && step > 0) goToStep(step - 1);
+      }
+    }, { passive: true });
+
+    // Remove entering class after initial animation
+    setTimeout(() => onboarding.classList.remove('entering'), 2000);
+  }
+
   /* ─── Init ─── */
   function init() {
     populateEssensen();
@@ -318,6 +400,7 @@
     populateFaenomener();
     populateRefleksion();
     observeReveals();
+    initOnboarding();
   }
 
   if (document.readyState === 'loading') {

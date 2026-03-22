@@ -16,6 +16,94 @@
 
 <div id="app">
 
+  <!-- ═══ ONBOARDING ═══ -->
+  <div class="onboarding" id="onboarding">
+    <div class="onboarding__backdrop"></div>
+    <div class="onboarding__grain" aria-hidden="true"></div>
+
+    <!-- Breathing circles behind content -->
+    <div class="onboarding__breath" aria-hidden="true">
+      <div class="ob-breath ob-breath--1"></div>
+      <div class="ob-breath ob-breath--2"></div>
+      <div class="ob-breath ob-breath--3"></div>
+    </div>
+
+    <div class="onboarding__container">
+
+      <!-- Step 0: Stillness -->
+      <div class="onboarding__step active" data-step="0">
+        <p class="onboarding__label">B i o d y n a m i c s</p>
+        <h1 class="onboarding__title">
+          <span class="onboarding__line">Balancering</span>
+          <span class="onboarding__amp">&amp;</span>
+          <span class="onboarding__line">Re-Balancering</span>
+        </h1>
+        <div class="onboarding__rule"></div>
+        <p class="onboarding__text">Et rum for at forstå kroppens iboende evne til at finde tilbage mod balance.</p>
+      </div>
+
+      <!-- Step 1: What this is -->
+      <div class="onboarding__step" data-step="1">
+        <div class="onboarding__icon">
+          <svg viewBox="0 0 200 200" fill="none">
+            <circle cx="100" cy="100" r="80" stroke="rgba(122,154,181,0.4)" stroke-width="1"/>
+            <circle cx="100" cy="100" r="55" stroke="rgba(122,154,181,0.3)" stroke-width="1"/>
+            <circle cx="100" cy="100" r="30" stroke="rgba(122,154,181,0.45)" stroke-width="1"/>
+            <circle cx="100" cy="100" r="4" fill="rgba(196,213,226,0.6)"/>
+          </svg>
+        </div>
+        <h2 class="onboarding__heading">En iboende intelligens</h2>
+        <p class="onboarding__text">Dybt i ethvert levende system eksisterer en evne til at finde sin balance. Ikke noget vi skal tilf&oslash;re udefra &mdash; men noget der allerede er til stede.</p>
+        <p class="onboarding__sub">Denne guide udforsker den viden, der underst&oslash;tter denne forst&aring;else.</p>
+      </div>
+
+      <!-- Step 2: The three pillars -->
+      <div class="onboarding__step" data-step="2">
+        <div class="onboarding__pillars">
+          <div class="onboarding__pillar">
+            <span class="onboarding__pillar-num">01</span>
+            <span class="onboarding__pillar-title">Essensen</span>
+            <span class="onboarding__pillar-desc">Den naturlige kapacitet</span>
+          </div>
+          <div class="onboarding__pillar">
+            <span class="onboarding__pillar-num">02</span>
+            <span class="onboarding__pillar-title">Nervesystemet</span>
+            <span class="onboarding__pillar-desc">Tre tilstande i os alle</span>
+          </div>
+          <div class="onboarding__pillar">
+            <span class="onboarding__pillar-num">03</span>
+            <span class="onboarding__pillar-title">Rummet</span>
+            <span class="onboarding__pillar-desc">Betingelserne for balance</span>
+          </div>
+        </div>
+        <p class="onboarding__text">Tre perspektiver p&aring; den samme levende proces &mdash; fra essens, gennem dynamik, til de betingelser der g&oslash;r forandring mulig.</p>
+      </div>
+
+      <!-- Step 3: Enter -->
+      <div class="onboarding__step" data-step="3">
+        <blockquote class="onboarding__quote">
+          <p>&ldquo;Healing is not about getting rid of symptoms. It&rsquo;s about an individual wholeness, that we remember instinctively the moment we touch it.&rdquo;</p>
+          <cite>James Jealous</cite>
+        </blockquote>
+      </div>
+
+    </div>
+
+    <!-- Navigation -->
+    <div class="onboarding__nav">
+      <div class="onboarding__dots">
+        <button class="onboarding__dot active" data-dot="0" aria-label="Trin 1"></button>
+        <button class="onboarding__dot" data-dot="1" aria-label="Trin 2"></button>
+        <button class="onboarding__dot" data-dot="2" aria-label="Trin 3"></button>
+        <button class="onboarding__dot" data-dot="3" aria-label="Trin 4"></button>
+      </div>
+      <button class="onboarding__btn" id="onboardingBtn">
+        <span class="onboarding__btn-text">Forts&aelig;t</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </div>
+
   <!-- ═══ AMBIENT BACKGROUND ═══ -->
   <div class="ambient" aria-hidden="true">
     <div class="ambient__orb ambient__orb--1"></div>
