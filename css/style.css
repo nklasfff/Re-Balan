@@ -1724,7 +1724,10 @@ body {
   50% { opacity: 0.6; }
 }
 
-.illo__svg--spectrum { width: 380px; }
+.illo__svg--spectrum {
+  width: 380px;
+  animation: illoSpectrum 10s ease-in-out infinite;
+}
 
 .illo__svg--space {
   width: 300px;
@@ -1766,11 +1769,13 @@ body {
 /* Ladder / autonome stige */
 .illo__svg--ladder {
   width: 240px;
+  animation: illoLadder 10s ease-in-out infinite;
 }
 
 /* Stillads / scaffolding */
 .illo__svg--stillads {
   width: 280px;
+  animation: illoStillads 12s ease-in-out infinite;
 }
 
 /* Islands of calm */
@@ -1803,6 +1808,44 @@ body {
 @keyframes illoNeutral {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.04); }
+}
+
+/* Spectrum — gentle pulse on circles */
+@keyframes illoSpectrum {
+  0%, 100% { opacity: 1; transform: scaleX(1); }
+  50% { opacity: 0.75; transform: scaleX(1.02); }
+}
+
+/* Ladder — slow vertical breathing */
+@keyframes illoLadder {
+  0%, 100% { transform: scaleY(1); opacity: 1; }
+  50% { transform: scaleY(1.025); opacity: 0.75; }
+}
+
+/* Stillads — gentle pendulum sway */
+@keyframes illoStillads {
+  0%, 100% { transform: rotate(-1deg); opacity: 1; }
+  50% { transform: rotate(1deg); opacity: 0.8; }
+}
+
+/* Freeze layers — slow breathing expansion */
+.illo__svg--freeze {
+  width: 340px;
+  animation: illoFreeze 11s ease-in-out infinite;
+}
+@keyframes illoFreeze {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.04); opacity: 0.7; }
+}
+
+/* Wave patterns — gentle vertical drift */
+.illo__svg--waves {
+  width: 340px;
+  animation: illoWaves 9s ease-in-out infinite;
+}
+@keyframes illoWaves {
+  0%, 100% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(-3px); opacity: 0.75; }
 }
 
 /* ─── State Cards (Nervous System) ─── */
@@ -2315,6 +2358,21 @@ body.onboarding-active {
   }
   .onboarding__nav {
     padding: var(--space-md) 20px calc(var(--sab) + var(--space-md));
+  }
+}
+
+/* ─── Landscape: push hero content below nav ─── */
+@media (orientation: landscape) and (max-height: 500px) {
+  .hero {
+    align-items: flex-start;
+  }
+  .hero__content {
+    padding-top: calc(var(--sat) + 80px);
+  }
+  .hero__overlay {
+    background:
+      linear-gradient(180deg, rgba(8,12,20,0.85) 0%, rgba(8,12,20,0.3) 30%, rgba(8,12,20,0.7) 100%),
+      radial-gradient(ellipse at center, transparent 30%, var(--bg) 80%);
   }
 }
 
