@@ -84,6 +84,45 @@
     });
   }
 
+  /* ─── Section Card Helper ─── */
+  function buildSectionCard(title, preview, bodyHTML) {
+    return `
+      <div class="section-card reveal">
+        <div class="section-card__header">
+          <div>
+            <h3 class="section-card__title">${title}</h3>
+            <p class="section-card__preview">${preview}</p>
+          </div>
+          <svg class="section-card__toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="section-card__body">
+          <div class="section-card__body-inner">
+            ${bodyHTML}
+          </div>
+        </div>
+      </div>`;
+  }
+
+  function activateSectionCards(container) {
+    $$('.section-card__header', container).forEach(header => {
+      header.addEventListener('click', () => {
+        const card = header.parentElement;
+        const isOpen = card.classList.contains('open');
+        // Close siblings
+        $$('.section-card.open', container).forEach(c => {
+          if (c !== card) c.classList.remove('open');
+        });
+        card.classList.toggle('open', !isOpen);
+      });
+    });
+  }
+
+  /* ─── Truncate preview ─── */
+  function truncate(str, len) {
+    if (str.length <= len) return str;
+    return str.substring(0, str.lastIndexOf(' ', len)) + ' …';
+  }
+
   /* ─── ESSENSEN ─── */
   function populateEssensen() {
     const data = D.sections.essensen;
@@ -91,46 +130,70 @@
     const pull = $('#essensPull');
     if (pull) pull.innerHTML = `<p>${data.pullQuote}</p>`;
 
-    const intro = $('#essensIntro');
-    if (intro) {
-      intro.innerHTML = data.intro.map(c =>
-        `<p class="prose-heading">${c.heading}</p><p>${c.text}</p>`
+    // Intro sections as expandable cards
+    const essensCards = $('#essensCards');
+    if (essensCards) {
+      essensCards.innerHTML = data.intro.map(c =>
+        buildSectionCard(c.heading, truncate(c.text, 100), `<p>${c.text}</p>`)
       ).join('');
+      activateSectionCards(essensCards);
     }
 
-    const paradoksText = $('#paradoksText');
-    if (paradoksText) paradoksText.textContent = data.paradoks.text;
-
-    const principles = $('#paradoksPrinciples');
-    if (principles) {
-      principles.innerHTML = data.paradoks.principles.map(p =>
-        `<div class="principle reveal"><p class="principle__text">${p}</p></div>`
-      ).join('');
+    // Stillads as expandable card
+    const stilladsCards = $('#stilladsCards');
+    if (stilladsCards) {
+      stilladsCards.innerHTML = buildSectionCard(
+        data.stillads.title,
+        truncate(data.stillads.pullQuote, 90),
+        `<blockquote class="pull"><p>${data.stillads.pullQuote}</p></blockquote>
+         <p>${data.stillads.text}</p><p>${data.stillads.text2}</p>`
+      );
+      activateSectionCards(stilladsCards);
     }
 
-    // Stillads
-    const stilladsPull = $('#stilladsPull');
-    if (stilladsPull) stilladsPull.innerHTML = `<p>${data.stillads.pullQuote}</p>`;
+    // Paradoks as expandable card with principles inside
+    const paradoksCards = $('#paradoksCards');
+    if (paradoksCards) {
+      const principlesHTML = data.paradoks.principles.map(p =>
+        `<div class="principle"><p class="principle__text">${p}</p></div>`
+      ).join('');
+      paradoksCards.innerHTML = buildSectionCard(
+        data.paradoks.title,
+        truncate(data.paradoks.text, 100),
+        `<p>${data.paradoks.text}</p>
+         <div class="principles">${principlesHTML}</div>`
+      );
+      activateSectionCards(paradoksCards);
+    }
 
-    const stilladsText = $('#stilladsText');
-    if (stilladsText) stilladsText.innerHTML = `<p>${data.stillads.text}</p><p>${data.stillads.text2}</p>`;
-
-    const kontekstPull = $('#kontekstPull');
-    if (kontekstPull) kontekstPull.innerHTML = `<p>${data.kontekst.pullQuote}</p>`;
-
-    const kontekstText = $('#kontekstText');
-    if (kontekstText) kontekstText.innerHTML = `<p>${data.kontekst.text}</p>`;
+    // Kontekst as expandable card
+    const kontekstCards = $('#kontekstCards');
+    if (kontekstCards) {
+      kontekstCards.innerHTML = buildSectionCard(
+        'Kontekst',
+        truncate(data.kontekst.pullQuote, 90),
+        `<blockquote class="pull"><p>${data.kontekst.pullQuote}</p></blockquote>
+         <p>${data.kontekst.text}</p>`
+      );
+      activateSectionCards(kontekstCards);
+    }
   }
 
   /* ─── NERVESYSTEM ─── */
   function populateNervesystem() {
     const data = D.sections.nervesystem;
 
-    const intro = $('#nerveIntro');
-    if (intro) intro.textContent = data.intro;
-
-    const staterIntro = $('#staterIntro');
-    if (staterIntro) staterIntro.textContent = data.treStater.intro;
+    // Intro as expandable card (it's very long)
+    const nerveIntroCards = $('#nerveIntroCards');
+    if (nerveIntroCards) {
+      nerveIntroCards.innerHTML = buildSectionCard(
+        'Det autonome nervesystem',
+        truncate(data.intro, 120),
+        `<p>${data.intro}</p>
+         <p style="margin-top: var(--space-md); color: var(--text-dim); font-style: italic;">${data.treStater.intro}</p>`
+      );
+      activateSectionCards(nerveIntroCards);
+    }
 
     // State cards
     const stateCards = $('#stateCards');
@@ -163,19 +226,29 @@
       });
     }
 
-    // Immobilisering
-    const immoPull = $('#immoPull');
-    if (immoPull) immoPull.innerHTML = `<p>${data.immobilisering.pullQuote}</p>`;
+    // Immobilisering as expandable card
+    const immoCards = $('#immoCards');
+    if (immoCards) {
+      immoCards.innerHTML = buildSectionCard(
+        data.immobilisering.title,
+        truncate(data.immobilisering.pullQuote, 100),
+        `<blockquote class="pull"><p>${data.immobilisering.pullQuote}</p></blockquote>
+         <p>${data.immobilisering.text}</p><p>${data.immobilisering.text2}</p>`
+      );
+      activateSectionCards(immoCards);
+    }
 
-    const immoText = $('#immoText');
-    if (immoText) immoText.innerHTML = `<p>${data.immobilisering.text}</p><p>${data.immobilisering.text2}</p>`;
-
-    // Dynamik
-    const dynamikPull = $('#dynamikPull');
-    if (dynamikPull) dynamikPull.innerHTML = `<p>${data.dynamik.pullQuote}</p>`;
-
-    const dynamikText = $('#dynamikText');
-    if (dynamikText) dynamikText.innerHTML = `<p>${data.dynamik.text}</p>`;
+    // Dynamik as expandable card
+    const dynamikCards = $('#dynamikCards');
+    if (dynamikCards) {
+      dynamikCards.innerHTML = buildSectionCard(
+        data.dynamik.title,
+        truncate(data.dynamik.pullQuote, 100),
+        `<blockquote class="pull"><p>${data.dynamik.pullQuote}</p></blockquote>
+         <p>${data.dynamik.text}</p>`
+      );
+      activateSectionCards(dynamikCards);
+    }
 
     // Slow Way Down
     const slowText = $('#slowText');
@@ -197,14 +270,16 @@
     const pull = $('#rumPull');
     if (pull) pull.innerHTML = `<p>${data.pullQuote}</p>`;
 
-    const intro = $('#rumIntro');
-    if (intro) {
-      intro.innerHTML = data.intro.map(c =>
-        `<p class="prose-heading">${c.heading}</p><p>${c.text}</p>`
+    // Five conditions as expandable cards
+    const rumIntroCards = $('#rumIntroCards');
+    if (rumIntroCards) {
+      rumIntroCards.innerHTML = data.intro.map(c =>
+        buildSectionCard(c.heading, truncate(c.text, 100), `<p>${c.text}</p>`)
       ).join('');
+      activateSectionCards(rumIntroCards);
     }
 
-    // Stilheden
+    // Stilheden poem (stays visible)
     const stilhedPoem = $('#stilhedPoem');
     if (stilhedPoem && data.stilheden && data.stilheden.poem) {
       stilhedPoem.innerHTML = `
@@ -213,18 +288,29 @@
       `;
     }
 
-    const stilhedPull = $('#stilhedPull');
-    if (stilhedPull && data.stilheden) stilhedPull.innerHTML = `<p>${data.stilheden.pullQuote}</p>`;
+    // Stilheden as expandable card
+    const stilhedCards = $('#stilhedCards');
+    if (stilhedCards && data.stilheden) {
+      stilhedCards.innerHTML = buildSectionCard(
+        data.stilheden.title,
+        truncate(data.stilheden.pullQuote, 100),
+        `<blockquote class="pull"><p>${data.stilheden.pullQuote}</p></blockquote>
+         <p>${data.stilheden.text}</p><p>${data.stilheden.text2}</p>`
+      );
+      activateSectionCards(stilhedCards);
+    }
 
-    const stilhedText = $('#stilhedText');
-    if (stilhedText && data.stilheden) stilhedText.innerHTML = `<p>${data.stilheden.text}</p><p>${data.stilheden.text2}</p>`;
-
-    // The Neutral
-    const neutralPull = $('#neutralPull');
-    if (neutralPull) neutralPull.innerHTML = `<p>${data.neutral.pullQuote}</p>`;
-
-    const neutralText = $('#neutralText');
-    if (neutralText) neutralText.innerHTML = `<p>${data.neutral.text}</p>${data.neutral.text2 ? `<p>${data.neutral.text2}</p>` : ''}`;
+    // The Neutral as expandable card
+    const neutralCards = $('#neutralCards');
+    if (neutralCards) {
+      neutralCards.innerHTML = buildSectionCard(
+        data.neutral.title,
+        truncate(data.neutral.pullQuote, 100),
+        `<blockquote class="pull"><p>${data.neutral.pullQuote}</p></blockquote>
+         <p>${data.neutral.text}</p>${data.neutral.text2 ? `<p>${data.neutral.text2}</p>` : ''}`
+      );
+      activateSectionCards(neutralCards);
+    }
 
     const neutralQualities = $('#neutralQualities');
     if (neutralQualities) {
@@ -233,12 +319,17 @@
       ).join('');
     }
 
-    // Dosering
-    const doseringPull = $('#doseringPull');
-    if (doseringPull) doseringPull.innerHTML = `<p>${data.dosering.pullQuote}</p>`;
-
-    const doseringText = $('#doseringText');
-    if (doseringText) doseringText.innerHTML = `<p>${data.dosering.text}</p>${data.dosering.text2 ? `<p>${data.dosering.text2}</p>` : ''}`;
+    // Dosering as expandable card
+    const doseringCards = $('#doseringCards');
+    if (doseringCards) {
+      doseringCards.innerHTML = buildSectionCard(
+        data.dosering.title,
+        truncate(data.dosering.pullQuote, 100),
+        `<blockquote class="pull"><p>${data.dosering.pullQuote}</p></blockquote>
+         <p>${data.dosering.text}</p>${data.dosering.text2 ? `<p>${data.dosering.text2}</p>` : ''}`
+      );
+      activateSectionCards(doseringCards);
+    }
 
     const doseringQualities = $('#doseringQualities');
     if (doseringQualities) {
