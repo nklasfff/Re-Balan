@@ -2500,3 +2500,61 @@ body.onboarding-active {
   .section-card__body-inner { padding: 0 var(--space-md) var(--space-md); }
   .home-links { padding: 0 16px var(--space-lg); }
 }
+
+/* ─── Desktop app frame — 700px centered ─── */
+@media (min-width: 768px) {
+  /* Centrer alle sider */
+  .page {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Centrer navigation */
+  .nav {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Centrer menuen inden i rammen */
+  .menu {
+    max-width: 700px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Centrer onboarding */
+  .onboarding {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Centrer ambient baggrund */
+  .ambient {
+    max-width: 700px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Tynd vertikal ramme langs begge sider */
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 700px;
+    margin: 0 auto;
+    border-left: 1.5px solid var(--border-light);
+    border-right: 1.5px solid var(--border-light);
+    pointer-events: none;
+    z-index: 150;
+  }
+}
