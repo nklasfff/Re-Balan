@@ -505,7 +505,7 @@
 
     function applyThemeMeta(theme) {
       const meta = document.querySelector('meta[name="theme-color"]');
-      if (meta) meta.setAttribute('content', theme === 'light' ? '#E4E7ED' : '#080c14');
+      if (meta) meta.setAttribute('content', theme === 'light' ? '#767A81' : '#080c14');
     }
 
     applyThemeMeta(saved);
