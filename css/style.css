@@ -67,6 +67,206 @@
   --sab: env(safe-area-inset-bottom, 0px);
 }
 
+/* ═══ LIGHT THEME ═══ */
+[data-theme="light"] {
+  /* Core palette — cool, blue-tinted light */
+  --bg: #F0F2F6;
+  --bg-up: #E8EBF0;
+  --surface: #FFFFFF;
+  --surface-hover: #F5F6F9;
+  --border: rgba(42, 46, 56, 0.08);
+  --border-light: rgba(42, 46, 56, 0.12);
+
+  --text-muted: #9AA2B4;
+  --text-dim: #7A8498;
+  --text-secondary: #7A8498;
+  --text-primary: #3E4456;
+  --text-bright: #1E2230;
+
+  --accent: #5A7A96;
+  --accent-light: #4A6A86;
+  --warm: #8A6A5A;
+  --warm-light: #7A5A4A;
+
+  --sym: #9A7060;
+  --sym-glow: rgba(154, 112, 96, 0.1);
+  --para: #5A7090;
+  --para-glow: rgba(90, 112, 144, 0.1);
+
+  /* Glass — dark on light */
+  --glass: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(42, 46, 56, 0.08);
+  --glass-hover: rgba(255, 255, 255, 0.9);
+
+  /* Shadows — softer for light */
+  --shadow: 0 4px 30px rgba(42, 46, 56, 0.08);
+  --shadow-up: 0 -2px 20px rgba(42, 46, 56, 0.06);
+}
+
+/* ─── Light: Navigation ─── */
+[data-theme="light"] .nav.scrolled {
+  background: rgba(240, 242, 246, 0.88);
+}
+
+/* ─── Light: Mobile menu ─── */
+[data-theme="light"] .menu {
+  background: rgba(240, 242, 246, 0.96);
+}
+
+/* ─── Light: Hero overlay — keep photo moody but blend to light edges ─── */
+[data-theme="light"] .hero__overlay {
+  background:
+    linear-gradient(180deg, rgba(30,34,48,0.55) 0%, rgba(30,34,48,0.15) 40%, rgba(240,242,246,0.85) 100%),
+    radial-gradient(ellipse at center, transparent 30%, var(--bg) 80%);
+}
+
+/* ─── Light: Hero image — slightly brighter ─── */
+[data-theme="light"] .hero__img {
+  opacity: 0.45;
+  filter: saturate(0.5);
+}
+
+/* ─── Light: Breathing rings ─── */
+[data-theme="light"] .breath {
+  border-color: rgba(42, 46, 56, 0.06);
+}
+
+/* ─── Light: Ambient orbs — very subtle on light ─── */
+[data-theme="light"] .ambient__orb {
+  opacity: 0.025;
+}
+
+/* ─── Light: Ambient grain — hide ─── */
+[data-theme="light"] .ambient__grain {
+  opacity: 0.15;
+}
+
+/* ─── Light: Hover borders — use dark alpha instead of white ─── */
+[data-theme="light"] .portal:hover,
+[data-theme="light"] .stage:hover,
+[data-theme="light"] .state-card:hover,
+[data-theme="light"] .tag:hover,
+[data-theme="light"] .greb-item:hover,
+[data-theme="light"] .deep-link:hover,
+[data-theme="light"] .carousel__btn:hover,
+[data-theme="light"] .concept:hover,
+[data-theme="light"] .concept.open,
+[data-theme="light"] .section-card:hover,
+[data-theme="light"] .section-card.open,
+[data-theme="light"] .onboarding__pillar:hover,
+[data-theme="light"] .onboarding__btn:hover {
+  border-color: rgba(42, 46, 56, 0.15);
+}
+
+/* ─── Light: Subtle borders ─── */
+[data-theme="light"] .nerve__list li {
+  border-bottom-color: rgba(42, 46, 56, 0.06);
+}
+[data-theme="light"] .principle {
+  border-bottom-color: rgba(42, 46, 56, 0.06);
+}
+[data-theme="light"] .lit-item {
+  border-bottom-color: rgba(42, 46, 56, 0.06);
+}
+
+/* ─── Light: Portal glow ─── */
+[data-theme="light"] .portal__glow {
+  background: radial-gradient(circle, rgba(90, 122, 150, 0.06), transparent 70%);
+}
+
+/* ─── Light: Nerve pulse ─── */
+[data-theme="light"] .nerve__pulse {
+  background: radial-gradient(circle, rgba(42, 46, 56, 0.06), transparent);
+  border-color: rgba(42, 46, 56, 0.1);
+}
+
+/* ─── Light: State card qualities ─── */
+[data-theme="light"] .state-card__quality {
+  background: rgba(42, 46, 56, 0.04);
+  border-color: rgba(42, 46, 56, 0.08);
+}
+
+/* ─── Light: Selection ─── */
+[data-theme="light"] ::selection {
+  background: rgba(90, 122, 150, 0.2);
+  color: #1E2230;
+}
+
+/* ─── Light: Scrollbar ─── */
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: rgba(42, 46, 56, 0.15);
+}
+[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background: rgba(42, 46, 56, 0.25);
+}
+
+/* ─── Light: Onboarding breathing circles ─── */
+[data-theme="light"] .ob-breath {
+  border-color: rgba(42, 46, 56, 0.08);
+}
+[data-theme="light"] .ob-breath--2 {
+  border-color: rgba(42, 46, 56, 0.05);
+}
+[data-theme="light"] .ob-breath--3 {
+  border-color: rgba(42, 46, 56, 0.03);
+}
+
+/* ─── Light: SVG illustrations — adapt inline colors via filter ─── */
+[data-theme="light"] .illo__svg {
+  filter: brightness(0.7) saturate(0.8);
+  opacity: 0.85;
+}
+
+/* ─── Light: Case session dot ─── */
+[data-theme="light"] .case-session__dot {
+  box-shadow: 0 0 8px rgba(90, 122, 150, 0.2);
+}
+
+/* ─── Light: State card indicator glow ─── */
+[data-theme="light"] .state-card__indicator--green {
+  box-shadow: 0 0 8px rgba(90, 138, 106, 0.15);
+}
+
+/* ─── Light: Landscape hero overlay ─── */
+@media (orientation: landscape) and (max-height: 500px) {
+  [data-theme="light"] .hero__overlay {
+    background:
+      linear-gradient(180deg, rgba(30,34,48,0.75) 0%, rgba(30,34,48,0.2) 30%, rgba(240,242,246,0.85) 100%),
+      radial-gradient(ellipse at center, transparent 30%, var(--bg) 80%);
+  }
+}
+
+/* ─── Light: Theme toggle icon ─── */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  transition: color var(--transition);
+  padding: 0;
+  flex-shrink: 0;
+}
+.theme-toggle:hover {
+  color: var(--text-secondary);
+}
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Dark mode: show sun icon (to switch to light) */
+.theme-toggle__moon { display: none; }
+.theme-toggle__sun { display: block; }
+
+/* Light mode: show moon icon (to switch to dark) */
+[data-theme="light"] .theme-toggle__sun { display: none; }
+[data-theme="light"] .theme-toggle__moon { display: block; }
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
@@ -82,6 +282,7 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
   -webkit-font-smoothing: antialiased;
+  transition: background 0.6s var(--ease), color 0.6s var(--ease);
 }
 
 #app {
