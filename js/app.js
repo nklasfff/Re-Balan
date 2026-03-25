@@ -492,6 +492,35 @@
     populateRefleksion();
     observeReveals();
     initOnboarding();
+    initTheme();
+  }
+
+  /* ─── Theme Toggle ─── */
+  function initTheme() {
+    const saved = localStorage.getItem('re-balan-theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+
+    const toggle = $('#themeToggle');
+    if (!toggle) return;
+
+    function applyThemeMeta(theme) {
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute('content', theme === 'light' ? '#F0F2F6' : '#080c14');
+    }
+
+    applyThemeMeta(saved);
+
+    toggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'light' ? 'dark' : 'light';
+      if (next === 'dark') {
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        document.documentElement.setAttribute('data-theme', next);
+      }
+      localStorage.setItem('re-balan-theme', next);
+      applyThemeMeta(next);
+    });
   }
 
   if (document.readyState === 'loading') {
