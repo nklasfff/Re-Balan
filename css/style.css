@@ -69,13 +69,13 @@
 
 /* ═══ LIGHT THEME ═══ */
 [data-theme="light"] {
-  /* Core palette — cool, blue-tinted light */
-  --bg: #F0F2F6;
-  --bg-up: #E8EBF0;
-  --surface: #FFFFFF;
-  --surface-hover: #F5F6F9;
-  --border: rgba(42, 46, 56, 0.08);
-  --border-light: rgba(42, 46, 56, 0.12);
+  /* Core palette — cool, blue-tinted light (slightly darker) */
+  --bg: #E4E7ED;
+  --bg-up: #DDE0E8;
+  --surface: #F0F2F6;
+  --surface-hover: #EAEDF2;
+  --border: rgba(42, 46, 56, 0.10);
+  --border-light: rgba(42, 46, 56, 0.14);
 
   --text-muted: #9AA2B4;
   --text-dim: #7A8498;
@@ -94,9 +94,9 @@
   --para-glow: rgba(90, 112, 144, 0.1);
 
   /* Glass — dark on light */
-  --glass: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(42, 46, 56, 0.08);
-  --glass-hover: rgba(255, 255, 255, 0.9);
+  --glass: rgba(240, 242, 246, 0.7);
+  --glass-border: rgba(42, 46, 56, 0.10);
+  --glass-hover: rgba(240, 242, 246, 0.9);
 
   /* Shadows — softer for light */
   --shadow: 0 4px 30px rgba(42, 46, 56, 0.08);
@@ -105,25 +105,25 @@
 
 /* ─── Light: Navigation ─── */
 [data-theme="light"] .nav.scrolled {
-  background: rgba(240, 242, 246, 0.88);
+  background: rgba(228, 231, 237, 0.90);
 }
 
 /* ─── Light: Mobile menu ─── */
 [data-theme="light"] .menu {
-  background: rgba(240, 242, 246, 0.96);
+  background: rgba(228, 231, 237, 0.96);
 }
 
-/* ─── Light: Hero overlay — keep photo moody but blend to light edges ─── */
+/* ─── Light: Hero overlay — keep photo moody, blend to light edges ─── */
 [data-theme="light"] .hero__overlay {
   background:
-    linear-gradient(180deg, rgba(30,34,48,0.55) 0%, rgba(30,34,48,0.15) 40%, rgba(240,242,246,0.85) 100%),
+    linear-gradient(180deg, rgba(30,34,48,0.65) 0%, rgba(30,34,48,0.25) 40%, rgba(228,231,237,0.9) 100%),
     radial-gradient(ellipse at center, transparent 30%, var(--bg) 80%);
 }
 
-/* ─── Light: Hero image — slightly brighter ─── */
+/* ─── Light: Hero image — kept moody/dark ─── */
 [data-theme="light"] .hero__img {
-  opacity: 0.45;
-  filter: saturate(0.5);
+  opacity: 0.35;
+  filter: saturate(0.55);
 }
 
 /* ─── Light: Breathing rings ─── */
@@ -231,7 +231,7 @@
 @media (orientation: landscape) and (max-height: 500px) {
   [data-theme="light"] .hero__overlay {
     background:
-      linear-gradient(180deg, rgba(30,34,48,0.75) 0%, rgba(30,34,48,0.2) 30%, rgba(240,242,246,0.85) 100%),
+      linear-gradient(180deg, rgba(30,34,48,0.80) 0%, rgba(30,34,48,0.25) 30%, rgba(228,231,237,0.9) 100%),
       radial-gradient(ellipse at center, transparent 30%, var(--bg) 80%);
   }
 }
