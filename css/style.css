@@ -69,169 +69,79 @@
 
 /* ═══ LIGHT THEME ═══ */
 [data-theme="light"] {
-  /* Core palette — cool, blue-tinted light (slightly darker) */
-  --bg: #E4E7ED;
-  --bg-up: #DDE0E8;
-  --surface: #F0F2F6;
-  --surface-hover: #EAEDF2;
-  --border: rgba(42, 46, 56, 0.10);
-  --border-light: rgba(42, 46, 56, 0.14);
+  /* Core palette — halfway between dark (#080C14) and bright (#E4E7ED) */
+  --bg: #767A81;
+  --bg-up: #6E7279;
+  --surface: #818690;
+  --surface-hover: #8A8F98;
+  --border: rgba(200, 210, 220, 0.12);
+  --border-light: rgba(200, 210, 220, 0.18);
 
-  --text-muted: #9AA2B4;
-  --text-dim: #7A8498;
-  --text-secondary: #7A8498;
-  --text-primary: #3E4456;
-  --text-bright: #1E2230;
+  --text-muted: #A0A8B6;
+  --text-dim: #B4BCCA;
+  --text-secondary: #C8D0DC;
+  --text-primary: #D8DEE6;
+  --text-bright: #EAF0F6;
 
   --accent: #5A7A96;
-  --accent-light: #4A6A86;
-  --warm: #8A6A5A;
-  --warm-light: #7A5A4A;
+  --accent-light: #6A8AA6;
+  --warm: #9A8A7A;
+  --warm-light: #AA9A8A;
 
-  --sym: #9A7060;
-  --sym-glow: rgba(154, 112, 96, 0.1);
-  --para: #5A7090;
-  --para-glow: rgba(90, 112, 144, 0.1);
+  --sym: #B08070;
+  --sym-glow: rgba(176, 128, 112, 0.12);
+  --para: #6A80A0;
+  --para-glow: rgba(106, 128, 160, 0.12);
 
-  /* Glass — dark on light */
-  --glass: rgba(240, 242, 246, 0.7);
-  --glass-border: rgba(42, 46, 56, 0.10);
-  --glass-hover: rgba(240, 242, 246, 0.9);
+  /* Glass — subtle light on mid-tone */
+  --glass: rgba(255, 255, 255, 0.07);
+  --glass-border: rgba(255, 255, 255, 0.09);
+  --glass-hover: rgba(255, 255, 255, 0.12);
 
-  /* Shadows — softer for light */
-  --shadow: 0 4px 30px rgba(42, 46, 56, 0.08);
-  --shadow-up: 0 -2px 20px rgba(42, 46, 56, 0.06);
+  /* Shadows */
+  --shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+  --shadow-up: 0 -2px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* ─── Light: Navigation ─── */
 [data-theme="light"] .nav.scrolled {
-  background: rgba(228, 231, 237, 0.90);
+  background: rgba(118, 122, 129, 0.88);
 }
 
 /* ─── Light: Mobile menu ─── */
 [data-theme="light"] .menu {
-  background: rgba(228, 231, 237, 0.96);
+  background: rgba(110, 114, 121, 0.96);
 }
 
-/* ─── Light: Hero overlay — keep photo moody, blend to light edges ─── */
+/* ─── Light: Hero overlay — blend into mid-tone bg ─── */
 [data-theme="light"] .hero__overlay {
   background:
-    linear-gradient(180deg, rgba(30,34,48,0.65) 0%, rgba(30,34,48,0.25) 40%, rgba(228,231,237,0.9) 100%),
+    linear-gradient(180deg, rgba(20,24,36,0.5) 0%, rgba(20,24,36,0.2) 40%, rgba(118,122,129,0.9) 100%),
     radial-gradient(ellipse at center, transparent 30%, var(--bg) 80%);
 }
 
-/* ─── Light: Hero image — kept moody/dark ─── */
+/* ─── Light: Hero image — same darkness, slight desaturation ─── */
 [data-theme="light"] .hero__img {
-  opacity: 0.35;
-  filter: saturate(0.55);
+  opacity: 0.3;
+  filter: saturate(0.5);
 }
 
-/* ─── Light: Breathing rings ─── */
-[data-theme="light"] .breath {
-  border-color: rgba(42, 46, 56, 0.06);
-}
-
-/* ─── Light: Ambient orbs — very subtle on light ─── */
+/* ─── Light: Ambient orbs — slightly more visible on mid-tone ─── */
 [data-theme="light"] .ambient__orb {
-  opacity: 0.025;
-}
-
-/* ─── Light: Ambient grain — hide ─── */
-[data-theme="light"] .ambient__grain {
-  opacity: 0.15;
-}
-
-/* ─── Light: Hover borders — use dark alpha instead of white ─── */
-[data-theme="light"] .portal:hover,
-[data-theme="light"] .stage:hover,
-[data-theme="light"] .state-card:hover,
-[data-theme="light"] .tag:hover,
-[data-theme="light"] .greb-item:hover,
-[data-theme="light"] .deep-link:hover,
-[data-theme="light"] .carousel__btn:hover,
-[data-theme="light"] .concept:hover,
-[data-theme="light"] .concept.open,
-[data-theme="light"] .section-card:hover,
-[data-theme="light"] .section-card.open,
-[data-theme="light"] .onboarding__pillar:hover,
-[data-theme="light"] .onboarding__btn:hover {
-  border-color: rgba(42, 46, 56, 0.15);
-}
-
-/* ─── Light: Subtle borders ─── */
-[data-theme="light"] .nerve__list li {
-  border-bottom-color: rgba(42, 46, 56, 0.06);
-}
-[data-theme="light"] .principle {
-  border-bottom-color: rgba(42, 46, 56, 0.06);
-}
-[data-theme="light"] .lit-item {
-  border-bottom-color: rgba(42, 46, 56, 0.06);
-}
-
-/* ─── Light: Portal glow ─── */
-[data-theme="light"] .portal__glow {
-  background: radial-gradient(circle, rgba(90, 122, 150, 0.06), transparent 70%);
-}
-
-/* ─── Light: Nerve pulse ─── */
-[data-theme="light"] .nerve__pulse {
-  background: radial-gradient(circle, rgba(42, 46, 56, 0.06), transparent);
-  border-color: rgba(42, 46, 56, 0.1);
-}
-
-/* ─── Light: State card qualities ─── */
-[data-theme="light"] .state-card__quality {
-  background: rgba(42, 46, 56, 0.04);
-  border-color: rgba(42, 46, 56, 0.08);
+  opacity: 0.035;
 }
 
 /* ─── Light: Selection ─── */
 [data-theme="light"] ::selection {
-  background: rgba(90, 122, 150, 0.2);
-  color: #1E2230;
-}
-
-/* ─── Light: Scrollbar ─── */
-[data-theme="light"] ::-webkit-scrollbar-thumb {
-  background: rgba(42, 46, 56, 0.15);
-}
-[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
-  background: rgba(42, 46, 56, 0.25);
-}
-
-/* ─── Light: Onboarding breathing circles ─── */
-[data-theme="light"] .ob-breath {
-  border-color: rgba(42, 46, 56, 0.08);
-}
-[data-theme="light"] .ob-breath--2 {
-  border-color: rgba(42, 46, 56, 0.05);
-}
-[data-theme="light"] .ob-breath--3 {
-  border-color: rgba(42, 46, 56, 0.03);
-}
-
-/* ─── Light: SVG illustrations — adapt inline colors via filter ─── */
-[data-theme="light"] .illo__svg {
-  filter: brightness(0.7) saturate(0.8);
-  opacity: 0.85;
-}
-
-/* ─── Light: Case session dot ─── */
-[data-theme="light"] .case-session__dot {
-  box-shadow: 0 0 8px rgba(90, 122, 150, 0.2);
-}
-
-/* ─── Light: State card indicator glow ─── */
-[data-theme="light"] .state-card__indicator--green {
-  box-shadow: 0 0 8px rgba(90, 138, 106, 0.15);
+  background: rgba(90, 122, 150, 0.3);
+  color: #EAF0F6;
 }
 
 /* ─── Light: Landscape hero overlay ─── */
 @media (orientation: landscape) and (max-height: 500px) {
   [data-theme="light"] .hero__overlay {
     background:
-      linear-gradient(180deg, rgba(30,34,48,0.80) 0%, rgba(30,34,48,0.25) 30%, rgba(228,231,237,0.9) 100%),
+      linear-gradient(180deg, rgba(20,24,36,0.65) 0%, rgba(20,24,36,0.2) 30%, rgba(118,122,129,0.9) 100%),
       radial-gradient(ellipse at center, transparent 30%, var(--bg) 80%);
   }
 }
