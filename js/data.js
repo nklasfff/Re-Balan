@@ -125,28 +125,28 @@ const APP_DATA = {
 
     rummet: {
       title: "Rummet",
-      subtitle: "Betingelserne for re-balancering",
+      subtitle: "Stilheden og betingelserne for forandring",
       pullQuote: "Det handler ikke om at gøre noget ved tilstanden. Det handler om at være med den — på en måde der giver den plads til at bevæge sig.",
       intro: [
         {
           heading: "Tilstedeværelse",
-          text: "Den vigtigste betingelse for re-balancering er kvaliteten af tilstedeværelse. Ikke en anspændt, koncentreret opmærksomhed, men en rolig, åben væren-med — som det, der er, præcis som det er. Denne kvalitet skaber i sig selv et rum, hvori forandring kan opstå. Paradoksalt nok ikke fordi vi forsøger at skabe forandring, men fordi vi holder op med at forsøge."
+          text: "Ikke en anspændt, koncentreret opmærksomhed — men en rolig, åben væren-med. At lade det, der er, være præcis som det er. Denne kvalitet skaber i sig selv et rum, hvori forandring kan opstå. Paradoksalt nok ikke fordi vi forsøger at skabe forandring, men fordi vi holder op med at forsøge."
         },
         {
           heading: "Relation",
-          text: "Re-balancering sker ikke i isolation. Den kræver relation — en forbindelse til noget udenfor sig selv. Thomas Hübl beskriver det som en proces af synkronisering, hvor ét velreguleret nervesystem kan fungere som støtte for et andet. Vi regulerer hinanden konstant — oftest helt ubevidst. Det er denne somatiske resonans, der gør, at nærvær og ro i ét menneske kan understøtte balancering i et andet."
+          text: "Balance sker ikke i isolation. Den kræver forbindelse til noget udenfor dig selv. Vi regulerer hinanden konstant — oftest helt ubevidst. Nærvær og ro i ét menneske kan understøtte balance i et andet. Det er derfor, det ikke er ligegyldigt hvem der er til stede. Kvaliteten af det rum, der skabes imellem, er alt."
         },
         {
-          heading: "Sikkerhed",
-          text: "Nervesystemet re-balancerer kun, når det vurderer, at det er sikkert at gøre det. Denne vurdering sker ofte helt udenfor vores bevidste kontrol — det er neuroception, en kropslig fornemmelse af 'er det sikkert her?'. Trygheden er den absolutte forudsætning for enhver form for regulering og integration. Uden den kan nervesystemet ikke bevæge sig ud af overlevelsestilstande."
+          heading: "Tryghed",
+          text: "Kroppen finder kun sin balance, når den mærker, at det er sikkert. Denne vurdering sker ofte helt udenfor din bevidste kontrol — en kropslig fornemmelse af 'er det sikkert her?'. Trygheden er forudsætningen. Uden den kan kroppen ikke slippe sine overlevelsestilstande, uanset hvor meget vi ønsker det."
         },
         {
           heading: "Autenticitet",
-          text: "Det er afgørende, at kvaliteten af nærvær er autentisk og integreret. Det handler ikke om en abstrakt idé eller en teknik, men om en levende erfaring. Netop fordi denne kvalitet er autentisk tilgængelig, kan andre nervesystemer registrere den — der opstår en samklang, en resonans mellem systemer. Det afgørende er graden af integration og autenticitet, ikke den specifikke form."
+          text: "Det handler ikke om en teknik eller en abstrakt idé, men om en levende erfaring. Nærvær der er ægte og integreret. Andre kroppe kan mærke forskellen — der opstår en samklang, en resonans. Det afgørende er ikke den specifikke form, men graden af autenticitet."
         },
         {
           heading: "Tid",
-          text: "Re-balancering kan ikke fremskyndes. Den har sin egen tidshorisont, sin egen rytme, sin egen indre kalender. I en kultur der hylder hastighed og umiddelbare resultater, er tålmodighed måske den mest radikale kvalitet, vi kan bringe til processen. James Jealous talte om at 'vente på tidevandet' — at anerkende, at kroppens dybeste processer følger en rytme, der ikke kan forceres, ligesom vi ikke kan fremskynde solopgangen eller tidevandets venden. Peter Levine beskriver, hvordan nervesystemet har brug for tid til at integrere — tid til at pendulerere, tid til at finde sin egen vej igennem. Når vi giver den tid, viser det sig ofte, at processen kender sin egen tidsplan langt bedre, end vi nogensinde kunne planlægge den."
+          text: "Det kan ikke fremskyndes. Der er en egen tidshorisont, en egen rytme, en indre kalender. I en kultur der hylder hastighed, er tålmodighed måske det mest radikale vi kan bringe. Kroppens dybeste processer følger en rytme, der ikke kan forceres — ligesom vi ikke kan fremskynde solopgangen eller tidevandets venden. Når vi giver den tid, viser det sig ofte, at processen kender sin egen tidsplan langt bedre end vi nogensinde kunne planlægge."
         }
       ],
       stilheden: {
@@ -155,9 +155,9 @@ const APP_DATA = {
           text: "We love the movement in a seeming stillness,\nthe breath in the body of the loved one sleeping,\nthe highest leaves in the silent wood,\na great migration in the sky above..",
           author: "David Whyte"
         },
-        pullQuote: "Stilheden er ikke noget vi skal skabe eller fremtvinge. Den er allerede til stede som et grundlæggende aspekt af virkeligheden og af vores egen natur.",
-        text: "I naturen finder stilheden sine mest umiddelbare udtryk. Det autonome nervesystem responderer naturligt på mødet med stilhedens udtryk: fugle der glider henover himlen, bladenes langsomme bevægelse i vinden, bølgernes rytmiske møde med stranden, sollysets vandring over et landskab. Når vi observerer disse fænomener med åben, nysgerrig opmærksomhed, begynder vores nervesystem spontant at synkronisere sig med den samme stilhedskvalitet. Det er som om naturen minder os om noget, vi allerede ved, men har glemt — at stilhed ikke er fravær af lyd, men tilstedeværelsen af en dybere orden. En skov er aldrig tavs; den er fuld af liv, bevægelse og kommunikation. Men alt dette sker inden for en ramme af dyb ro. Fuglesangen bryder ikke stilheden — den udtrykker den. Vindens susen gennem træernes kroner er ikke støj — det er stilhedens egen stemme. Og det er præcis denne kvalitet, der resonerer med noget i os: en erindring om, at vi selv er en del af den samme levende stilhed.",
-        text2: "Vi mærker, hvordan den samme uantastelige ro, der bor i naturen, også er til stede i os. Selv i de mest intense tilstande af aktivering eller kollaps findes der altid områder eller kvaliteter af systemet, der forbliver i balance — øer af ro, som aldrig inddrages i nervesystemets storm. Ved at opdage og forbinde sig med disse øer, skabes en ressource, der kan fungere som anker for nervesystemets egen selvregulerende kapacitet. James Jealous pegede på, at denne stilhed ikke blot er en subjektiv oplevelse, men en fundamental kraft — den samme kraft, der organiserer embryonets udvikling, der styrer celledeling og vækst, der opretholder de rytmer, som livet hviler på. Når vi berører den stilhed i os selv, berører vi det samme princip, der får tidevandet til at vende, sæsonerne til at skifte, og frøet til at spire. Det er ikke en metafor. Det er en direkte forbindelse til den intelligens, der gennemsyrer alt levende."
+        pullQuote: "Stilheden er ikke noget vi skal skabe. Den er allerede til stede — som et grundlæggende aspekt af virkeligheden og af vores egen natur.",
+        text: "Fugle der glider henover himlen. Bladenes langsomme bevægelse i vinden. Bølgernes rytmiske møde med stranden. Sollysets vandring over et landskab. Når vi møder disse udtryk med åben, nysgerrig opmærksomhed, begynder noget i os spontant at synkronisere sig med den samme kvalitet af ro. Det er som om naturen minder os om noget, vi allerede ved men har glemt — at stilhed ikke er fravær af lyd, men tilstedeværelsen af en dybere orden. En skov er aldrig tavs. Den er fuld af liv, bevægelse og kommunikation. Men alt dette sker inden for en ramme af dyb ro. Fuglesangen bryder ikke stilheden — den udtrykker den. Vindens susen gennem træernes kroner er ikke støj — det er stilhedens egen stemme.",
+        text2: "Den samme uantastelige ro, der bor i naturen, er også til stede i dig. Selv i de mest intense tilstande af aktivering eller kollaps findes der altid områder, der forbliver i balance — øer af ro, som aldrig inddrages i stormen. Ved at opdage og forbinde dig med disse øer, opstår et anker. Denne stilhed er ikke blot en subjektiv oplevelse — den er den samme kraft, der får tidevandet til at vende, sæsonerne til at skifte, og frøet til at spire. Det er ikke en metafor. Det er en direkte forbindelse til den intelligens, der gennemsyrer alt levende."
       },
       neutral: {
         title: "The Neutral",
