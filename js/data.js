@@ -57,32 +57,32 @@ const APP_DATA = {
     },
 
     nervesystem: {
-      title: "Nervesystemets Dynamik",
-      subtitle: "Tre tilstande i os alle",
-      intro: "I ethvert menneske lever et autonomt nervesystem, der konstant navigerer mellem aktivering og ro, mellem mobilisering og hvile. Det er vores mest grundlæggende fysiologiske kompas — og det fungerer oftest helt uden vores bevidste medvirken. Stephen Porges kalder denne ubevidste scanning for 'neuroception' — nervesystemets konstante aflæsning af miljøet for signaler om sikkerhed eller fare. Neuroceptionen er hurtigere end tanken, dybere end sproget. Den registrerer mikrobevægelser i et ansigt, nuancer i en stemme, subtile skift i energien i et rum — længe før vores bevidste sind har nået at formulere en vurdering. Det er denne ubevidste visdom, der afgør, om vi åbner os eller lukker ned, om vi bevæger os mod forbindelse eller mod forsvar. Deb Dana beskriver det som nervesystemets fortælling — den historie, vores fysiologi fortæller os om verden, endnu før vi har ord for den. Og fordi neuroceptionen opererer under bevidsthedens tærskel, kan vi ikke tænke os ud af dens konklusioner. Vi kan ikke argumentere med et nervesystem, der har besluttet, at det ikke er sikkert. Men vi kan skabe betingelser — gennem nærvær, langsomhed og autentisk kontakt — hvor neuroceptionen gradvist kan revidere sin vurdering og åbne for nye muligheder.",
+      title: "Nervesystemet",
+      subtitle: "Den visdom kroppen bærer",
+      intro: "Der er noget i dig, der konstant navigerer mellem aktivering og ro — helt uden din bevidste medvirken. Det registrerer mikrobevægelser i et ansigt, nuancer i en stemme, subtile skift i energien i et rum. Det ved om du er tryg, længe før din bevidste tanke når at formulere en vurdering. Denne kropslige visdom er hurtigere end tanken, dybere end sproget. Den afgør om du åbner dig eller lukker ned, om du bevæger dig mod forbindelse eller mod forsvar. Du kan ikke tænke dig ud af dens konklusioner. Du kan ikke argumentere med et nervesystem, der har besluttet, at det ikke er sikkert. Men du kan skabe betingelser — gennem nærvær, langsomhed og autentisk kontakt — hvor kroppen gradvist kan revidere sin vurdering og åbne for nye muligheder.",
       treStater: {
-        intro: "Den polyvagale teori udvider vores forståelse af nervesystemet til tre distinkte tilstande, der hver repræsenterer en fundamental måde at møde verden på:",
+        intro: "Vi bevæger os alle mellem tre grundlæggende tilstande — tre måder at møde verden på:",
         states: [
           {
             title: "Tryghed & Forbindelse",
-            label: "Ventral vagal",
+            label: "Når vi er hjemme i os selv",
             color: "green",
-            description: "En tilstand af afbalanceret fleksibilitet, hvor vi er i stand til at møde verden med åbenhed og nysgerrighed. Her er nervesystemet optimalt reguleret — vi kan mærke os selv, mærke andre, og bevæge os frit mellem aktivering og ro. Deb Dana kalder dette for at befinde sig øverst på 'den autonome stige' — det sted, hvorfra vi kan klatre op og ned uden at miste fodfæstet.",
-            qualities: ["Social engagement", "Dyb vejrtrækning", "Åben perception", "Fleksibel respons", "Forbindelse til krop og omverden"]
+            description: "Du kender den. Øjeblikke hvor du kan mærke dig selv og mærke andre. Hvor du kan bevæge dig frit mellem aktivering og ro uden at miste fodfæstet. En åbenhed, en nysgerrighed, en fleksibilitet. Herfra kan du klatre op og ned uden at falde. Det er dit nervesystems naturlige hvilested — det sted du vender tilbage til, når betingelserne er til stede.",
+            qualities: ["At kunne mærke sig selv", "Dyb, fri vejrtrækning", "Åben opmærksomhed", "Fleksibel respons", "Forbindelse til krop og omverden"]
           },
           {
             title: "Mobilisering",
-            label: "Sympatisk aktivering",
+            label: "Når kroppen gør klar",
             color: "warm",
-            description: "Nervesystemets naturlige respons på fare eller udfordring. Tempoet øges, kroppen gør klar til handling. I sin sunde form giver den os energi og handlekraft. Når den overaktiveres, mister vi kontakten — med os selv og med omverdenen. En vigtig indsigt er, at den sympatiske aktivering ofte er et symptom — nervesystemets forsøg på at holde os ude af en endnu dybere tilstand af immobilisering.",
-            qualities: ["Øget hjertefrekvens", "Hurtig vejrtrækning", "Forhøjet energi", "Muskelspænding", "Skærpet fokus"]
+            description: "Du kender også den. Tempoet øges, kroppen gør klar til handling. I sin sunde form giver den dig energi og handlekraft. Men når den løber løbsk, mister du kontakten — med dig selv og med verden omkring dig. Ofte er denne aktivering faktisk et forsøg på at holde dig ude af noget endnu dybere — en beskyttelse, du endnu ikke er klar over.",
+            qualities: ["Hjertet banker hurtigere", "Vejrtrækningen bliver kort", "Energien stiger", "Kroppen spænder", "Fokus skærpes"]
           },
           {
             title: "Immobilisering",
-            label: "Dorsal vagal",
+            label: "Når alt lukker ned",
             color: "cool",
-            description: "Den evolutionært ældste overlevelsesrespons. Når systemet vurderer, at hverken kamp eller flugt er mulig, lukker det ned. En tilstand af tilbagetrækning og energibesparelse — den tilstand, som Peter Levine beskriver som den egentlige essens af trauma. Ikke den hektiske aktivering, men den dybe frystilstand, hvor den psykobiologiske kontinuitet brydes.",
-            qualities: ["Langsom vejrtrækning", "Nedsat energi", "Tilbagetrækning", "Følelsesmæssig distance", "Dissociation"]
+            description: "Og den. Når hverken kamp eller flugt er muligt, lukker kroppen ned. En tilbagetrækning, en energibesparelse. Det er ikke den hektiske aktivering, men den dybe frystilstand — det øjeblik, hvor forbindelsen til dig selv bliver brudt. Det er den ældste overlevelsesrespons vi har. Og det er her, i denne stilhed, at den dybeste heling venter.",
+            qualities: ["Vejrtrækningen bliver langsom", "Energien falder", "En tilbagetrækning indad", "Følelserne bliver fjerne", "En fornemmelse af at være væk"]
           }
         ]
       },
