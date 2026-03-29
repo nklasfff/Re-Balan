@@ -35,17 +35,16 @@
 
       <!-- Step 0: Stillness -->
       <div class="onboarding__step active" data-step="0">
-        <p class="onboarding__label">B i o d y n a m i c s</p>
         <h1 class="onboarding__title">
           <span class="onboarding__line">Balancering</span>
           <span class="onboarding__amp">&amp;</span>
           <span class="onboarding__line">Re-Balancering</span>
         </h1>
         <div class="onboarding__rule"></div>
-        <p class="onboarding__text">Et rum for at forstå kroppens iboende evne til at finde tilbage mod balance.</p>
+        <p class="onboarding__text">Et stille rum at vende tilbage til.</p>
       </div>
 
-      <!-- Step 1: What this is -->
+      <!-- Step 1: Remembering -->
       <div class="onboarding__step" data-step="1">
         <div class="onboarding__icon">
           <svg viewBox="0 0 200 200" fill="none">
@@ -55,31 +54,16 @@
             <circle cx="100" cy="100" r="4" fill="rgba(196,213,226,0.6)"/>
           </svg>
         </div>
-        <h2 class="onboarding__heading">En iboende intelligens</h2>
+        <h2 class="onboarding__heading">Noget i dig ved allerede</h2>
         <p class="onboarding__text">Dybt i ethvert levende system eksisterer en evne til at finde sin balance. Ikke noget vi skal tilf&oslash;re udefra &mdash; men noget der allerede er til stede.</p>
-        <p class="onboarding__sub">Denne guide udforsker den viden, der underst&oslash;tter denne forst&aring;else.</p>
+        <p class="onboarding__sub">Her kan du m&aelig;rke det igen.</p>
       </div>
 
-      <!-- Step 2: The three pillars -->
+      <!-- Step 2: What lives here -->
       <div class="onboarding__step" data-step="2">
-        <div class="onboarding__pillars">
-          <div class="onboarding__pillar">
-            <span class="onboarding__pillar-num">01</span>
-            <span class="onboarding__pillar-title">Essensen</span>
-            <span class="onboarding__pillar-desc">Den naturlige kapacitet</span>
-          </div>
-          <div class="onboarding__pillar">
-            <span class="onboarding__pillar-num">02</span>
-            <span class="onboarding__pillar-title">Nervesystemet</span>
-            <span class="onboarding__pillar-desc">Tre tilstande i os alle</span>
-          </div>
-          <div class="onboarding__pillar">
-            <span class="onboarding__pillar-num">03</span>
-            <span class="onboarding__pillar-title">Rummet</span>
-            <span class="onboarding__pillar-desc">Betingelserne for balance</span>
-          </div>
-        </div>
-        <p class="onboarding__text">Tre perspektiver p&aring; den samme levende proces &mdash; fra essens, gennem dynamik, til de betingelser der g&oslash;r forandring mulig.</p>
+        <h2 class="onboarding__heading">Hvad du finder her</h2>
+        <p class="onboarding__text">Ord og stilhed om det der allerede er i balance i dig. Om nervesystemets visdom. Om det rum, hvori forandring bliver mulig &mdash; ikke fordi vi g&oslash;r noget, men fordi vi holder op med at fors&oslash;ge.</p>
+        <p class="onboarding__sub">Ikke en guide der skal gennemf&oslash;res, men et sted at vende tilbage til.</p>
       </div>
 
       <!-- Step 3: Enter -->
@@ -123,6 +107,7 @@
       <button class="nav__link" data-navigate="essensen">Essensen</button>
       <button class="nav__link" data-navigate="nervesystem">Nervesystemet</button>
       <button class="nav__link" data-navigate="rummet">Rummet</button>
+      <button class="nav__link" data-navigate="refleksion">Refleksion</button>
     </div>
     <div style="display:flex;align-items:center;gap:8px;">
       <button class="theme-toggle" id="themeToggle" aria-label="Skift tema">
@@ -142,9 +127,9 @@
       <button class="menu__item" data-navigate="essensen">Essensen</button>
       <button class="menu__item" data-navigate="nervesystem">Nervesystemet</button>
       <button class="menu__item" data-navigate="rummet">Rummet</button>
+      <button class="menu__item" data-navigate="refleksion">Refleksion</button>
       <div class="menu__line"></div>
-      <button class="menu__item menu__item--sm" data-navigate="faenomener">F&aelig;nomener</button>
-      <button class="menu__item menu__item--sm" data-navigate="refleksion">Refleksion</button>
+      <button class="menu__item menu__item--sm" data-navigate="faenomener">Indsigter</button>
     </div>
   </div>
 
@@ -181,43 +166,31 @@
       </div>
     </div>
 
-    <!-- Portals — evocative invitations, not summaries -->
+    <!-- Portals — invitations, not summaries -->
     <div class="portals">
       <article class="portal reveal" data-navigate="essensen">
         <div class="portal__glow"></div>
-        <span class="portal__num">01</span>
         <h2 class="portal__title">Essensen</h2>
-        <p class="portal__desc">Det der allerede er til stede</p>
-        <svg class="portal__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        <p class="portal__desc">Det der allerede er til stede i dig</p>
       </article>
 
       <article class="portal reveal" data-navigate="nervesystem">
         <div class="portal__glow"></div>
-        <span class="portal__num">02</span>
         <h2 class="portal__title">Nervesystemet</h2>
-        <p class="portal__desc">Tre tilstande og bevægelsen imellem dem</p>
-        <svg class="portal__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        <p class="portal__desc">Den visdom din krop allerede kender</p>
       </article>
 
       <article class="portal reveal" data-navigate="rummet">
         <div class="portal__glow"></div>
-        <span class="portal__num">03</span>
         <h2 class="portal__title">Rummet</h2>
-        <p class="portal__desc">Betingelserne og den uantastelige stilhed</p>
-        <svg class="portal__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        <p class="portal__desc">Stilheden og betingelserne for forandring</p>
       </article>
-    </div>
 
-    <!-- Sub-links -->
-    <div class="home-links reveal">
-      <button class="deep-link" data-navigate="faenomener">
-        <div><span class="deep-link__title">F&aelig;nomener</span><span class="deep-link__sub">Begreber og dynamikker</span></div>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </button>
-      <button class="deep-link" data-navigate="refleksion">
-        <div><span class="deep-link__title">Refleksion</span><span class="deep-link__sub">Tanker til eftertanke</span></div>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </button>
+      <article class="portal reveal" data-navigate="refleksion">
+        <div class="portal__glow"></div>
+        <h2 class="portal__title">Refleksion</h2>
+        <p class="portal__desc">Sp&oslash;rgsm&aring;l du allerede kender svaret p&aring;</p>
+      </article>
     </div>
 
     <!-- Vertical poles — inspired by hero photograph -->
@@ -260,9 +233,9 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
         <span>Tilbage</span>
       </button>
-      <span class="page-hero__label">01 — Essensen</span>
-      <h2 class="page-hero__title">Den iboende intelligens</h2>
-      <p class="page-hero__sub">Det der allerede er til stede</p>
+      <span class="page-hero__label">Essensen</span>
+      <h2 class="page-hero__title">Det der allerede er til stede</h2>
+      <p class="page-hero__sub">En p&aring;mindelse om det du allerede ved</p>
     </div>
 
     <!-- Breathing circles illustration -->
@@ -332,9 +305,9 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
         <span>Tilbage</span>
       </button>
-      <span class="page-hero__label">02 — Nervesystemet</span>
-      <h2 class="page-hero__title">Nervesystemets dynamik</h2>
-      <p class="page-hero__sub">Tre tilstande i os alle</p>
+      <span class="page-hero__label">Nervesystemet</span>
+      <h2 class="page-hero__title">Den visdom kroppen b&aelig;rer</h2>
+      <p class="page-hero__sub">Bev&aelig;gelsen mellem ro og aktivering</p>
     </div>
 
     <div class="content">
@@ -436,9 +409,9 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
         <span>Tilbage</span>
       </button>
-      <span class="page-hero__label">03 — Rummet</span>
-      <h2 class="page-hero__title">Betingelserne</h2>
-      <p class="page-hero__sub">for re-balancering</p>
+      <span class="page-hero__label">Rummet</span>
+      <h2 class="page-hero__title">Stilheden og betingelserne</h2>
+      <p class="page-hero__sub">Det rum hvori forandring bliver mulig</p>
     </div>
 
     <!-- Open space illustration -->
@@ -548,9 +521,9 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
         <span>Tilbage</span>
       </button>
-      <span class="page-hero__label">Fordybelse</span>
-      <h2 class="page-hero__title">F&aelig;nomener</h2>
-      <p class="page-hero__sub">Begreber og dynamikker</p>
+      <span class="page-hero__label">Indsigter</span>
+      <h2 class="page-hero__title">Det levende landskab</h2>
+      <p class="page-hero__sub">Ord for det vi m&aelig;rker</p>
     </div>
 
     <!-- Interconnected web illustration -->
@@ -598,7 +571,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
         <span>Tilbage</span>
       </button>
-      <span class="page-hero__label">Fordybelse</span>
+      <span class="page-hero__label">Refleksion</span>
       <h2 class="page-hero__title">Tanker til eftertanke</h2>
     </div>
 
@@ -614,6 +587,7 @@
     </div>
 
     <div class="content">
+      <p class="intro-text reveal">Ikke sp&oslash;rgsm&aring;l der kr&aelig;ver svar &mdash; men invitationer til at m&aelig;rke efter. Lad dem hvile i dig. Vend tilbage til dem n&aring;r de kalder.</p>
       <div class="carousel" id="carousel">
         <div class="carousel__track" id="carouselTrack"></div>
         <div class="carousel__nav">
@@ -633,7 +607,7 @@
   <footer class="footer">
     <div class="footer__line"></div>
     <p class="footer__title">Balancering &amp; Re-Balancering</p>
-    <p class="footer__sub">Biodynamics</p>
+    <p class="footer__sub">Vend tilbage n&aring;r du har brug for det</p>
   </footer>
 
 </div>
