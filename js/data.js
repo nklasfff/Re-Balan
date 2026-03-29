@@ -194,67 +194,67 @@ const APP_DATA = {
         {
           term: "Det autonome nervesystem",
           short: "Det der navigerer, f\u00f8r vi t\u00e6nker",
-          text: "Består af to primære grene — den sympatiske og den parasympatiske — der ideelt fungerer i dynamisk balance. Den sympatiske aktiverer mobilisering, mens den parasympatiske faciliterer hvile og restitution. I den polyvagale forståelse tilføjes en tredje dimension: den ventrale vagale tilstand af tryghed og social forbindelse, som er nøglen til fleksibel regulering."
+          text: "To kræfter i dig — én der mobiliserer, én der bringer ro — i en evig dans. Når de er i balance, bevæger du dig frit. Der er også en tredje dimension: den tilstand af tryghed og forbindelse, som gør det muligt at være åben. Det er nøglen til det hele."
         },
         {
           term: "Neuroception",
           short: "Kroppen ved det, f\u00f8r du g\u00f8r",
-          text: "Stephen Porges' begreb for nervesystemets konstante, ubevidste scanning af miljøet for signaler om sikkerhed eller fare. Det er denne proces, der afgør, om vi føler os trygge nok til at være åbne og forbundne — eller om vi automatisk aktiverer forsvarsstrategier. Neuroceptionen sker langt hurtigere end vores bevidste tanker og kan ikke overrules af rationelle argumenter."
+          text: "Din krop scanner konstant verden for signaler om sikkerhed eller fare — helt ubevidst. Det er denne proces der afgør, om du åbner dig eller lukker ned. Den er hurtigere end din tanke, dybere end dit sprog. Du kan ikke argumentere dig ud af dens konklusioner. Men du kan skabe betingelser, hvor den gradvist reviderer sin vurdering."
         },
         {
           term: "Det indre stillads",
           short: "Det vi blev bygget p\u00e5",
-          text: "Den indre struktur, der etableres under de tidligste betingelser i vores liv. Et robust stillads giver kapacitet til at møde og integrere selv voldsomme oplevelser. Et mere skrøbeligt stillads — dannet under belastende betingelser — er ikke et spørgsmål om svaghed, men om biologi. Det har dybtgående konsekvenser for, hvordan systemet møder ubalance og finder sin vej tilbage."
+          text: "Noget i dig blev formet meget tidligt — et indre fundament. Var betingelserne trygge, blev det robust og fleksibelt. Var de anderledes, blev det mere skrøbeligt. Det er ikke svaghed — det er biologi. Og det har betydning for, hvad du kan rumme, og hvordan du finder din vej tilbage."
         },
         {
           term: "The Neutral",
           short: "\u00d8jeblikket f\u00f8r forandring",
-          text: "En specifik fysiologisk tilstand, hvor kroppens kompensatoriske mønstre midlertidigt nedreguleres. Ikke passivitet, men dynamisk ligevægt, hvorfra forandring kan opstartes. Det er i dette øjeblik, kroppen samler sig omkring midtlinjen og finder sin egen vej — med en præcision, der overgår enhver ekstern plan."
+          text: "Et øjeblik, hvor kroppen holder op med at kompensere og i stedet samler sig. Ikke stilstand, men levende ro. Det er herfra, kroppen finder sin egen vej — med en præcision, der overgår enhver ekstern plan. Som en indånding før en dyb udånding."
         },
         {
           term: "Midtlinjen",
           short: "Det f\u00f8rste der blev til i dig",
-          text: "Den første struktur, der dannes i den embryologiske udvikling, og som forbliver et fundamentalt referencepunkt for alle kroppens systemer gennem hele livet. Midtlinjen er ikke blot en anatomisk reference, men kroppens primære organiserende princip. Ved ubalance er forbindelsen til midtlinjen ofte svækket — og re-balancering handler i sin dybeste forstand om at genetablere denne forbindelse."
+          text: "Det allerførste der blev dannet i dig — en akse, et referencepunkt, som alt i din krop orienterer sig omkring hele livet. Ikke bare en anatomisk linje, men et organiserende princip. Når du er ude af balance, er forbindelsen til denne akse ofte svækket. At genfinde den er at finde hjem."
         },
         {
           term: "Pendulering",
           short: "Tidevandets rytme i os",
-          text: "Peter Levines begreb for evnen til at bevæge sig frem og tilbage mellem aktivering og ro uden at blive fastlåst. Det er denne fleksible bevægelse — op og ned ad det, Deb Dana kalder 'den autonome stige' — der kendetegner et velreguleret nervesystem. Når penduleringen går tabt, fastlåses systemet i enten overaktivering eller kollaps."
+          text: "Evnen til at bevæge sig frem og tilbage mellem aktivering og ro uden at blive fastlåst. Som tidevand. Som åndedræt. Den fleksible bevægelse der kendetegner et nervesystem i balance. Når den går tabt, sidder vi fast i enten det ene eller det andet. Vejen tilbage er at genopdage den rytme, der allerede er der."
         },
         {
           term: "Øer af ro",
           short: "Noget i dig er altid i balance",
-          text: "Selv i de mest intense tilstande af aktivering eller kollaps findes der altid områder eller kvaliteter af systemet, der forbliver i balance — som aldrig inddrages i nervesystemets storm. Ved at opdage og forbinde sig med disse øer, skabes en ressource der fungerer som anker for selvregulering. Det er denne indsigt, der gør re-balancering mulig: der er altid noget, der allerede er i balance."
+          text: "Selv midt i stormen er der altid områder i dig, der forbliver i ro — øer, som aldrig inddrages. Ved at opdage og forbinde dig med dem, opstår et anker. Det er denne indsigt, der gør alt det andet muligt: der er altid noget i dig, der allerede er i balance."
         },
         {
           term: "Somatisk resonans",
           short: "N\u00e6rv\u00e6r der ber\u00f8rer uden ord",
-          text: "Processen hvor ét nervesystem påvirker og påvirkes af et andet i en gensidig, ofte ubevidst kommunikation. Thomas Hübl kalder det synkronisering — hvor et velreguleret nervesystem fungerer som støtte for et andet. Det er den mekanisme, hvorigennem nærvær og ro i ét menneske kan understøtte re-balancering i et andet."
+          text: "Ét nervesystem kan påvirke et andet — i en gensidig, ofte ubevidst kommunikation. En synkronisering. Nærvær og ro i ét menneske kan understøtte balance i et andet. Det er derfor, det ikke er ligegyldigt hvem der er til stede. Det er derfor, ægte nærvær er en gave."
         },
         {
           term: "Tolerance-vinduet",
           short: "Det rum hvor vi kan rumme",
-          text: "Pat Ogdens begreb for det område, hvor systemet kan processere oplevelser og finde balance. Inden for vinduet er der fleksibilitet og integration. Udenfor vinduet er systemet i overlevelsestilstand — fastlåst i enten hyperarousal eller hypoarousal. Vinduets bredde er ikke statisk, men kan udvides gradvist gennem trygge, støttende oplevelser."
+          text: "Det område, hvor du kan møde oplevelser og finde balance. Inden for vinduet er der fleksibilitet. Udenfor er der overlevelse. Vinduets bredde er ikke fast — det kan udvides langsomt, gradvist, gennem trygge oplevelser. Det er aldrig for lille til at begynde."
         },
         {
           term: "Den levende gråzone",
           short: "Hvor kontekst er alt",
-          text: "Der findes ikke én klar grænse mellem sund reaktion og overbelastning. Det er en levende gråzone, hvor kontekst er alt. Træthed efter en dyb proces kan være det sundeste tegn på, at noget er i bevægelse. Den samme træthed i en anden kontekst kan signalere overbelastning. Det kræver en sensitiv opmærksomhed at skelne — og en villighed til at møde hvert øjeblik med friske øjne."
+          text: "Der er ingen klar grænse mellem sund reaktion og overbelastning. Træthed efter en dyb proces kan være det sundeste tegn på, at noget er i bevægelse. Den samme træthed i en anden sammenhæng kan signalere for meget. At skelne kræver opmærksomhed — og en villighed til at møde hvert øjeblik med friske øjne."
         },
         {
           term: "Tårer som forvandling",
           short: "N\u00e5r noget endelig f\u00e5r lov at bev\u00e6ge sig",
-          text: "Mange anser tårer som svaghed eller noget forkert. Men egentlige gennembrud og forvandlinger indeholder altid de store følelser. Når tårer opstår spontant, er det ofte et tegn på, at en proces er levende og dynamisk — at noget der har været holdt, endelig får lov at bevæge sig. Det er den gode smerte — tegnet på, at noget er ved at ske."
+          text: "Vi tror tit at tårer er svaghed. Men egentlige gennembrud indeholder altid de store følelser. Når tårer opstår spontant, er det ofte tegnet på, at noget der har været holdt, endelig får lov at bevæge sig. Det er den gode smerte. Tegnet på, at noget er ved at ske."
         },
         {
           term: "Den skjulte gave",
           short: "Det ubalancen fors\u00f8ger at fort\u00e6lle",
-          text: "Enhver kraftig reaktion indeholder information. Den fortæller om et område, der kalder på opmærksomhed — et sted, hvor energi har været bundet og drænende. Ubalancen er ikke en fjende, men en budbringer. Den peger præcis derhen, hvor frigørelse er mulig — og hvor systemet ved hjælp til netop dette område kan frisætte energi, der hidtil har haft drænende effekt."
+          text: "Enhver kraftig reaktion indeholder et budskab. Den peger derhen, hvor energi har været bundet. Ubalancen er ikke en fjende — den er en budbringer. Den viser præcis, hvor frigørelse er mulig. Hvor noget kan slippe, og kræfter der har været drænende kan blive frie."
         },
         {
           term: "Dosering",
           short: "Mindre er n\u00e6sten altid mere",
-          text: "Omhyggelig tilpasning af enhver påvirknings intensitet til systemets aktuelle kapacitet. Gabor Maté påpeger, at hver person er unik i sin sensitivitet og grænser, formet gennem både genetik og livserfaring. Den optimale dosering er ofte blidere end vi tror — 'mindre er mere' er en levende erfaring af, at kroppens intelligens arbejder bedst, når den får plads frem for pres."
+          text: "Hvert nervesystem har sin egen tærskel, formet af alt det du har levet. Den optimale dosering er ofte blidere end vi tror. Kroppens intelligens arbejder bedst, når den får plads frem for pres. 'Mindre er mere' er ikke et princip — det er en levende erfaring."
         }
       ]
     },
