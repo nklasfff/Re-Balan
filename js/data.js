@@ -18,41 +18,41 @@ const APP_DATA = {
 
     essensen: {
       title: "Essensen",
-      subtitle: "Den iboende intelligens",
+      subtitle: "Det der allerede er til stede",
       pullQuote: "Vi behøver ikke skabe balancen. Den er allerede til stede — som en kapacitet, der venter på de rette betingelser.",
       intro: [
         {
-          heading: "En naturlig kapacitet",
-          text: "Dybt i ethvert levende system eksisterer en iboende evne til at finde tilbage mod balance. Det er ikke noget vi skal tilføre udefra, og det er ikke noget der kræver en bestemt teknik eller metode. Det er en intelligens, der allerede er til stede — som vejrtrækningen, som hjerterytmen, som de tusindvis af processer, der i dette øjeblik opretholder livet i os."
+          heading: "Noget der allerede er der",
+          text: "Mærk efter et øjeblik. Din vejrtrækning sker af sig selv. Dit hjerte slår uden din indblanding. Tusindvis af processer opretholder lige nu livet i dig — uden at du behøver gøre noget. Den samme intelligens, der styrer alt dette, ved også hvordan balance genfindes. Den har altid vidst det."
         },
         {
-          heading: "Rumskabelse, ikke intervention",
-          text: "Re-balancering handler fundamentalt om at skabe et rum. Ikke et fysisk rum, men en kvalitet af tilstedeværelse, hvor det som er i ubalance får lov til at være præcis som det er — uden at vi forsøger at fikse det, ændre det eller skubbe det i en bestemt retning. I det øjeblik vi skaber det rum, har systemet allerede alt det behøver for selv at igangsætte den proces, der fører mod bedst mulige balance."
+          heading: "At give plads",
+          text: "Hvad sker der, når det der er i ubalance får lov til at være præcis som det er? Når vi holder op med at forsøge at fikse, ændre eller skubbe? Der opstår et rum — ikke et fysisk rum, men en kvalitet af tilstedeværelse. Og i det rum har kroppen allerede alt, den behøver for at finde sin egen vej tilbage."
         },
         {
-          heading: "Processen kender sin egen vej",
-          text: "Den re-balancerende proces kender præcis den sekvens, den skal igennem. Den kender sit eget tempo. Den kender den grad af kontakt og plads, der er nødvendig. Vores rolle er ikke at styre processen, men at være til stede med den — at tilbyde de betingelser, under hvilke den kan udfolde sig af sine egne veje."
+          heading: "Vejen kender sig selv",
+          text: "Processen mod balance kender sit eget tempo. Den kender den grad af kontakt og plads, der er nødvendig. Den kender den rækkefølge, der skal til. Vores rolle er ikke at styre — men at være til stede. At tilbyde de betingelser, under hvilke noget kan udfolde sig af sine egne veje."
         }
       ],
       stillads: {
-        title: "Det indre stillads",
-        pullQuote: "Det er ikke et spørgsmål om svaghed, men om biologisk udvikling under bestemte betingelser.",
-        text: "I ethvert menneske eksisterer et indre stillads — et fundament, der er etableret under de tidligste betingelser i vores liv. Når udviklingen sker under trygge betingelser, dannes et robust og fleksibelt stillads, der fungerer som buffer og integrerende kraft gennem hele livet. Et sådant stillads giver os grundlæggende ressourcer til at møde og integrere voldsomme oplevelser.",
-        text2: "Når den tidlige udvikling derimod forstyrres, dannes et mere skrøbeligt stillads. Dette er ikke personlig svaghed — det er biologi. Og det har konsekvenser for, hvor stor en kapacitet systemet har til at finde sin balance. Det er en af grundene til, at doseringen er så afgørende: det samme input kan være helende for ét system og overvældende for et andet."
+        title: "Det vi blev bygget på",
+        pullQuote: "Det er ikke et spørgsmål om svaghed, men om de betingelser der var til rådighed.",
+        text: "Der er noget i os, der blev formet meget tidligt — et indre fundament, et stillads. Når de tidligste betingelser var trygge, blev dette stillads robust og fleksibelt. Det giver os en grundlæggende evne til at møde selv det voldsomme og finde hjem igen.",
+        text2: "Når de tidlige betingelser var anderledes, blev stilladset mere skrøbeligt. Det er ikke en svaghed — det er biologi. Og det betyder, at det samme input kan være helende for ét menneske og overvældende for et andet. Det kalder på respekt. På at lytte til, hvad netop dette system har brug for."
       },
       paradoks: {
-        title: "Det dynamiske paradoks",
-        text: "Der er et smukt paradoks i re-balancering: jo mindre vi gør, desto mere kan ske. Jo mere vi forsøger at kontrollere processen, desto mere begrænser vi den. Det kræver mod at træde et skridt tilbage og lade systemets egen intelligens tage føringen — men det er netop i det rum, at de dybeste forvandlinger bliver mulige.",
+        title: "Når mindre er mere",
+        text: "Der er et smukt paradoks her: jo mindre vi gør, desto mere kan ske. Jo mere vi forsøger at kontrollere, desto mere begrænser vi. Det kræver mod at træde et skridt tilbage og lade kroppens egen intelligens tage føringen — men det er netop dér, i det åbne rum, at de dybeste forvandlinger bliver mulige.",
         principles: [
-          "Det generelle er mest og dybest og blidest støttende",
-          "Midtlinjen fungerer som aksen for normalisering",
-          "Mindre er mere — den optimale dosering er ofte blidere end vi tror",
-          "Så snart kroppen har svaret, er det nok"
+          "Det blideste er ofte det mest støttende",
+          "Der er en akse i os, som alt orienterer sig imod",
+          "Ofte er det nok at gøre langt mindre end vi tror",
+          "Når kroppen har svaret, er det nok"
         ]
       },
       kontekst: {
         pullQuote: "Balance er aldrig absolut. Den er altid relativ til den kontekst, hvori den opstår.",
-        text: "Ubalance opstår i en kontekst — i relation til bestemte omstændigheder, oplevelser og belastninger. Og re-balanceringen indfinder sig ligeledes i en kontekst. Den har brug for en støttende og nærværende ramme. Den har brug for at være i relation til noget udenfor sig selv. Gabor Maté minder os om, at vi ikke kan forstå et menneskes ubalance uden at forstå den verden, det menneske har levet i — de relationer, der formede det, den kultur der omgav det, de betingelser der var til rådighed. Balance er aldrig et abstrakt ideal; den er altid forankret i en levende, konkret virkelighed. Thomas Hübl udvider dette perspektiv og peger på, at konteksten ikke blot er individuel, men kollektiv og transgenerationel — at vi bærer balancer og ubalancer, der rækker langt ud over vores eget liv. Når de betingelser er til stede — når konteksten er forstået, mødt og respekteret — har systemet allerede alt, det behøver for at skabe den optimale proces tilbage mod bedst mulige balance, i relation til begge kontekster, den individuelle og den større."
+        text: "Vi lever aldrig i et vakuum. Ubalance opstår i en sammenhæng — i relation til det vi har oplevet, de relationer der formede os, den verden vi lever i. Og vejen tilbage mod balance kræver den samme opmærksomhed på sammenhæng. Vi kan ikke forstå et menneskes ubalance uden at forstå det liv, det menneske har levet. Vi bærer historier der rækker ud over vores eget liv — balancer og ubalancer der er kollektive, transgenerationelle. Når den sammenhæng bliver mødt og respekteret, har kroppen allerede alt den behøver for at finde sin egen vej."
       }
     },
 
