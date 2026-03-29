@@ -160,29 +160,29 @@ const APP_DATA = {
         text2: "Den samme uantastelige ro, der bor i naturen, er også til stede i dig. Selv i de mest intense tilstande af aktivering eller kollaps findes der altid områder, der forbliver i balance — øer af ro, som aldrig inddrages i stormen. Ved at opdage og forbinde dig med disse øer, opstår et anker. Denne stilhed er ikke blot en subjektiv oplevelse — den er den samme kraft, der får tidevandet til at vende, sæsonerne til at skifte, og frøet til at spire. Det er ikke en metafor. Det er en direkte forbindelse til den intelligens, der gennemsyrer alt levende."
       },
       neutral: {
-        title: "The Neutral",
-        pullQuote: "Ikke passivitet, men dynamisk ligevægt — hvorfra forandring kan opstarte.",
-        text: "The Neutral er en specifik fysiologisk tilstand, hvor kroppens kompensatoriske mønstre midlertidigt nedreguleres. Det er det øjeblik, hvor systemet holder op med at kompensere og i stedet samler sig — som en indånding før en dyb udånding. Det er ikke stilstand, men en levende, vibrerende ro, hvorfra kroppens selvregulerende kræfter kan mobiliseres optimalt. I The Neutral ophører systemets forsøg på at håndtere og kontrollere, og i stedet opstår der et øjeblik af overgivelse — ikke i betydningen opgivelse, men i betydningen en dyb tillid til den iboende intelligens. James Jealous beskrev dette som det øjeblik, hvor 'The Breath of Life' — livskraftens eget åndedræt — kan komme til udtryk uhindret. Det er et øjeblik af dyb lytning, hvor kroppen ikke længere taler med symptomernes sprog, men med helhedens.",
-        text2: "Pat Ogden beskriver dette som at 'arbejde inden for tolerancevinduet' — det område, hvor oplevelser kan bearbejdes og integreres uden at systemet overvældes. I The Neutral samler systemet sig omkring midtlinjen — den første struktur, der dannes i den embryologiske udvikling, og som forbliver et fundamentalt referencepunkt for alle kroppens systemer gennem hele livet. Midtlinjen er ikke blot en anatomisk linje, men et organiserende princip — en akse, hvoromkring alt i kroppen orienterer sig. Når systemet finder sin vej tilbage til midtlinjen, sker der en genforening med det mest grundlæggende i os. Det er som at finde hjem til noget, der altid har været der. Enhver struktur, ethvert væv, ethvert organ har en relation til midtlinjen, og i The Neutral genetableres denne relation. Det er herfra, at kroppens dybeste reorganisering kan begynde — ikke styret af en ekstern plan, men af den intelligens, der fra begyndelsen formede os.",
+        title: "Øjeblikket før forandring",
+        pullQuote: "Ikke passivitet, men levende ro — hvorfra forandring kan begynde.",
+        text: "Der kommer et øjeblik, hvor kroppen holder op med at kompensere og i stedet samler sig. Som en indånding før en dyb udånding. Ikke stilstand, men en levende, vibrerende ro. Her ophører forsøget på at håndtere og kontrollere, og i stedet opstår noget andet — en overgivelse. Ikke opgivelse, men dyb tillid. Et øjeblik af dyb lytning, hvor kroppen ikke længere taler med symptomernes sprog, men med helhedens.",
+        text2: "I dette øjeblik samler kroppen sig omkring sin midte — den akse, der blev til som det allerførste i dig, og som forbliver et referencepunkt for alt i dig hele livet. Når du finder vej tilbage til den akse, sker der en genforening med det mest grundlæggende i dig. Det er som at finde hjem til noget, der altid har været der. Det er herfra, at den dybeste reorganisering kan begynde — ikke styret af en ekstern plan, men af den intelligens der fra begyndelsen formede dig.",
         qualities: [
-          "Kompensatoriske mønstre ophører midlertidigt",
-          "Systemet samler sig omkring midtlinjen",
-          "En levende stilhed — ikke fravær, men tilstedeværelse",
-          "Kroppens selvregulerende kræfter mobiliseres",
-          "Forandringens udgangspunkt"
+          "Kroppen holder op med at kompensere",
+          "Noget samler sig omkring din midte",
+          "Levende stilhed — ikke fravær, men tilstedeværelse",
+          "Kroppens egne kræfter vågner",
+          "Forandringens begyndelse"
         ]
       },
       dosering: {
-        title: "Dosering",
+        title: "At lytte til hvad der er nok",
         pullQuote: "Mindre er mere — og det er sværere end det lyder.",
-        text: "I enhver proces mod balance spiller doseringen en afgørende rolle. For meget stimuli, for hurtigt, overskrider systemets kapacitet og skaber ny ubalance. For lidt når ikke igennem. Den optimale dosering matcher præcis de ressourcer, der er tilgængelige lige nu — ikke i går, ikke i morgen, men i dette øjeblik. Hver situation er sin egen, og vi må i den enkelte situation vurdere alt med nye øjne. Gabor Maté minder os om, at sensitivitet ikke er en defekt, men en biologisk realitet — at hvert nervesystem har sin egen unikke tærskel, formet af genetik, livshistorie og de betingelser, der var til rådighed i de tidligste år. Peter Levine taler om at 'titrere' oplevelser — at møde dem i små, håndterbare doser, der tillader systemet at integrere, før det næste lag præsenterer sig. Det er en kunst, der kræver sensitiv opmærksomhed og en dyb respekt for processens eget tempo.",
-        text2: "Det er her, det indre stillads bliver afgørende. Et system med et robust stillads kan rumme en større intensitet. Et system med et mere skrøbeligt fundament kræver en blidere, mere gradueret tilgang. Det er ikke en svaghed — det er en realitet, der kalder på respekt og sensitiv opmærksomhed. Stilladsets kvalitet bestemmer ikke blot, hvor meget systemet kan tåle, men også hvordan det forarbejder det, det møder. Et stærkt stillads tillader en naturlig pendulering — systemet kan bevæge sig mod det svære, trække sig tilbage, integrere, og bevæge sig frem igen. Et skrøbeligt stillads har brug for mere støtte udefra — mere tid, mere tryghed, mere gradvis eksponering. Pat Ogden beskriver det som at udvide tolerancevinduet langsomt og respektfuldt, altid med opmærksomhed på, hvornår vinduet er ved at blive overskredet. Det kræver en villighed til at gå langsommere end vi tror er nødvendigt — og en tillid til, at selv de mindste skridt kan føre til dyb forandring.",
+        text: "For meget, for hurtigt, overvælder. For lidt når ikke igennem. Det der er nok, matcher præcis de ressourcer der er til rådighed lige nu — ikke i går, ikke i morgen, men i dette øjeblik. Hver situation er sin egen. Hvert nervesystem har sin egen unikke tærskel, formet af alt det du har levet. Sensitivitet er ikke en defekt — det er en biologisk realitet. At møde oplevelser i små, håndterbare doser, der giver kroppen tid til at integrere før det næste lag præsenterer sig — det er en kunst. En kunst der kræver opmærksomhed og en dyb respekt for processens eget tempo.",
+        text2: "Her bliver det indre stillads afgørende. Et robust stillads kan rumme en større intensitet. Et mere skrøbeligt fundament kræver en blidere, mere gradvis tilgang. Det er ikke en svaghed — det er en realitet, der kalder på respekt. Et stærkt stillads tillader en naturlig pendulering — kroppen kan bevæge sig mod det svære, trække sig tilbage, integrere, og bevæge sig frem igen. Et skrøbeligt stillads har brug for mere støtte, mere tid, mere tryghed. Det kræver en villighed til at gå langsommere end vi tror er nødvendigt — og en tillid til, at selv de mindste skridt kan føre til dyb forandring.",
         tegn: [
-          "Bevægelserne er symmetriske og harmoniske",
-          "Der er en blødhed og flydenhed i systemet",
-          "Tempoet er naturligt — hverken forceret eller stagnerende",
+          "En blødhed og flydenhed i kroppen",
+          "Bevægelser der føles symmetriske og harmoniske",
+          "Et tempo der hverken er forceret eller stagnerende",
           "Vejrtrækningen finder sin egen rytme",
-          "En grundlæggende ro er til stede"
+          "En grundlæggende ro"
         ]
       }
     },
