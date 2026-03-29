@@ -276,5 +276,30 @@ const APP_DATA = {
         "Hvordan ville det forandre din dag, hvis du vidste, at du allerede har alt det, du behøver for at finde balance?"
       ]
     }
+  },
+
+  /* ─── Dwell: contemplative rooms linked to each topic ─── */
+  dwell: {
+    /* Essensen */
+    "essens-intro":    { essence: "Din vejrtrækning sker af sig selv. Dit hjerte slår uden din indblanding. Den intelligens der styrer alt dette, ved også hvordan balance genfindes.", illo: "breath", q: 0 },
+    "essens-stillads": { essence: "Noget i dig blev formet meget tidligt. Det er ikke svaghed — det er biologi. Det kalder på respekt.", illo: "stillads", q: 8 },
+    "essens-paradoks": { essence: "Jo mindre vi gør, desto mere kan ske.", illo: "breath", q: 2 },
+    "essens-kontekst": { essence: "Vi lever aldrig i et vakuum. Balance er altid forankret i en levende, konkret virkelighed.", illo: "relation", q: 11 },
+
+    /* Nervesystemet */
+    "nerve-intro":     { essence: "Der er noget i dig, der konstant navigerer — helt uden din bevidste medvirken. Det er hurtigere end tanken, dybere end sproget.", illo: "spectrum", q: 6 },
+    "nerve-tryghed":   { essence: "Du kender den. Øjeblikke hvor du kan mærke dig selv og mærke andre. Dit nervesystems naturlige hvilested.", illo: "breath", q: 0 },
+    "nerve-mobil":     { essence: "Tempoet øges, kroppen gør klar. I sin sunde form giver den dig energi. Når den løber løbsk, mister du kontakten.", illo: "waves", q: 4 },
+    "nerve-immobil":   { essence: "Når alt lukker ned. Det er ikke den hektiske aktivering, men den dybe stilhed — det øjeblik, hvor forbindelsen til dig selv brydes.", illo: "freeze", q: 1 },
+    "nerve-under":     { essence: "Aktiveringen er ikke fjenden. Den er et forsvarssystem, der beskytter dig mod noget, du endnu ikke er klar til at møde.", illo: "freeze", q: 6 },
+    "nerve-dynamik":   { essence: "Tidevand. Ebbe og flod. Vi aktiveres, vi finder ro, vi aktiveres igen. Vejen tilbage er at genopdage den rytme, der allerede er der.", illo: "waves", q: 10 },
+    "nerve-slow":      { essence: "Et roligt åndedræt. En blidere rytme. En invitation til at mærke noget langsomt indeni dig selv.", illo: "breath", q: 4 },
+    "nerve-meet":      { essence: "Du er ikke alene. En kontakt der er tydelig nok til at nå igennem stilheden.", illo: "relation", q: 3 },
+
+    /* Rummet */
+    "rum-intro":       { essence: "Ikke en anspændt opmærksomhed — men en rolig, åben væren-med. At lade det, der er, være præcis som det er.", illo: "space", q: 2 },
+    "rum-stilhed":     { essence: "Fuglesangen bryder ikke stilheden — den udtrykker den.", illo: "breath", q: 9 },
+    "rum-neutral":     { essence: "Et øjeblik, hvor kroppen holder op med at kompensere og i stedet samler sig. Som en indånding før en dyb udånding.", illo: "midtlinje", q: 10 },
+    "rum-dosering":    { essence: "Mindre er mere. Kroppens intelligens arbejder bedst, når den får plads frem for pres.", illo: "neutral", q: 8 }
   }
 };

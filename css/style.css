@@ -2558,3 +2558,109 @@ body.onboarding-active {
     z-index: 150;
   }
 }
+
+/* ─── Dwell — Contemplative Room ─── */
+.dwell {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: calc(var(--sat) + 80px) 32px calc(var(--sab) + 60px);
+  max-width: 540px;
+  margin: 0 auto;
+  gap: var(--space-xl);
+}
+
+.dwell__illo {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: dwellFadeIn 2s var(--ease-out) 0.3s forwards;
+}
+
+.dwell__illo svg {
+  width: 100%;
+  height: 100%;
+}
+
+.dwell__essence {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 440px;
+  opacity: 0;
+  animation: dwellFadeIn 2s var(--ease-out) 1s forwards;
+}
+
+.dwell__question {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 400px;
+  opacity: 0;
+  animation: dwellFadeIn 2s var(--ease-out) 2s forwards;
+}
+
+.dwell__return {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 300;
+  color: var(--text-muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: dwellFadeIn 2s var(--ease-out) 3s forwards;
+  transition: color var(--transition);
+  padding: var(--space-md);
+}
+
+.dwell__return:hover {
+  color: var(--text-secondary);
+}
+
+@keyframes dwellFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── "Bliv her lidt" invitation inside cards ─── */
+.dwell-invite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: var(--space-lg);
+  margin-top: var(--space-md);
+  border-top: 1px solid var(--glass-border);
+}
+
+.dwell-invite__btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+  transition: color var(--transition);
+  padding: 8px 16px;
+}
+
+.dwell-invite__btn:hover {
+  color: var(--text-secondary);
+}
