@@ -188,72 +188,72 @@ const APP_DATA = {
     },
 
     faenomener: {
-      title: "Fænomener",
-      subtitle: "Begreber og dynamikker",
+      title: "Det levende landskab",
+      subtitle: "Ord for det vi mærker",
       items: [
         {
           term: "Det autonome nervesystem",
-          short: "Vores ubevidste kompas",
+          short: "Det der navigerer, f\u00f8r vi t\u00e6nker",
           text: "Består af to primære grene — den sympatiske og den parasympatiske — der ideelt fungerer i dynamisk balance. Den sympatiske aktiverer mobilisering, mens den parasympatiske faciliterer hvile og restitution. I den polyvagale forståelse tilføjes en tredje dimension: den ventrale vagale tilstand af tryghed og social forbindelse, som er nøglen til fleksibel regulering."
         },
         {
           term: "Neuroception",
-          short: "Den ubevidste aflæsning",
+          short: "Kroppen ved det, f\u00f8r du g\u00f8r",
           text: "Stephen Porges' begreb for nervesystemets konstante, ubevidste scanning af miljøet for signaler om sikkerhed eller fare. Det er denne proces, der afgør, om vi føler os trygge nok til at være åbne og forbundne — eller om vi automatisk aktiverer forsvarsstrategier. Neuroceptionen sker langt hurtigere end vores bevidste tanker og kan ikke overrules af rationelle argumenter."
         },
         {
           term: "Det indre stillads",
-          short: "Fundamentet for kapacitet",
+          short: "Det vi blev bygget p\u00e5",
           text: "Den indre struktur, der etableres under de tidligste betingelser i vores liv. Et robust stillads giver kapacitet til at møde og integrere selv voldsomme oplevelser. Et mere skrøbeligt stillads — dannet under belastende betingelser — er ikke et spørgsmål om svaghed, men om biologi. Det har dybtgående konsekvenser for, hvordan systemet møder ubalance og finder sin vej tilbage."
         },
         {
           term: "The Neutral",
-          short: "Dynamisk ligevægt",
+          short: "\u00d8jeblikket f\u00f8r forandring",
           text: "En specifik fysiologisk tilstand, hvor kroppens kompensatoriske mønstre midlertidigt nedreguleres. Ikke passivitet, men dynamisk ligevægt, hvorfra forandring kan opstartes. Det er i dette øjeblik, kroppen samler sig omkring midtlinjen og finder sin egen vej — med en præcision, der overgår enhver ekstern plan."
         },
         {
           term: "Midtlinjen",
-          short: "Kroppens organiserende princip",
+          short: "Det f\u00f8rste der blev til i dig",
           text: "Den første struktur, der dannes i den embryologiske udvikling, og som forbliver et fundamentalt referencepunkt for alle kroppens systemer gennem hele livet. Midtlinjen er ikke blot en anatomisk reference, men kroppens primære organiserende princip. Ved ubalance er forbindelsen til midtlinjen ofte svækket — og re-balancering handler i sin dybeste forstand om at genetablere denne forbindelse."
         },
         {
           term: "Pendulering",
-          short: "Bevægelsen mellem ro og aktivering",
+          short: "Tidevandets rytme i os",
           text: "Peter Levines begreb for evnen til at bevæge sig frem og tilbage mellem aktivering og ro uden at blive fastlåst. Det er denne fleksible bevægelse — op og ned ad det, Deb Dana kalder 'den autonome stige' — der kendetegner et velreguleret nervesystem. Når penduleringen går tabt, fastlåses systemet i enten overaktivering eller kollaps."
         },
         {
           term: "Øer af ro",
-          short: "Det der aldrig forstyrres",
+          short: "Noget i dig er altid i balance",
           text: "Selv i de mest intense tilstande af aktivering eller kollaps findes der altid områder eller kvaliteter af systemet, der forbliver i balance — som aldrig inddrages i nervesystemets storm. Ved at opdage og forbinde sig med disse øer, skabes en ressource der fungerer som anker for selvregulering. Det er denne indsigt, der gør re-balancering mulig: der er altid noget, der allerede er i balance."
         },
         {
           term: "Somatisk resonans",
-          short: "Gensidig nervesystem-kommunikation",
+          short: "N\u00e6rv\u00e6r der ber\u00f8rer uden ord",
           text: "Processen hvor ét nervesystem påvirker og påvirkes af et andet i en gensidig, ofte ubevidst kommunikation. Thomas Hübl kalder det synkronisering — hvor et velreguleret nervesystem fungerer som støtte for et andet. Det er den mekanisme, hvorigennem nærvær og ro i ét menneske kan understøtte re-balancering i et andet."
         },
         {
           term: "Tolerance-vinduet",
-          short: "Rummet for optimal processering",
+          short: "Det rum hvor vi kan rumme",
           text: "Pat Ogdens begreb for det område, hvor systemet kan processere oplevelser og finde balance. Inden for vinduet er der fleksibilitet og integration. Udenfor vinduet er systemet i overlevelsestilstand — fastlåst i enten hyperarousal eller hypoarousal. Vinduets bredde er ikke statisk, men kan udvides gradvist gennem trygge, støttende oplevelser."
         },
         {
           term: "Den levende gråzone",
-          short: "Mellem balance og overbelastning",
+          short: "Hvor kontekst er alt",
           text: "Der findes ikke én klar grænse mellem sund reaktion og overbelastning. Det er en levende gråzone, hvor kontekst er alt. Træthed efter en dyb proces kan være det sundeste tegn på, at noget er i bevægelse. Den samme træthed i en anden kontekst kan signalere overbelastning. Det kræver en sensitiv opmærksomhed at skelne — og en villighed til at møde hvert øjeblik med friske øjne."
         },
         {
           term: "Tårer som forvandling",
-          short: "Den gode smerte",
+          short: "N\u00e5r noget endelig f\u00e5r lov at bev\u00e6ge sig",
           text: "Mange anser tårer som svaghed eller noget forkert. Men egentlige gennembrud og forvandlinger indeholder altid de store følelser. Når tårer opstår spontant, er det ofte et tegn på, at en proces er levende og dynamisk — at noget der har været holdt, endelig får lov at bevæge sig. Det er den gode smerte — tegnet på, at noget er ved at ske."
         },
         {
           term: "Den skjulte gave",
-          short: "Ubalancens budskab",
+          short: "Det ubalancen fors\u00f8ger at fort\u00e6lle",
           text: "Enhver kraftig reaktion indeholder information. Den fortæller om et område, der kalder på opmærksomhed — et sted, hvor energi har været bundet og drænende. Ubalancen er ikke en fjende, men en budbringer. Den peger præcis derhen, hvor frigørelse er mulig — og hvor systemet ved hjælp til netop dette område kan frisætte energi, der hidtil har haft drænende effekt."
         },
         {
           term: "Dosering",
-          short: "Kunstens fineste balance",
+          short: "Mindre er n\u00e6sten altid mere",
           text: "Omhyggelig tilpasning af enhver påvirknings intensitet til systemets aktuelle kapacitet. Gabor Maté påpeger, at hver person er unik i sin sensitivitet og grænser, formet gennem både genetik og livserfaring. Den optimale dosering er ofte blidere end vi tror — 'mindre er mere' er en levende erfaring af, at kroppens intelligens arbejder bedst, når den får plads frem for pres."
         }
       ]
