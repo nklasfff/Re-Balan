@@ -87,37 +87,37 @@ const APP_DATA = {
         ]
       },
       immobilisering: {
-        title: "Immobiliseringens sande natur",
-        pullQuote: "Essensen af et traume er ikke sympatisk aktivering, men immobilisering — den frystilstand, der aktiveres, når alle andre strategier er udtømt.",
-        text: "En udbredt antagelse er, at traumatiske tilstande primært handler om den sympatiske gren — kamp, flugt, hektisk aktivering. Men den egentlige essens er en dybere immobilisering. I det øjeblik en situation bliver traumatisk, sker det fordi organismen overskrider tærsklen fra mobiliserbare forsvarsstrategier til immobilisering. Det er i dette skift, at den psykobiologiske kontinuitet brydes.",
-        text2: "Når vi møder udtalt sympatisk aktivering — angst, hyperarousal, uro — er det afgørende at forstå, at disse tilstande ikke repræsenterer selve essensen, men nervesystemets forsøg på at håndtere det underliggende. Den sympatiske aktivering fungerer som et forsvarssystem, der ubevidst aktiveres for at holde os ude af den mere truende immobiliseringstilstand."
+        title: "Det der ligger under",
+        pullQuote: "Det er ikke den hektiske aktivering, men den dybe stilhed — det øjeblik, hvor forbindelsen til dig selv brydes.",
+        text: "Vi tror ofte, at det svære handler om den hektiske aktivering — kampen, flugten, uroen. Men under al den bevægelse kan der ligge noget dybere: et øjeblik, hvor kroppen gik i stå. Hvor den lukkede ned, fordi alle andre strategier var udtømt. Det er i det skift, at noget grundlæggende brydes.",
+        text2: "Når du mærker angst, uro, rastløshed — så kan det faktisk være kroppens forsøg på at holde dig ude af den dybere stilhed. Aktiveringen er ikke fjenden. Den er et forsvarssystem, der beskytter dig mod noget, du endnu ikke er klar til at møde. At forstå det ændrer alt."
       },
       dynamik: {
         title: "Tempo & Kontakt",
-        pullQuote: "To grundlæggende kvaliteter — tempo og kontakt — bestemmer nervesystemets bevægelse mellem tilstandene.",
-        text: "Når tempoet i systemet løber løbsk, mister vi kontakt. Når kontakten forsvinder, falder tempoet mod kollaps. Disse to dynamikker spejler hinanden — og vejen tilbage mod balance følger den modsatte sti. Peter Levine kalder denne evne til at bevæge sig frem og tilbage for 'pendulering' — kapaciteten til at bevæge sig mellem aktivering og ro uden at blive fastlåst. Penduleringen er ikke en lineær bevægelse fra ét punkt til et andet, men en bølgende, organisk rytme — som tidevandets uophørlige vekslen mellem ebbe og flod. I et velreguleret nervesystem sker denne pendulering naturligt og ubesværet: vi aktiveres, vi finder ro, vi aktiveres igen, vi finder ro igen. Der er en grundlæggende tillid i systemet til, at bevægelsen i den ene retning altid vil blive fulgt af en bevægelse i den anden. Når denne tillid brydes — når systemet fastlåses i enten den ene eller den anden pol — mister penduleringen sin frie bevægelse. Deb Dana beskriver det som at sidde fast på den autonome stige, ude af stand til at klatre op eller ned. Vejen tilbage handler ikke om at tvinge bevægelsen, men om at genopdage den rytme, der allerede eksisterer — at minde systemet om, at det kan bevæge sig, at det har bevæget sig før, og at det vil bevæge sig igen.",
+        pullQuote: "To grundlæggende kvaliteter — tempo og kontakt — bestemmer bevægelsen mellem tilstandene.",
+        text: "Når tempoet løber løbsk, mister vi kontakt. Når kontakten forsvinder, falder tempoet mod kollaps. De to spejler hinanden — og vejen tilbage følger den modsatte sti. Tænk på tidevandet. Ebbe og flod. Vi aktiveres, vi finder ro, vi aktiveres igen, vi finder ro igen. En bølgende, organisk rytme. I et velreguleret nervesystem sker dette naturligt og ubesværet. Der er en grundlæggende tillid til, at bevægelsen i den ene retning altid vil blive fulgt af en bevægelse i den anden. Når den tillid brydes — når vi sidder fast i enten den ene eller den anden pol — mister kroppen sin frie bevægelse. Vejen tilbage handler ikke om at tvinge bevægelsen, men om at genopdage den rytme, der allerede eksisterer. At minde kroppen om, at den kan bevæge sig, at den har bevæget sig før, og at den vil bevæge sig igen.",
         slow: {
           title: "Slow Way Down",
-          subtitle: "Når tempoet er primært",
-          text: "Når systemet er overaktiveret, skyldes det primært tempoet — mistet kontakt er en konsekvens. Vejen tilbage går gennem langsomhed: et roligt åndedræt, en blidere rytme, en invitation til at mærke noget langsomt indeni sig selv. Ikke som en tvang, men som en åbning.",
+          subtitle: "Når tempoet er løbet løbsk",
+          text: "Når alt kører for hurtigt, er vejen tilbage gennem langsomhed. Et roligt åndedræt. En blidere rytme. En invitation til at mærke noget langsomt indeni dig selv. Ikke som en tvang, men som en åbning.",
           qualities: [
-            "Invitere til langsomhed i krop og sind",
-            "Finde et roligt kontaktsted — noget stabilt at hvile opmærksomheden på",
-            "Bemærke noget langsomt indeni sig selv",
-            "Kontakt med omverdenen — åbne sanserne udad",
-            "Mærke støtten under sig — det der bærer"
+            "Inviter til langsomhed i krop og sind",
+            "Find noget stabilt at hvile opmærksomheden på",
+            "Bemærk noget der bevæger sig langsomt i dig",
+            "Åbn sanserne udad — mærk verden omkring dig",
+            "Mærk det der bærer dig — støtten under dig"
           ]
         },
         meet: {
           title: "Meet Me",
-          subtitle: "Når kontakt er primært",
-          text: "Når systemet er kollapset, skyldes det primært mistet kontakt — det sænkede tempo er en konsekvens. Vejen tilbage går gennem forbindelse: en tilstedeværelse der siger 'du er ikke alene', en kontakt der er tydelig nok til at nå igennem stilheden. Gabor Maté beskriver det som et relationelt rum, hvor nervesystemet naturligt kan begynde at regulere sig selv.",
+          subtitle: "Når forbindelsen er forsvundet",
+          text: "Når alt er lukket ned, er vejen tilbage gennem forbindelse. En tilstedeværelse der siger: du er ikke alene. En kontakt der er tydelig nok til at nå igennem stilheden. Et rum, hvor kroppen naturligt kan begynde at finde sig selv igen.",
           qualities: [
-            "Etablere en minimal grad af tryghed som indgang",
-            "Tilkendegive tilstedeværelse — du er ikke alene",
-            "Fokusere på kvaliteten af kontakt som det primære",
-            "Mærke støtten og stabiliteten i forbindelsen",
-            "Give tillid til at læne sig ind i nærværet"
+            "En minimal grad af tryghed som indgang",
+            "At tilkendegive: du er ikke alene",
+            "Kvaliteten af kontakt som det vigtigste",
+            "Stabiliteten og støtten i forbindelsen",
+            "Tillid til at læne sig ind i nærværet"
           ]
         }
       }
