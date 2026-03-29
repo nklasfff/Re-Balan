@@ -14,11 +14,9 @@
   const burger = $('#burger');
   const menu = $('#menu');
   let currentPage = 'home';
-  let previousPage = 'home';
 
   function navigate(page) {
     if (page === currentPage) return;
-    previousPage = currentPage;
 
     const cur = $(`.page[data-page="${currentPage}"]`);
     if (cur) cur.classList.remove('active');
@@ -87,10 +85,7 @@
   }
 
   /* ─── Section Card Helper ─── */
-  function buildSectionCard(title, preview, bodyHTML, dwellKey) {
-    const dwellInvite = dwellKey && D.dwell[dwellKey]
-      ? `<div class="dwell-invite"><button class="dwell-invite__btn" data-dwell="${dwellKey}">Bliv her lidt</button></div>`
-      : '';
+  function buildSectionCard(title, preview, bodyHTML) {
     return `
       <div class="section-card reveal">
         <div class="section-card__header">
@@ -103,7 +98,6 @@
         <div class="section-card__body">
           <div class="section-card__body-inner">
             ${bodyHTML}
-            ${dwellInvite}
           </div>
         </div>
       </div>`;
@@ -139,8 +133,8 @@
     // Intro sections as expandable cards
     const essensCards = $('#essensCards');
     if (essensCards) {
-      essensCards.innerHTML = data.intro.map((c, i) =>
-        buildSectionCard(c.heading, truncate(c.text, 100), `<p>${c.text}</p>`, i === 0 ? 'essens-intro' : null)
+      essensCards.innerHTML = data.intro.map(c =>
+        buildSectionCard(c.heading, truncate(c.text, 100), `<p>${c.text}</p>`)
       ).join('');
       activateSectionCards(essensCards);
     }
@@ -152,8 +146,7 @@
         data.stillads.title,
         truncate(data.stillads.pullQuote, 90),
         `<blockquote class="pull"><p>${data.stillads.pullQuote}</p></blockquote>
-         <p>${data.stillads.text}</p><p>${data.stillads.text2}</p>`,
-        'essens-stillads'
+         <p>${data.stillads.text}</p><p>${data.stillads.text2}</p>`
       );
       activateSectionCards(stilladsCards);
     }
@@ -168,8 +161,7 @@
         data.paradoks.title,
         truncate(data.paradoks.text, 100),
         `<p>${data.paradoks.text}</p>
-         <div class="principles">${principlesHTML}</div>`,
-        'essens-paradoks'
+         <div class="principles">${principlesHTML}</div>`
       );
       activateSectionCards(paradoksCards);
     }
@@ -178,11 +170,10 @@
     const kontekstCards = $('#kontekstCards');
     if (kontekstCards) {
       kontekstCards.innerHTML = buildSectionCard(
-        'Sammenhæng',
+        'Kontekst',
         truncate(data.kontekst.pullQuote, 90),
         `<blockquote class="pull"><p>${data.kontekst.pullQuote}</p></blockquote>
-         <p>${data.kontekst.text}</p>`,
-        'essens-kontekst'
+         <p>${data.kontekst.text}</p>`
       );
       activateSectionCards(kontekstCards);
     }
@@ -196,23 +187,43 @@
     const nerveIntroCards = $('#nerveIntroCards');
     if (nerveIntroCards) {
       nerveIntroCards.innerHTML = buildSectionCard(
-        'Den kropslige visdom',
+        'Det autonome nervesystem',
         truncate(data.intro, 120),
         `<p>${data.intro}</p>
-         <p style="margin-top: var(--space-md); color: var(--text-dim); font-style: italic;">${data.treStater.intro}</p>`,
-        'nerve-intro'
+         <p style="margin-top: var(--space-md); color: var(--text-dim); font-style: italic;">${data.treStater.intro}</p>`
       );
       activateSectionCards(nerveIntroCards);
     }
 
-    // Three states as section-cards (not clinical state-cards)
+    // State cards
     const stateCards = $('#stateCards');
     if (stateCards) {
-      const stateKeys = ['nerve-tryghed', 'nerve-mobil', 'nerve-immobil'];
-      stateCards.innerHTML = data.treStater.states.map((s, i) =>
-        buildSectionCard(s.title, s.label, `<p>${s.description}</p>`, stateKeys[i])
-      ).join('');
-      activateSectionCards(stateCards);
+      stateCards.innerHTML = data.treStater.states.map(s => `
+        <div class="state-card reveal">
+          <div class="state-card__top">
+            <div class="state-card__heading">
+              <div class="state-card__indicator state-card__indicator--${s.color}"></div>
+              <div>
+                <span class="state-card__title">${s.title}</span>
+                <span class="state-card__label">${s.label}</span>
+              </div>
+            </div>
+            <svg class="state-card__toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="state-card__body">
+            <div class="state-card__body-inner">
+              <p class="state-card__desc">${s.description}</p>
+              <div class="state-card__qualities">
+                ${s.qualities.map(q => `<span class="state-card__quality">${q}</span>`).join('')}
+              </div>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      $$('.state-card', stateCards).forEach(card => {
+        card.addEventListener('click', () => card.classList.toggle('open'));
+      });
     }
 
     // Immobilisering as expandable card
@@ -222,8 +233,7 @@
         data.immobilisering.title,
         truncate(data.immobilisering.pullQuote, 100),
         `<blockquote class="pull"><p>${data.immobilisering.pullQuote}</p></blockquote>
-         <p>${data.immobilisering.text}</p><p>${data.immobilisering.text2}</p>`,
-        'nerve-under'
+         <p>${data.immobilisering.text}</p><p>${data.immobilisering.text2}</p>`
       );
       activateSectionCards(immoCards);
     }
@@ -235,11 +245,22 @@
         data.dynamik.title,
         truncate(data.dynamik.pullQuote, 100),
         `<blockquote class="pull"><p>${data.dynamik.pullQuote}</p></blockquote>
-         <p>${data.dynamik.text}</p>${data.dynamik.text2 ? `<p>${data.dynamik.text2}</p>` : ''}`,
-        'nerve-dynamik'
+         <p>${data.dynamik.text}</p>`
       );
       activateSectionCards(dynamikCards);
     }
+
+    // Slow Way Down
+    const slowText = $('#slowText');
+    if (slowText) slowText.textContent = data.dynamik.slow.text;
+    const slowList = $('#slowList');
+    if (slowList) slowList.innerHTML = data.dynamik.slow.qualities.map(q => `<li>${q}</li>`).join('');
+
+    // Meet Me
+    const meetText = $('#meetText');
+    if (meetText) meetText.textContent = data.dynamik.meet.text;
+    const meetList = $('#meetList');
+    if (meetList) meetList.innerHTML = data.dynamik.meet.qualities.map(q => `<li>${q}</li>`).join('');
   }
 
   /* ─── RUMMET ─── */
@@ -252,8 +273,8 @@
     // Five conditions as expandable cards
     const rumIntroCards = $('#rumIntroCards');
     if (rumIntroCards) {
-      rumIntroCards.innerHTML = data.intro.map((c, i) =>
-        buildSectionCard(c.heading, truncate(c.text, 100), `<p>${c.text}</p>`, i === 0 ? 'rum-intro' : null)
+      rumIntroCards.innerHTML = data.intro.map(c =>
+        buildSectionCard(c.heading, truncate(c.text, 100), `<p>${c.text}</p>`)
       ).join('');
       activateSectionCards(rumIntroCards);
     }
@@ -274,8 +295,7 @@
         data.stilheden.title,
         truncate(data.stilheden.pullQuote, 100),
         `<blockquote class="pull"><p>${data.stilheden.pullQuote}</p></blockquote>
-         <p>${data.stilheden.text}</p><p>${data.stilheden.text2}</p>`,
-        'rum-stilhed'
+         <p>${data.stilheden.text}</p><p>${data.stilheden.text2}</p>`
       );
       activateSectionCards(stilhedCards);
     }
@@ -287,8 +307,7 @@
         data.neutral.title,
         truncate(data.neutral.pullQuote, 100),
         `<blockquote class="pull"><p>${data.neutral.pullQuote}</p></blockquote>
-         <p>${data.neutral.text}</p>${data.neutral.text2 ? `<p>${data.neutral.text2}</p>` : ''}`,
-        'rum-neutral'
+         <p>${data.neutral.text}</p>${data.neutral.text2 ? `<p>${data.neutral.text2}</p>` : ''}`
       );
       activateSectionCards(neutralCards);
     }
@@ -307,8 +326,7 @@
         data.dosering.title,
         truncate(data.dosering.pullQuote, 100),
         `<blockquote class="pull"><p>${data.dosering.pullQuote}</p></blockquote>
-         <p>${data.dosering.text}</p>${data.dosering.text2 ? `<p>${data.dosering.text2}</p>` : ''}`,
-        'rum-dosering'
+         <p>${data.dosering.text}</p>${data.dosering.text2 ? `<p>${data.dosering.text2}</p>` : ''}`
       );
       activateSectionCards(doseringCards);
     }
@@ -475,63 +493,6 @@
     observeReveals();
     initOnboarding();
     initTheme();
-    initDwell();
-  }
-
-  /* ─── Dwell — Contemplative rooms ─── */
-  const dwellIllos = {
-    breath: `<svg viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="85" stroke="rgba(122,154,181,0.2)" stroke-width="0.7"/><circle cx="100" cy="100" r="65" stroke="rgba(90,138,106,0.3)" stroke-width="0.8"/><circle cx="100" cy="100" r="45" stroke="rgba(122,154,181,0.35)" stroke-width="0.9"/><circle cx="100" cy="100" r="25" stroke="rgba(160,96,80,0.35)" stroke-width="1"/><circle cx="100" cy="100" r="4" fill="rgba(196,213,226,0.55)"/></svg>`,
-    stillads: `<svg viewBox="0 0 240 200" fill="none"><line x1="60" y1="30" x2="60" y2="170" stroke="rgba(122,154,181,0.6)" stroke-width="1.8" stroke-linecap="round"/><line x1="180" y1="30" x2="180" y2="170" stroke="rgba(122,154,181,0.6)" stroke-width="1.8" stroke-linecap="round"/><line x1="60" y1="50" x2="180" y2="50" stroke="rgba(122,154,181,0.45)" stroke-width="1.2"/><line x1="60" y1="100" x2="180" y2="100" stroke="rgba(122,154,181,0.45)" stroke-width="1.2"/><line x1="60" y1="150" x2="180" y2="150" stroke="rgba(122,154,181,0.45)" stroke-width="1.2"/><circle cx="120" cy="100" r="22" stroke="rgba(160,96,80,0.6)" stroke-width="1.2" fill="rgba(160,96,80,0.1)"/><circle cx="120" cy="100" r="6" fill="rgba(196,213,226,0.6)"/></svg>`,
-    relation: `<svg viewBox="0 0 220 140" fill="none"><circle cx="85" cy="70" r="45" stroke="rgba(122,154,181,0.4)" stroke-width="1"/><circle cx="135" cy="70" r="45" stroke="rgba(122,154,181,0.4)" stroke-width="1"/><ellipse cx="110" cy="70" rx="14" ry="35" fill="rgba(61,106,138,0.15)" stroke="rgba(122,154,181,0.5)" stroke-width="0.8"/></svg>`,
-    spectrum: `<svg viewBox="0 0 260 90" fill="none"><line x1="30" y1="45" x2="230" y2="45" stroke="rgba(122,154,181,0.3)" stroke-width="1"/><circle cx="55" cy="45" r="12" stroke="rgba(80,112,160,0.6)" stroke-width="1" fill="rgba(80,112,160,0.12)"/><circle cx="130" cy="45" r="15" stroke="rgba(90,138,106,0.6)" stroke-width="1" fill="rgba(90,138,106,0.12)"/><circle cx="205" cy="45" r="12" stroke="rgba(160,96,80,0.6)" stroke-width="1" fill="rgba(160,96,80,0.12)"/></svg>`,
-    waves: `<svg viewBox="0 0 260 80" fill="none"><path d="M20,40 Q55,15 90,40 Q125,65 160,40 Q195,15 230,40 Q245,50 250,40" stroke="rgba(160,96,80,0.55)" stroke-width="1.2" fill="none"/><path d="M20,40 Q75,28 130,40 Q185,52 240,40" stroke="rgba(80,112,160,0.55)" stroke-width="1.2" fill="none"/><circle cx="130" cy="40" r="4" fill="rgba(196,213,226,0.5)"/></svg>`,
-    freeze: `<svg viewBox="0 0 200 160" fill="none"><ellipse cx="100" cy="80" rx="85" ry="55" stroke="rgba(160,96,80,0.45)" stroke-width="1" stroke-dasharray="4 4" fill="rgba(160,96,80,0.03)"/><ellipse cx="100" cy="80" rx="55" ry="38" stroke="rgba(122,154,181,0.4)" stroke-width="1" stroke-dasharray="3 3" fill="rgba(122,154,181,0.03)"/><ellipse cx="100" cy="80" rx="28" ry="20" stroke="rgba(80,112,160,0.55)" stroke-width="1.2" fill="rgba(80,112,160,0.1)"/><circle cx="100" cy="80" r="4" fill="rgba(196,213,226,0.5)"/></svg>`,
-    space: `<svg viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="60" stroke="rgba(122,154,181,0.35)" stroke-width="1" stroke-dasharray="6 4"/><line x1="100" y1="30" x2="100" y2="10" stroke="rgba(122,154,181,0.4)" stroke-width="1"/><line x1="100" y1="170" x2="100" y2="190" stroke="rgba(122,154,181,0.4)" stroke-width="1"/><line x1="30" y1="100" x2="10" y2="100" stroke="rgba(122,154,181,0.4)" stroke-width="1"/><line x1="170" y1="100" x2="190" y2="100" stroke="rgba(122,154,181,0.4)" stroke-width="1"/></svg>`,
-    midtlinje: `<svg viewBox="0 0 80 200" fill="none"><line x1="40" y1="15" x2="40" y2="185" stroke="rgba(122,154,181,0.55)" stroke-width="1.5" stroke-linecap="round"/><circle cx="40" cy="50" r="10" stroke="rgba(122,154,181,0.4)" stroke-width="1" fill="none"/><circle cx="40" cy="100" r="7" stroke="rgba(122,154,181,0.5)" stroke-width="1" fill="none"/><circle cx="40" cy="140" r="4" stroke="rgba(122,154,181,0.6)" stroke-width="1" fill="rgba(196,213,226,0.4)"/></svg>`,
-    neutral: `<svg viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="4" fill="rgba(196,213,226,0.6)"/><circle cx="100" cy="100" r="30" stroke="rgba(122,154,181,0.4)" stroke-width="1"/><circle cx="100" cy="100" r="60" stroke="rgba(122,154,181,0.25)" stroke-width="1"/><line x1="30" y1="100" x2="70" y2="100" stroke="rgba(122,154,181,0.35)" stroke-width="1"/><line x1="130" y1="100" x2="170" y2="100" stroke="rgba(122,154,181,0.35)" stroke-width="1"/></svg>`
-  };
-
-  function openDwell(key) {
-    const d = D.dwell[key];
-    if (!d) return;
-
-    const illoEl = $('#dwellIllo');
-    const essEl = $('#dwellEssence');
-    const qEl = $('#dwellQuestion');
-
-    illoEl.innerHTML = dwellIllos[d.illo] || dwellIllos.breath;
-    essEl.textContent = d.essence;
-    qEl.textContent = D.sections.refleksion.questions[d.q];
-
-    // Reset animations by re-rendering
-    const dwell = $('.dwell');
-    dwell.style.animation = 'none';
-    dwell.offsetHeight;
-    dwell.style.animation = '';
-
-    [illoEl, essEl, qEl, $('#dwellReturn')].forEach(el => {
-      el.style.animation = 'none';
-      el.offsetHeight;
-      el.style.animation = '';
-    });
-
-    navigate('dwell');
-  }
-
-  function initDwell() {
-    const returnBtn = $('#dwellReturn');
-    if (returnBtn) {
-      returnBtn.addEventListener('click', () => navigate(previousPage));
-    }
-
-    document.addEventListener('click', e => {
-      const btn = e.target.closest('[data-dwell]');
-      if (btn) {
-        e.preventDefault();
-        e.stopPropagation();
-        openDwell(btn.dataset.dwell);
-      }
-    });
   }
 
   /* ─── Theme Toggle ─── */

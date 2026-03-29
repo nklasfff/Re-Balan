@@ -35,16 +35,17 @@
 
       <!-- Step 0: Stillness -->
       <div class="onboarding__step active" data-step="0">
+        <p class="onboarding__label">B i o d y n a m i c s</p>
         <h1 class="onboarding__title">
           <span class="onboarding__line">Balancering</span>
           <span class="onboarding__amp">&amp;</span>
           <span class="onboarding__line">Re-Balancering</span>
         </h1>
         <div class="onboarding__rule"></div>
-        <p class="onboarding__text">Et stille rum at vende tilbage til.</p>
+        <p class="onboarding__text">Et rum for at forstå kroppens iboende evne til at finde tilbage mod balance.</p>
       </div>
 
-      <!-- Step 1: Remembering -->
+      <!-- Step 1: What this is -->
       <div class="onboarding__step" data-step="1">
         <div class="onboarding__icon">
           <svg viewBox="0 0 200 200" fill="none">
@@ -54,16 +55,31 @@
             <circle cx="100" cy="100" r="4" fill="rgba(196,213,226,0.6)"/>
           </svg>
         </div>
-        <h2 class="onboarding__heading">Noget i dig ved allerede</h2>
+        <h2 class="onboarding__heading">En iboende intelligens</h2>
         <p class="onboarding__text">Dybt i ethvert levende system eksisterer en evne til at finde sin balance. Ikke noget vi skal tilf&oslash;re udefra &mdash; men noget der allerede er til stede.</p>
-        <p class="onboarding__sub">Her kan du m&aelig;rke det igen.</p>
+        <p class="onboarding__sub">Denne guide udforsker den viden, der underst&oslash;tter denne forst&aring;else.</p>
       </div>
 
-      <!-- Step 2: What lives here -->
+      <!-- Step 2: The three pillars -->
       <div class="onboarding__step" data-step="2">
-        <h2 class="onboarding__heading">Hvad du finder her</h2>
-        <p class="onboarding__text">Ord og stilhed om det der allerede er i balance i dig. Om nervesystemets visdom. Om det rum, hvori forandring bliver mulig &mdash; ikke fordi vi g&oslash;r noget, men fordi vi holder op med at fors&oslash;ge.</p>
-        <p class="onboarding__sub">Ikke en guide der skal gennemf&oslash;res, men et sted at vende tilbage til.</p>
+        <div class="onboarding__pillars">
+          <div class="onboarding__pillar">
+            <span class="onboarding__pillar-num">01</span>
+            <span class="onboarding__pillar-title">Essensen</span>
+            <span class="onboarding__pillar-desc">Den naturlige kapacitet</span>
+          </div>
+          <div class="onboarding__pillar">
+            <span class="onboarding__pillar-num">02</span>
+            <span class="onboarding__pillar-title">Nervesystemet</span>
+            <span class="onboarding__pillar-desc">Tre tilstande i os alle</span>
+          </div>
+          <div class="onboarding__pillar">
+            <span class="onboarding__pillar-num">03</span>
+            <span class="onboarding__pillar-title">Rummet</span>
+            <span class="onboarding__pillar-desc">Betingelserne for balance</span>
+          </div>
+        </div>
+        <p class="onboarding__text">Tre perspektiver p&aring; den samme levende proces &mdash; fra essens, gennem dynamik, til de betingelser der g&oslash;r forandring mulig.</p>
       </div>
 
       <!-- Step 3: Enter -->
@@ -107,7 +123,6 @@
       <button class="nav__link" data-navigate="essensen">Essensen</button>
       <button class="nav__link" data-navigate="nervesystem">Nervesystemet</button>
       <button class="nav__link" data-navigate="rummet">Rummet</button>
-      <button class="nav__link" data-navigate="refleksion">Refleksion</button>
     </div>
     <div style="display:flex;align-items:center;gap:8px;">
       <button class="theme-toggle" id="themeToggle" aria-label="Skift tema">
@@ -127,9 +142,9 @@
       <button class="menu__item" data-navigate="essensen">Essensen</button>
       <button class="menu__item" data-navigate="nervesystem">Nervesystemet</button>
       <button class="menu__item" data-navigate="rummet">Rummet</button>
-      <button class="menu__item" data-navigate="refleksion">Refleksion</button>
       <div class="menu__line"></div>
-      <button class="menu__item menu__item--sm" data-navigate="faenomener">Indsigter</button>
+      <button class="menu__item menu__item--sm" data-navigate="faenomener">F&aelig;nomener</button>
+      <button class="menu__item menu__item--sm" data-navigate="refleksion">Refleksion</button>
     </div>
   </div>
 
@@ -166,31 +181,43 @@
       </div>
     </div>
 
-    <!-- Portals — invitations, not summaries -->
+    <!-- Portals — evocative invitations, not summaries -->
     <div class="portals">
       <article class="portal reveal" data-navigate="essensen">
         <div class="portal__glow"></div>
+        <span class="portal__num">01</span>
         <h2 class="portal__title">Essensen</h2>
-        <p class="portal__desc">Det der allerede er til stede i dig</p>
+        <p class="portal__desc">Det der allerede er til stede</p>
+        <svg class="portal__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </article>
 
       <article class="portal reveal" data-navigate="nervesystem">
         <div class="portal__glow"></div>
+        <span class="portal__num">02</span>
         <h2 class="portal__title">Nervesystemet</h2>
-        <p class="portal__desc">Den visdom din krop allerede kender</p>
+        <p class="portal__desc">Tre tilstande og bevægelsen imellem dem</p>
+        <svg class="portal__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </article>
 
       <article class="portal reveal" data-navigate="rummet">
         <div class="portal__glow"></div>
+        <span class="portal__num">03</span>
         <h2 class="portal__title">Rummet</h2>
-        <p class="portal__desc">Stilheden og betingelserne for forandring</p>
+        <p class="portal__desc">Betingelserne og den uantastelige stilhed</p>
+        <svg class="portal__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </article>
+    </div>
 
-      <article class="portal reveal" data-navigate="refleksion">
-        <div class="portal__glow"></div>
-        <h2 class="portal__title">Refleksion</h2>
-        <p class="portal__desc">Sp&oslash;rgsm&aring;l du allerede kender svaret p&aring;</p>
-      </article>
+    <!-- Sub-links -->
+    <div class="home-links reveal">
+      <button class="deep-link" data-navigate="faenomener">
+        <div><span class="deep-link__title">F&aelig;nomener</span><span class="deep-link__sub">Begreber og dynamikker</span></div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+      <button class="deep-link" data-navigate="refleksion">
+        <div><span class="deep-link__title">Refleksion</span><span class="deep-link__sub">Tanker til eftertanke</span></div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
     </div>
 
     <!-- Vertical poles — inspired by hero photograph -->
@@ -233,9 +260,9 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
         <span>Tilbage</span>
       </button>
-      <span class="page-hero__label">Essensen</span>
-      <h2 class="page-hero__title">Det der allerede er til stede</h2>
-      <p class="page-hero__sub">En p&aring;mindelse om det du allerede ved</p>
+      <span class="page-hero__label">01 — Essensen</span>
+      <h2 class="page-hero__title">Den iboende intelligens</h2>
+      <p class="page-hero__sub">Det der allerede er til stede</p>
     </div>
 
     <!-- Breathing circles illustration -->
@@ -256,7 +283,7 @@
       <!-- Expandable intro sections -->
       <div class="section-cards" id="essensCards"></div>
 
-      <div class="divider reveal"><div class="divider__line"></div><span>Det vi blev bygget p&aring;</span></div>
+      <div class="divider reveal"><div class="divider__line"></div><span>Det indre stillads</span></div>
 
       <!-- Scaffolding illustration -->
       <div class="illo illo--center">
@@ -277,11 +304,11 @@
 
       <div class="section-cards" id="stilladsCards"></div>
 
-      <div class="divider reveal"><div class="divider__line"></div><span>N&aring;r mindre er mere</span></div>
+      <div class="divider reveal"><div class="divider__line"></div><span>Det dynamiske paradoks</span></div>
 
       <div class="section-cards" id="paradoksCards"></div>
 
-      <div class="divider reveal"><div class="divider__line"></div><span>Sammenhæng</span></div>
+      <div class="divider reveal"><div class="divider__line"></div><span>Kontekst</span></div>
 
       <!-- Relation illustration — vesica piscis -->
       <div class="illo illo--center">
@@ -305,16 +332,71 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
         <span>Tilbage</span>
       </button>
-      <span class="page-hero__label">Nervesystemet</span>
-      <h2 class="page-hero__title">Den visdom kroppen b&aelig;rer</h2>
-      <p class="page-hero__sub">Bev&aelig;gelsen mellem ro og aktivering</p>
+      <span class="page-hero__label">02 — Nervesystemet</span>
+      <h2 class="page-hero__title">Nervesystemets dynamik</h2>
+      <p class="page-hero__sub">Tre tilstande i os alle</p>
     </div>
 
     <div class="content">
-      <!-- Intro -->
+      <!-- Expandable intro -->
       <div class="section-cards" id="nerveIntroCards"></div>
 
-      <!-- Wave illustration — the central metaphor -->
+      <!-- Three states spectrum illustration -->
+      <div class="illo illo--center">
+        <svg class="illo__svg illo__svg--spectrum" viewBox="0 0 260 90" fill="none">
+          <line x1="30" y1="45" x2="230" y2="45" stroke="rgba(122,154,181,0.3)" stroke-width="1"/>
+          <circle cx="55" cy="45" r="12" stroke="rgba(80,112,160,0.6)" stroke-width="1" fill="rgba(80,112,160,0.12)"/>
+          <circle cx="130" cy="45" r="15" stroke="rgba(90,138,106,0.6)" stroke-width="1" fill="rgba(90,138,106,0.12)"/>
+          <circle cx="205" cy="45" r="12" stroke="rgba(160,96,80,0.6)" stroke-width="1" fill="rgba(160,96,80,0.12)"/>
+          <text x="55" y="75" text-anchor="middle" fill="rgba(80,112,160,0.7)" font-size="8" font-family="Inter, sans-serif" font-weight="300">Dorsal</text>
+          <text x="130" y="78" text-anchor="middle" fill="rgba(90,138,106,0.7)" font-size="8" font-family="Inter, sans-serif" font-weight="300">Ventral</text>
+          <text x="205" y="75" text-anchor="middle" fill="rgba(160,96,80,0.7)" font-size="8" font-family="Inter, sans-serif" font-weight="300">Sympatisk</text>
+        </svg>
+      </div>
+
+      <div class="states" id="stateCards"></div>
+
+      <!-- Autonomic ladder illustration -->
+      <div class="illo illo--center">
+        <svg class="illo__svg illo__svg--ladder" viewBox="0 0 100 280" fill="none">
+          <line x1="30" y1="20" x2="30" y2="260" stroke="rgba(122,154,181,0.55)" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="70" y1="20" x2="70" y2="260" stroke="rgba(122,154,181,0.55)" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="30" y1="55" x2="70" y2="55" stroke="rgba(90,138,106,0.65)" stroke-width="1.5"/>
+          <line x1="30" y1="100" x2="70" y2="100" stroke="rgba(122,154,181,0.5)" stroke-width="1.2"/>
+          <line x1="30" y1="145" x2="70" y2="145" stroke="rgba(122,154,181,0.5)" stroke-width="1.2"/>
+          <line x1="30" y1="190" x2="70" y2="190" stroke="rgba(122,154,181,0.5)" stroke-width="1.2"/>
+          <line x1="30" y1="235" x2="70" y2="235" stroke="rgba(80,112,160,0.65)" stroke-width="1.5"/>
+          <circle cx="50" cy="55" r="8" stroke="rgba(90,138,106,0.7)" stroke-width="1.3" fill="rgba(90,138,106,0.15)"/>
+          <circle cx="50" cy="145" r="8" stroke="rgba(160,96,80,0.6)" stroke-width="1.3" fill="rgba(160,96,80,0.12)"/>
+          <circle cx="50" cy="235" r="8" stroke="rgba(80,112,160,0.7)" stroke-width="1.3" fill="rgba(80,112,160,0.15)"/>
+          <text x="50" y="35" text-anchor="middle" fill="rgba(90,138,106,0.75)" font-size="9" font-family="Inter, sans-serif" font-weight="300">Ventral</text>
+          <text x="50" y="170" text-anchor="middle" fill="rgba(160,96,80,0.65)" font-size="9" font-family="Inter, sans-serif" font-weight="300">Sympatisk</text>
+          <text x="50" y="260" text-anchor="middle" fill="rgba(80,112,160,0.75)" font-size="9" font-family="Inter, sans-serif" font-weight="300">Dorsal</text>
+        </svg>
+      </div>
+
+      <div class="divider reveal"><div class="divider__line"></div><span>Immobiliseringens sande natur</span></div>
+
+      <!-- Immobilisering — layers of freeze -->
+      <div class="illo illo--center">
+        <svg class="illo__svg illo__svg--freeze" viewBox="0 0 280 160" fill="none">
+          <ellipse cx="140" cy="80" rx="120" ry="60" stroke="rgba(160,96,80,0.55)" stroke-width="1.3" stroke-dasharray="4 4" fill="rgba(160,96,80,0.03)"/>
+          <ellipse cx="140" cy="80" rx="80" ry="42" stroke="rgba(122,154,181,0.5)" stroke-width="1.3" stroke-dasharray="3 3" fill="rgba(122,154,181,0.03)"/>
+          <ellipse cx="140" cy="80" rx="40" ry="24" stroke="rgba(80,112,160,0.65)" stroke-width="1.5" fill="rgba(80,112,160,0.12)"/>
+          <circle cx="140" cy="80" r="5" fill="rgba(196,213,226,0.6)"/>
+          <text x="140" y="150" text-anchor="middle" fill="rgba(160,96,80,0.65)" font-size="8" font-family="Inter, sans-serif" font-weight="300">Sympatisk forsvar</text>
+          <text x="140" y="130" text-anchor="middle" fill="rgba(122,154,181,0.6)" font-size="8" font-family="Inter, sans-serif" font-weight="300">Overgang</text>
+          <text x="140" y="108" text-anchor="middle" fill="rgba(80,112,160,0.7)" font-size="8" font-family="Inter, sans-serif" font-weight="300">Immobilisering</text>
+        </svg>
+      </div>
+
+      <div class="section-cards" id="immoCards"></div>
+
+      <div class="divider reveal"><div class="divider__line"></div><span>Tempo &amp; Kontakt</span></div>
+
+      <div class="section-cards" id="dynamikCards"></div>
+
+      <!-- Wave patterns illustration -->
       <div class="illo illo--center">
         <svg class="illo__svg illo__svg--waves" viewBox="0 0 260 80" fill="none">
           <path d="M20,40 Q55,15 90,40 Q125,65 160,40 Q195,15 230,40 Q245,50 250,40" stroke="rgba(160,96,80,0.55)" stroke-width="1.2" fill="none"/>
@@ -323,43 +405,25 @@
         </svg>
       </div>
 
-      <div class="divider reveal"><div class="divider__line"></div><span>Tre m&aring;der at m&oslash;de verden p&aring;</span></div>
+      <div class="duality">
+        <div class="immersive immersive--warm reveal">
+          <div class="immersive__glow"></div>
+          <span class="immersive__label">N&aring;r tempoet er prim&aelig;rt</span>
+          <h3 class="immersive__title">Slow Way Down</h3>
+          <p class="immersive__text" id="slowText"></p>
+          <div class="immersive__rule"></div>
+          <ul class="immersive__list" id="slowList"></ul>
+        </div>
 
-      <!-- Three states as section-cards (not color-coded state-cards) -->
-      <div class="section-cards" id="stateCards"></div>
-
-      <div class="divider reveal"><div class="divider__line"></div><span>Det der ligger under</span></div>
-
-      <div class="section-cards" id="immoCards"></div>
-
-      <div class="divider reveal"><div class="divider__line"></div><span>Tidevandet</span></div>
-
-      <!-- Breathing circles — the rhythm of pendulation -->
-      <div class="illo illo--center">
-        <svg class="illo__svg illo__svg--breath" viewBox="0 0 200 200" fill="none">
-          <circle cx="100" cy="100" r="85" stroke="rgba(122,154,181,0.2)" stroke-width="0.7"/>
-          <circle cx="100" cy="100" r="65" stroke="rgba(90,138,106,0.3)" stroke-width="0.8"/>
-          <circle cx="100" cy="100" r="45" stroke="rgba(122,154,181,0.35)" stroke-width="0.9"/>
-          <circle cx="100" cy="100" r="25" stroke="rgba(160,96,80,0.35)" stroke-width="1"/>
-          <circle cx="100" cy="100" r="4" fill="rgba(196,213,226,0.55)"/>
-        </svg>
+        <div class="immersive immersive--cool reveal">
+          <div class="immersive__glow"></div>
+          <span class="immersive__label">N&aring;r kontakt er prim&aelig;rt</span>
+          <h3 class="immersive__title">Meet Me</h3>
+          <p class="immersive__text" id="meetText"></p>
+          <div class="immersive__rule"></div>
+          <ul class="immersive__list" id="meetList"></ul>
+        </div>
       </div>
-
-      <div class="section-cards" id="dynamikCards"></div>
-
-      <!-- Deep links -->
-      <div class="deep-links reveal">
-        <button class="deep-link" data-navigate="faenomener">
-          <div><span class="deep-link__title">Indsigter</span><span class="deep-link__sub">Ord for det vi m&aelig;rker</span></div>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </button>
-        <button class="deep-link" data-navigate="refleksion">
-          <div><span class="deep-link__title">Refleksion</span><span class="deep-link__sub">Sp&oslash;rgsm&aring;l at m&aelig;rke efter</span></div>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </button>
-      </div>
-    </div>
-  </section>
     </div>
   </section>
 
@@ -372,9 +436,9 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
         <span>Tilbage</span>
       </button>
-      <span class="page-hero__label">Rummet</span>
-      <h2 class="page-hero__title">Stilheden og betingelserne</h2>
-      <p class="page-hero__sub">Det rum hvori forandring bliver mulig</p>
+      <span class="page-hero__label">03 — Rummet</span>
+      <h2 class="page-hero__title">Betingelserne</h2>
+      <p class="page-hero__sub">for re-balancering</p>
     </div>
 
     <!-- Open space illustration -->
@@ -406,7 +470,7 @@
 
       <div class="section-cards" id="stilhedCards"></div>
 
-      <div class="divider reveal"><div class="divider__line"></div><span>&Oslash;jeblikket f&oslash;r forandring</span></div>
+      <div class="divider reveal"><div class="divider__line"></div><span>The Neutral</span></div>
 
       <!-- Midtlinje illustration -->
       <div class="illo illo--center">
@@ -453,7 +517,7 @@
         </svg>
       </div>
 
-      <div class="divider reveal"><div class="divider__line"></div><span>At lytte til hvad der er nok</span></div>
+      <div class="divider reveal"><div class="divider__line"></div><span>Dosering</span></div>
 
       <div class="section-cards" id="doseringCards"></div>
 
@@ -464,11 +528,11 @@
 
       <div class="deep-links reveal">
         <button class="deep-link" data-navigate="faenomener">
-          <div><span class="deep-link__title">Indsigter</span><span class="deep-link__sub">Ord for det vi m&aelig;rker</span></div>
+          <div><span class="deep-link__title">F&aelig;nomener</span><span class="deep-link__sub">Alle begreber og dynamikker</span></div>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </button>
         <button class="deep-link" data-navigate="refleksion">
-          <div><span class="deep-link__title">Refleksion</span><span class="deep-link__sub">Sp&oslash;rgsm&aring;l at m&aelig;rke efter</span></div>
+          <div><span class="deep-link__title">Refleksion</span><span class="deep-link__sub">Tanker til eftertanke</span></div>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </button>
       </div>
@@ -484,9 +548,9 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
         <span>Tilbage</span>
       </button>
-      <span class="page-hero__label">Indsigter</span>
-      <h2 class="page-hero__title">Det levende landskab</h2>
-      <p class="page-hero__sub">Ord for det vi m&aelig;rker</p>
+      <span class="page-hero__label">Fordybelse</span>
+      <h2 class="page-hero__title">F&aelig;nomener</h2>
+      <p class="page-hero__sub">Begreber og dynamikker</p>
     </div>
 
     <!-- Interconnected web illustration -->
@@ -534,7 +598,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
         <span>Tilbage</span>
       </button>
-      <span class="page-hero__label">Refleksion</span>
+      <span class="page-hero__label">Fordybelse</span>
       <h2 class="page-hero__title">Tanker til eftertanke</h2>
     </div>
 
@@ -550,7 +614,6 @@
     </div>
 
     <div class="content">
-      <p class="intro-text reveal">Ikke sp&oslash;rgsm&aring;l der kr&aelig;ver svar &mdash; men invitationer til at m&aelig;rke efter. Lad dem hvile i dig. Vend tilbage til dem n&aring;r de kalder.</p>
       <div class="carousel" id="carousel">
         <div class="carousel__track" id="carouselTrack"></div>
         <div class="carousel__nav">
@@ -566,21 +629,11 @@
     </div>
   </section>
 
-  <!-- ═══ DWELL — Contemplative room ═══ -->
-  <section class="page page--dwell" data-page="dwell">
-    <div class="dwell">
-      <div class="dwell__illo" id="dwellIllo"></div>
-      <blockquote class="dwell__essence" id="dwellEssence"></blockquote>
-      <p class="dwell__question" id="dwellQuestion"></p>
-      <button class="dwell__return" id="dwellReturn">Vend tilbage</button>
-    </div>
-  </section>
-
   <!-- ═══ FOOTER ═══ -->
   <footer class="footer">
     <div class="footer__line"></div>
     <p class="footer__title">Balancering &amp; Re-Balancering</p>
-    <p class="footer__sub">Vend tilbage n&aring;r du har brug for det</p>
+    <p class="footer__sub">Biodynamics</p>
   </footer>
 
 </div>
