@@ -3,7 +3,7 @@ const APP_DATA = {
 
   meta: {
     title: "Balancering & Re-Balancering",
-    subtitle: "Biodynamics",
+    subtitle: "Et stille rum at vende tilbage til",
     quote: {
       text: "Healing is not about getting rid of symptoms. It's about an individual wholeness, that we remember instinctively the moment we touch it.",
       author: "James Jealous"
