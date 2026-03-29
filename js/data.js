@@ -93,33 +93,10 @@ const APP_DATA = {
         text2: "Når du mærker angst, uro, rastløshed — så kan det faktisk være kroppens forsøg på at holde dig ude af den dybere stilhed. Aktiveringen er ikke fjenden. Den er et forsvarssystem, der beskytter dig mod noget, du endnu ikke er klar til at møde. At forstå det ændrer alt."
       },
       dynamik: {
-        title: "Tempo & Kontakt",
-        pullQuote: "To grundlæggende kvaliteter — tempo og kontakt — bestemmer bevægelsen mellem tilstandene.",
-        text: "Når tempoet løber løbsk, mister vi kontakt. Når kontakten forsvinder, falder tempoet mod kollaps. De to spejler hinanden — og vejen tilbage følger den modsatte sti. Tænk på tidevandet. Ebbe og flod. Vi aktiveres, vi finder ro, vi aktiveres igen, vi finder ro igen. En bølgende, organisk rytme. I et velreguleret nervesystem sker dette naturligt og ubesværet. Der er en grundlæggende tillid til, at bevægelsen i den ene retning altid vil blive fulgt af en bevægelse i den anden. Når den tillid brydes — når vi sidder fast i enten den ene eller den anden pol — mister kroppen sin frie bevægelse. Vejen tilbage handler ikke om at tvinge bevægelsen, men om at genopdage den rytme, der allerede eksisterer. At minde kroppen om, at den kan bevæge sig, at den har bevæget sig før, og at den vil bevæge sig igen.",
-        slow: {
-          title: "Slow Way Down",
-          subtitle: "Når tempoet er løbet løbsk",
-          text: "Når alt kører for hurtigt, er vejen tilbage gennem langsomhed. Et roligt åndedræt. En blidere rytme. En invitation til at mærke noget langsomt indeni dig selv. Ikke som en tvang, men som en åbning.",
-          qualities: [
-            "Inviter til langsomhed i krop og sind",
-            "Find noget stabilt at hvile opmærksomheden på",
-            "Bemærk noget der bevæger sig langsomt i dig",
-            "Åbn sanserne udad — mærk verden omkring dig",
-            "Mærk det der bærer dig — støtten under dig"
-          ]
-        },
-        meet: {
-          title: "Meet Me",
-          subtitle: "Når forbindelsen er forsvundet",
-          text: "Når alt er lukket ned, er vejen tilbage gennem forbindelse. En tilstedeværelse der siger: du er ikke alene. En kontakt der er tydelig nok til at nå igennem stilheden. Et rum, hvor kroppen naturligt kan begynde at finde sig selv igen.",
-          qualities: [
-            "En minimal grad af tryghed som indgang",
-            "At tilkendegive: du er ikke alene",
-            "Kvaliteten af kontakt som det vigtigste",
-            "Stabiliteten og støtten i forbindelsen",
-            "Tillid til at læne sig ind i nærværet"
-          ]
-        }
+        title: "Tidevandet",
+        pullQuote: "Ebbe og flod. Vi aktiveres, vi finder ro. Vejen tilbage er at genopdage den rytme, der allerede er der.",
+        text: "Når tempoet løber løbsk, mister vi kontakt. Når kontakten forsvinder, falder tempoet mod kollaps. De to spejler hinanden — og vejen tilbage følger den modsatte sti. Tænk på tidevandet. Vi aktiveres, vi finder ro, vi aktiveres igen, vi finder ro igen. En bølgende, organisk rytme. I et velreguleret nervesystem sker dette naturligt og ubesværet. Der er en grundlæggende tillid til, at bevægelsen i den ene retning altid vil blive fulgt af en bevægelse i den anden.",
+        text2: "Når den tillid brydes — når vi sidder fast — er der to veje hjem. Når alt kører for hurtigt: langsomhed. Et roligt åndedræt. At mærke noget stabilt at hvile på. Når alt er lukket ned: forbindelse. En tilstedeværelse der siger: du er ikke alene. En kontakt der er tydelig nok til at nå igennem stilheden. Vejen tilbage handler ikke om at tvinge bevægelsen, men om at minde kroppen om, at den kan bevæge sig, at den har bevæget sig før, og at den vil bevæge sig igen."
       }
     },
 
@@ -293,8 +270,6 @@ const APP_DATA = {
     "nerve-immobil":   { essence: "Når alt lukker ned. Det er ikke den hektiske aktivering, men den dybe stilhed — det øjeblik, hvor forbindelsen til dig selv brydes.", illo: "freeze", q: 1 },
     "nerve-under":     { essence: "Aktiveringen er ikke fjenden. Den er et forsvarssystem, der beskytter dig mod noget, du endnu ikke er klar til at møde.", illo: "freeze", q: 6 },
     "nerve-dynamik":   { essence: "Tidevand. Ebbe og flod. Vi aktiveres, vi finder ro, vi aktiveres igen. Vejen tilbage er at genopdage den rytme, der allerede er der.", illo: "waves", q: 10 },
-    "nerve-slow":      { essence: "Et roligt åndedræt. En blidere rytme. En invitation til at mærke noget langsomt indeni dig selv.", illo: "breath", q: 4 },
-    "nerve-meet":      { essence: "Du er ikke alene. En kontakt der er tydelig nok til at nå igennem stilheden.", illo: "relation", q: 3 },
 
     /* Rummet */
     "rum-intro":       { essence: "Ikke en anspændt opmærksomhed — men en rolig, åben væren-med. At lade det, der er, være præcis som det er.", illo: "space", q: 2 },

@@ -205,37 +205,14 @@
       activateSectionCards(nerveIntroCards);
     }
 
-    // State cards
+    // Three states as section-cards (not clinical state-cards)
     const stateCards = $('#stateCards');
     if (stateCards) {
       const stateKeys = ['nerve-tryghed', 'nerve-mobil', 'nerve-immobil'];
-      stateCards.innerHTML = data.treStater.states.map((s, i) => `
-        <div class="state-card reveal">
-          <div class="state-card__top">
-            <div class="state-card__heading">
-              <div class="state-card__indicator state-card__indicator--${s.color}"></div>
-              <div>
-                <span class="state-card__title">${s.title}</span>
-                <span class="state-card__label">${s.label}</span>
-              </div>
-            </div>
-            <svg class="state-card__toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"/></svg>
-          </div>
-          <div class="state-card__body">
-            <div class="state-card__body-inner">
-              <p class="state-card__desc">${s.description}</p>
-              <div class="state-card__qualities">
-                ${s.qualities.map(q => `<span class="state-card__quality">${q}</span>`).join('')}
-              </div>
-              <div class="dwell-invite"><button class="dwell-invite__btn" data-dwell="${stateKeys[i]}">Bliv her lidt</button></div>
-            </div>
-          </div>
-        </div>
-      `).join('');
-
-      $$('.state-card', stateCards).forEach(card => {
-        card.addEventListener('click', () => card.classList.toggle('open'));
-      });
+      stateCards.innerHTML = data.treStater.states.map((s, i) =>
+        buildSectionCard(s.title, s.label, `<p>${s.description}</p>`, stateKeys[i])
+      ).join('');
+      activateSectionCards(stateCards);
     }
 
     // Immobilisering as expandable card
@@ -258,23 +235,11 @@
         data.dynamik.title,
         truncate(data.dynamik.pullQuote, 100),
         `<blockquote class="pull"><p>${data.dynamik.pullQuote}</p></blockquote>
-         <p>${data.dynamik.text}</p>`,
+         <p>${data.dynamik.text}</p>${data.dynamik.text2 ? `<p>${data.dynamik.text2}</p>` : ''}`,
         'nerve-dynamik'
       );
       activateSectionCards(dynamikCards);
     }
-
-    // Slow Way Down
-    const slowText = $('#slowText');
-    if (slowText) slowText.textContent = data.dynamik.slow.text;
-    const slowList = $('#slowList');
-    if (slowList) slowList.innerHTML = data.dynamik.slow.qualities.map(q => `<li>${q}</li>`).join('');
-
-    // Meet Me
-    const meetText = $('#meetText');
-    if (meetText) meetText.textContent = data.dynamik.meet.text;
-    const meetList = $('#meetList');
-    if (meetList) meetList.innerHTML = data.dynamik.meet.qualities.map(q => `<li>${q}</li>`).join('');
   }
 
   /* ─── RUMMET ─── */
